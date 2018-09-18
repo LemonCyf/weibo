@@ -219,11 +219,11 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="757" />
-    <option name="y" value="56" />
-    <option name="width" value="849" />
-    <option name="height" value="609" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="483" />
+    <option name="y" value="182" />
+    <option name="width" value="1060" />
+    <option name="height" value="760" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
