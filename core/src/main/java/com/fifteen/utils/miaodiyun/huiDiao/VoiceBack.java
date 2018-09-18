@@ -2,9 +2,9 @@ package com.fifteen.utils.miaodiyun.huiDiao;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.miaodiyun.httpApiDemo.common.Config;
-import com.miaodiyun.huiDiao.entity.VoiceBackRep;
-import com.miaodiyun.huiDiao.entity.VoiceBackResp;
+import com.fifteen.utils.miaodiyun.httpApiDemo.common.Config;
+import com.fifteen.utils.miaodiyun.huiDiao.entity.VoiceBackRep;
+import com.fifteen.utils.miaodiyun.huiDiao.entity.VoiceBackResp;
 import org.apache.commons.codec.digest.DigestUtils;
 
 import javax.servlet.ServletException;

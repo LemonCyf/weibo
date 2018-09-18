@@ -1,8 +1,8 @@
 package com.fifteen.utils.miaodiyun.huiDiao;
 
 import com.google.gson.Gson;
-import com.miaodiyun.huiDiao.entity.MoNoticeReq;
-import com.miaodiyun.huiDiao.entity.MoNoticeResp;
+import com.fifteen.utils.miaodiyun.huiDiao.entity.MoNoticeReq;
+import com.fifteen.utils.miaodiyun.huiDiao.entity.MoNoticeResp;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
