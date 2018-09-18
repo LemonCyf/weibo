@@ -6,16 +6,12 @@
        http://www.springframework.org/schema/beans/spring-beans.xsd
        http://www.springframework.org/schema/context
        http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
-    <!--让spring容器自动管理bean对象
-     启动包扫描功能,以便注册带有@Controller、@Service、@Repository、@Component等注解的类成为spring的bean-->
+
     <context:component-scan base-package="com.fifteen"/>
 
     <!--jdbc-->
-
-    <!--加载属性文件-->
     <context:property-placeholder location="classpath:jdbc.properties"/>
 
-    <!--Druid数据源配置-->
     <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource">
         <property name="username" value="${jdbc.username}"/>
         <property name="password" value="${jdbc.password}"/>
@@ -23,29 +19,28 @@
         <property name="url" value="${jdbc.url}"/>
     </bean>
 
-    <!--mybatis配置,工厂-->
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
-        <!--注入数据源-->
         <property name="dataSource" ref="dataSource"/>
-        <!--核心配置文件配置,即根据mybatis-config.xml进行一些配置-->
         <property name="configLocation" value="classpath:mybatis-config.xml"/>
-        <!-- 处理responseBody 里面日期类型 -->
+    </bean>
+
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="basePackage" value="com.fifteen.dao"/>
+        <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
     </bean>
 
     <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
         <property name="dataSource" ref="dataSource"/>
     </bean>
+
     <tx:annotation-driven transaction-manager="transactionManager"/>
 
-    <!-- jedis 配置 -->
     <bean id="poolConfig" class="redis.clients.jedis.JedisPoolConfig"/>
 
     <bean id="pool" class="redis.clients.jedis.JedisPool">
         <constructor-arg name="host" value="${redis.host}"/>
         <constructor-arg name="poolConfig" ref="poolConfig"/>
     </bean>
-
-    <!--<bean class="com.fifteenen.redis.MyRedisPool"/>-->
 
 
 </beans>

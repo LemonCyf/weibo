@@ -7,6 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1b7c7845-82d6-4bc2-997e-1b5a451c9d7d" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/main/java/com/fifteen/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/com/fifteen/controller/UserController.java" afterDir="false" />
@@ -17,6 +18,11 @@
       <change beforePath="$PROJECT_DIR$/core/src/main/java/com/fifteen/service/imp/UserServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/fifteen/service/imp/UserServiceImp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/src/main/java/com/fifteen/utils/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/com/fifteen/controller/IndexController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/target/classes/com/fifteen/utils/IndexController.class" beforeDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/fifteen/utils/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/com/fifteen/controller/IndexController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/resources/coreContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/resources/coreContext.xml" afterDir="false" />
+>>>>>>> d55ac48cb4b8f3fdab11c321c126b736981bdb5b
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -64,7 +70,7 @@
           <entry key="jsp" value="6" />
           <entry key="properties" value="3" />
           <entry key="sql" value="1" />
-          <entry key="xml" value="10" />
+          <entry key="xml" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -74,21 +80,21 @@
           <entry key="JavaScript" value="1" />
           <entry key="Properties" value="3" />
           <entry key="SQL" value="1" />
-          <entry key="XML" value="10" />
+          <entry key="XML" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="java" value="32" />
           <entry key="jsp" value="28" />
-          <entry key="xml" value="18" />
+          <entry key="xml" value="26" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="32" />
           <entry key="JSP" value="28" />
-          <entry key="XML" value="18" />
+          <entry key="XML" value="26" />
         </counts>
       </usages-collector>
     </session>
@@ -140,6 +146,7 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/core/src/main/java/com/fifteen/dao/UserDao.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
@@ -147,15 +154,55 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+=======
+        <entry file="file://$PROJECT_DIR$/core/src/main/java/com/fifteen/pojo/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="44">
+              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/main/java/com/fifteen/service/UserService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="44">
+              <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/src/main/webapp/index.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+>>>>>>> d55ac48cb4b8f3fdab11c321c126b736981bdb5b
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/client/src/main/java/com/fifteen/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="166">
               <caret line="27" column="54" lean-forward="true" selection-start-line="27" selection-start-column="54" selection-end-line="27" selection-end-column="54" />
+=======
+        <entry file="file://$PROJECT_DIR$/core/src/main/java/com/fifteen/service/imp/UserServiceImp.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="44">
+              <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/client/src/main/java/com/fifteen/controller/IndexController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="8" column="27" lean-forward="true" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+>>>>>>> d55ac48cb4b8f3fdab11c321c126b736981bdb5b
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -243,6 +290,7 @@
         <option value="$PROJECT_DIR$/core/src/main/java/com/fifteen/utils/miaodiyun/huiDiao/ReceNotice.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/com/fifteen/utils/miaodiyun/huiDiao/MoNotice.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/com/fifteen/utils/miaodiyun/huiDiao/VoiceBack.java" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/client/src/main/java/com/fifteen/controller/UserController.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/com/fifteen/service/UserService.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/com/fifteen/service/imp/UserServiceImp.java" />
@@ -255,6 +303,10 @@
         <option value="$PROJECT_DIR$/client/src/main/resources/dispatcher-servlet.xml" />
         <option value="$PROJECT_DIR$/core/src/main/java/com/fifteen/pojo/User.java" />
         <option value="$PROJECT_DIR$/core/src/main/resources/jdbc.properties" />
+=======
+        <option value="$PROJECT_DIR$/client/src/main/java/com/fifteen/controller/IndexController.java" />
+        <option value="$PROJECT_DIR$/core/src/main/resources/coreContext.xml" />
+>>>>>>> d55ac48cb4b8f3fdab11c321c126b736981bdb5b
       </list>
     </option>
   </component>
@@ -284,12 +336,19 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
+<<<<<<< HEAD
     <option name="x" value="953" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
+=======
+    <option name="x" value="461" />
+    <option name="y" value="32" />
+    <option name="width" value="1060" />
+    <option name="height" value="760" />
+>>>>>>> d55ac48cb4b8f3fdab11c321c126b736981bdb5b
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -307,6 +366,7 @@
               <item name="新建文件夹" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
+<<<<<<< HEAD
               <item name="新建文件夹" type="b2602c69:ProjectViewProjectNode" />
               <item name="新建文件夹" type="462c0819:PsiDirectoryNode" />
               <item name="admin" type="462c0819:PsiDirectoryNode" />
@@ -385,6 +445,10 @@
             <path>
               <item name="新建文件夹" type="b2602c69:ProjectViewProjectNode" />
               <item name="新建文件夹" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="weibo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="weibo" type="462c0819:PsiDirectoryNode" />
+>>>>>>> d55ac48cb4b8f3fdab11c321c126b736981bdb5b
               <item name="core" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -412,6 +476,7 @@
               <item name="core" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="fifteen" type="462c0819:PsiDirectoryNode" />
               <item name="dao" type="462c0819:PsiDirectoryNode" />
@@ -473,6 +538,9 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="mapper" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+>>>>>>> d55ac48cb4b8f3fdab11c321c126b736981bdb5b
             </path>
           </expand>
           <select />
@@ -486,7 +554,11 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+<<<<<<< HEAD
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537256264399" />
+=======
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537256137677" />
+>>>>>>> d55ac48cb4b8f3fdab11c321c126b736981bdb5b
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -642,12 +714,17 @@
       <option name="presentableId" value="Default" />
       <updated>1537240905125</updated>
       <workItem from="1537240908881" duration="3235000" />
+<<<<<<< HEAD
       <workItem from="1537251803133" duration="2325000" />
       <workItem from="1537254820299" duration="1287000" />
+=======
+      <workItem from="1537251803133" duration="3507000" />
+>>>>>>> d55ac48cb4b8f3fdab11c321c126b736981bdb5b
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="6847000" />
   </component>
   <component name="ToolWindowManager">
@@ -655,6 +732,15 @@
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15191898" />
+=======
+    <option name="totallyTimeSpent" value="6742000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22989276" />
+>>>>>>> d55ac48cb4b8f3fdab11c321c126b736981bdb5b
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -664,16 +750,26 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49932975" weight="0.32991204" />
+<<<<<<< HEAD
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.33116177" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.7198068" weight="1.0" />
+=======
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.8827078" visible="true" weight="0.13950074" />
+>>>>>>> d55ac48cb4b8f3fdab11c321c126b736981bdb5b
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Application Servers" order="7" sideWeight="0.49932975" weight="0.32991204" />
       <window_info anchor="bottom" id="Spring" order="8" />
       <window_info anchor="bottom" id="Terminal" order="9" />
+<<<<<<< HEAD
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50053304" side_tool="true" weight="0.32899022" />
       <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49798927" weight="0.32681867" />
+=======
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.117292225" side_tool="true" visible="true" weight="0.13950074" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49798927" weight="0.32892805" />
+>>>>>>> d55ac48cb4b8f3fdab11c321c126b736981bdb5b
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="bottom" id="Version Control" order="14" show_stripe_button="false" />
@@ -1045,10 +1141,31 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/client/src/main/java/com/fifteen/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="166">
           <caret line="27" column="54" lean-forward="true" selection-start-line="27" selection-start-column="54" selection-end-line="27" selection-end-column="54" />
+=======
+    <entry file="file://$PROJECT_DIR$/core/src/main/resources/coreContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="36" column="4" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="4" />
+          <folding>
+            <element signature="e#1842#1860#0" expanded="true" />
+            <element signature="e#1903#1921#0" expanded="true" />
+            <element signature="e#1971#1987#0" expanded="true" />
+            <element signature="e#2025#2038#0" expanded="true" />
+            <element signature="e#3336#3351#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/main/java/com/fifteen/controller/IndexController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="27" lean-forward="true" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+>>>>>>> d55ac48cb4b8f3fdab11c321c126b736981bdb5b
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
