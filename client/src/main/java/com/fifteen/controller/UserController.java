@@ -31,8 +31,8 @@ public class UserController {
 //        password= MD5Utils.md5(password);
         User user=userService.login(phone,password);
         if(user==null){
-            session.setAttribute("warn","用户名或密码错误");
-            return "/jsp/head";
+            session.setAttribute("warn","用户名或密码错误, 请重新输入！");
+            return "/jsp/login";
         }else{
             session.setAttribute("user",user);
             return "/jsp/head";
