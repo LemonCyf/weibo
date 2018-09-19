@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.fifteen.dao.UserDao">
+    <resultMap id="UserMap" type="com.fifteen.pojo.User">
+        <id property="userId" column="userId"/>
+        <id property="phone" column="phone"/>
+        <id property="password" column="password"/>
+        <id property="mailbox" column="mailbox"/>
+        <id property="registeredl_dentity" column="registeredl_dentity"/>
+        <id property="location" column="location"/>
+        <id property="nickname" column="nickname"/>
+        <id property="orientation" column="orientation"/>
+        <id property="sex" column="sex"/>
+        <id property="emotional_state" column="emotional_state"/>
+        <id property="birthday" column="birthday"/>
+        <id property="blood_type" column="blood_type"/>
+        <id property="brieflntroduction" column="brieflntroduction"/>
+        <id property="blog_address" column="blog_address"/>
+        <id property="MSN" column="MSN"/>
+        <id property="qq" column="qq"/>
+        <id property="receiptlnformation" column="receiptlnformation"/>
+        <id property="domain_name" column="domain_name"/>
+        <id property="how_to_find_me" column="how_to_find_me"/>
+        <id property="ID" column="ID"/>
+        <id property="member" column="member"/>
+    </resultMap>
+    <select id="login" resultType="com.fifteen.pojo.User">
+        select * from  user where phone=#{phone} and password=#{password};
+    </select>
+</mapper>
