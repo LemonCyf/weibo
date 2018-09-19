@@ -24,18 +24,18 @@ public class UserController {
 
     @RequestMapping("/login")
     public String login(
-//            @RequestParam(name = "mailbox")String mailbox,
-            @RequestParam(name = "phone")String phone,
-            @RequestParam(name = "password")String password,
+//            @RequestParam(value = "mailbox",required=false)String mailbox,
+            @RequestParam(value = "phone",required = false)String phone,
+            @RequestParam(value = "password",required = false)String password,
             HttpSession session){
 //        password= MD5Utils.md5(password);
         User user=userService.login(phone,password);
         if(user==null){
             session.setAttribute("warn","用户名或密码错误");
-            return "/jsp/index";
+            return "/jsp/head";
         }else{
             session.setAttribute("user",user);
-            return "/jsp/index";
+            return "/jsp/head";
         }
     }
 }

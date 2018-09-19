@@ -11,6 +11,6 @@
     <title>主页</title>
 </head>
 <body>
-<jsp:forward page="${pageContext.request.contextPath}/index.do"/>
+<jsp:forward page="/index.do"/>
 </body>
 </html>
