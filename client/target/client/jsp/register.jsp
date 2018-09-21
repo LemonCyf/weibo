@@ -1,7 +1,11 @@
-<%@ page contentType="text/html; charset=UTF-8"  %>
+<%@ page contentType="text/html; charset=UTF-8" isELIgnored="false"  %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/bootstrap.min.css" type="text/css" />
+
+    <script src="${pageContext.request.contextPath}/js/jquery-1.11.3.min.js" type="text/javascript"></script>
+    <script src="${pageContext.request.contextPath}/js/bootstrap.min.js" type="text/javascript"></script>
     <!--注册登录header-->
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link href="//img.t.sinajs.cn/t5/style/css/module/base/frame.css?version=9744cb1b8d390b27" type="text/css" rel="stylesheet" />
@@ -46,7 +50,7 @@
                             <a href="javascript:void(0);" class="tel_country CH" node-type="mobilesea_select"></a>
                             <input type="hidden" name="zone" value="" node-type="mobilesea_selectvalue"/>
                             <div class="W_input foreign_tel"><span class="tel_forenum" node-type="mobilesea_txt">0086</span>
-                                <input type="text" node-type="newmobilesea" action-data="text=请输入您的手机号码" action-type="text_copy" name="username" class="tel_num" value="" autocomplete="off" >
+                                <input id="phone" type="text" node-type="newmobilesea" action-data="text=请输入您的手机号码" action-type="text_copy" name="username" class="tel_num" value="" autocomplete="off" >
                                 <div style="position:absolute; top:320px; left:100px; z-index:99;display:none;" class="layer_menu_list msg_set_select layer_set_country" node-type="mobilesea_selectlayer">
                                     <!-- 选中态 select, a内增加 em -->
                                     <ul class="y_scroll">
@@ -88,7 +92,7 @@
                 <div class="info_list clearfix">
                     <div class="tit"><i>*</i>设置密码：</div>
                     <div class="inp">
-                        <input node-type="password" action-data="" action-type="text_copy" name="passwd" type="password" class="W_input" value="" />
+                        <input id="password" node-type="password" action-data="" action-type="text_copy" name="passwd" type="password" class="W_input" value="" />
                     </div>
                     <div node-type="password_tip" class="tips"></div>
                 </div>
@@ -123,19 +127,19 @@
                 <div node-type="activation_wrapper"  class="info_list clearfix" style="display:inline;">
                     <div class="tit"><i>*</i>激活码：</div>
                     <div class="inp active">
-                        <a href="javascript:void(0);" class="W_btn_e" action-type="btn_sms_activation" node-type="btn_sms_activation" action-data="type=sendsms"><span>免费获取短信激活码</span></a>
+                        <a href="javascript:void(0);" class="W_btn_e" action-type="btn_sms_activation" node-type="btn_sms_activation" action-data="type=sendsms"><span id="getCode">免费获取短信激活码</span></a>
                         <a href="javascript:void(0);" class="W_btn_e_disable" style="display:none" node-type="btn_sms_activation_disable"><span><em node-type="sms_timer">180</em>秒后重新获取短信</span></a>
                         <input name="pincode" type="text" class="W_input" value="" maxlength="6">
-                        <div class="attachment"><a href="http://help.weibo.com/faq/q/2375/20136#20136" target="_blank">收不到验证码？</a></div>
+                        <div class="attachment"><a id="noCode" href="http://help.weibo.com/faq/q/2375/20136#20136" target="_blank">收不到验证码？</a></div>
                     </div>
                     <div class="tips" node-type="activation_tip">
                     </div>
                 </div>
 
                 <div class="info_submit clearfix">
-                    <div class="inp">
-                        <a action-type="btn_check_pincode" class="W_btn_big" suda-uatrack="key=tblog_register_page&value=register_now_button" href="javascript:void(0);" refake-type="submit" node-type="btn_check_pincode"><span>立即注册</span></a>
-                        <a style="display:none;" action-type="btn_submit" class="W_btn_big" suda-uatrack="key=tblog_register_page&value=register_now_button" href="javascript:void(0);" refake-type="submit" node-type="btn_submit"><span>立即注册</span></a>
+                    <div  class="inp">
+                        <a id="register" action-type="btn_check_pincode" class="W_btn_big" suda-uatrack="key=tblog_register_page&value=register_now_button" href="javascript:void(0);" refake-type="submit" node-type="btn_check_pincode"><span>立即注册</span></a>
+                        <%--<a style="display:none;" action-type="btn_submit" class="W_btn_big" suda-uatrack="key=tblog_register_page&value=register_now_button" href="javascript:void(0);" refake-type="submit" node-type="btn_submit"><span>立即注册</span></a>--%>
                     </div>
                 </div>
                 <div class="info_list clearfix">
@@ -193,11 +197,51 @@
             wa.src = 'https://js.t.sinajs.cn/open/analytics/js/suda.js?version=9744cb1b8d390b27';
             s.parentNode.insertBefore(wa, s);
         })();
+        // var data = {
+        //     "phone":$("#phone").val,
+        //     "password":$("#password").val
+        // };
+        <!--register-->
+
+        //如果手机和密码都已经填写 并 按下获取验证码->发送验证码至用户手机
+
+
     </script>
     <!-- SUDA_CODE_END -->        <!--/注册登录footer-->
 </div>
 <img src="/signup/v5/arrivelog?page=mobile&invite=" style="height:1px;width:1px;filter:alpha(Opacity=0);-moz-opacity:0;opacity:0;" />
 </body>
+
+<script>
+    $("#register").click(function () {
+        $.ajax({
+                url:"${pageContext.request.contextPath}/user/register.do",
+                type:"post",
+                data:{
+                    phone:$("#phone").val(),
+                    password:$("#password").val()
+                },
+                dataType:"json",
+                success:function (data) {
+                    alert(data);
+                }
+            }
+        )
+    });
+    //判断验证码是否正确
+    $("#getCode").blur(function () {
+        $.ajax({
+            url:"${pageContext.request.contextPath}/user/register.do",
+            type:"post",
+            data:JSON.stringify(data),
+            dataType:"json",
+            success:function (data) {
+
+            }
+        })
+    })
+</script>
 <script src="//js.t.sinajs.cn/t5/register/js/page/remote/registerSSO.js?version=9744cb1b8d390b27" type="text/javascript" ></script>
 <script src="//js.t.sinajs.cn/t5/register/js/page/register/mobile.js?version=9744cb1b8d390b27" type="text/javascript" ></script>
 </html>
+
