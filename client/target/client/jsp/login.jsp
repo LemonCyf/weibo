@@ -15,22 +15,34 @@
 </head>
 <jsp:include page="head.jsp"/>
 <body class="login" mycollectionplug="bind">
+<%
+    String phone="";
+    String password="";
+    Cookie[] cookies=request.getCookies();
+    for(int i=0;i<cookies.length;i++){
+        if("phone".equals(cookies[i].getName())){
+            phone=cookies[i].getValue();
+        }else if("password".equals(cookies[i].getName())){
+            password=cookies[i].getValue();
+        }
+    }
+%>
 <form action="/user/login.do" method="post">
     <div class="login_m">
         <div class="login_boder">
             <div class="login_padding" id="login_model">
                 <h2>手机号</h2>
                 <label>
-                    <input type="text" id="phone" name="phone" class="txt_input txt_input2" placeholder="请输入手机号">
+                    <input type="text" id="phone" name="phone" class="txt_input txt_input2" value="<%=phone%>" placeholder="请输入手机号">
                 </label>
                 <h2>密码</h2>
                 <label>
-                    <input type="password" name="password" id="userpwd" class="txt_input" placeholder="请输入密码">
+                    <input type="password" name="password" id="userpwd" class="txt_input" value="<%=password%>" placeholder="请输入密码">
                 </label>
                 <p class="forgot"><a id="iforget" href="javascript:void(0);">忘记密码?</a></p>
                 <div class="rem_sub">
                     <div class="rem_sub_l">
-                        <input type="checkbox" name="rememberMe" id="save_me" value="">
+                        <input type="checkbox" name="rememberMe" id="save_me" value="checked">
                         <label for="checkbox">记住我</label>
                     </div>
                     <label>
@@ -83,16 +95,4 @@
         });
     }
 </script>
-<%
-    String phone="";
-    String password="";
-    Cookie[] cookies=request.getCookies();
-    for(int i=0;i<cookies.length;i++){
-        if("phone".equals(cookies[i].getName())){
-            phone=cookies[i].getValue();
-        }else if("password".equals(cookies[i].getName())){
-            password=cookies[i].getValue();
-        }
-    }
-%>
 </html>
