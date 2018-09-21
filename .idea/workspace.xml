@@ -6,30 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aabd43d8-d2cf-4dc8-ae19-2009a3c494a6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a1a4e366-cc79-420e-8819-b53dac62de84.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a1a4e366-cc79-420e-8819-b53dac62de84.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/java/com/fifteen/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/com/fifteen/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/webapp/jsp/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/webapp/jsp/register.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/target/classes/com/fifteen/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/classes/com/fifteen/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/target/client/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/client/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/target/client/WEB-INF/classes/com/fifteen/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/client/WEB-INF/classes/com/fifteen/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/target/client/WEB-INF/lib/core-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/client/WEB-INF/lib/core-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/target/client/Wopop_files/style_log.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/client/Wopop_files/style_log.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/target/client/jsp/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/client/jsp/register.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/fifteen/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/fifteen/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/fifteen/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/fifteen/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/fifteen/service/imp/UserServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/fifteen/service/imp/UserServiceImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/resources/coreContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/resources/coreContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/resources/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/resources/jdbc.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/resources/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/fifteen/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/com/fifteen/dao/UserDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/fifteen/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/com/fifteen/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/fifteen/service/imp/UserServiceImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/com/fifteen/service/imp/UserServiceImp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/fifteen/utils/miaodiyun/httpApiDemo/IndustrySMS.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/com/fifteen/utils/miaodiyun/httpApiDemo/IndustrySMS.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/coreContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/coreContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/mapper/UserMapper.xml" afterDir="false" />
-    </list>
+    <list default="true" id="aabd43d8-d2cf-4dc8-ae19-2009a3c494a6" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/core/target/" />
     <ignored path="$PROJECT_DIR$/admin/target/" />
@@ -86,8 +63,9 @@
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.52" value="1" />
+          <entry key="project.open.time.55" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -138,7 +116,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/src/main/java/com/fifteen/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
+            <state relative-caret-position="330">
               <caret line="25" selection-start-line="25" selection-end-line="25" />
               <folding>
                 <element signature="e#1076#1077#0" expanded="true" />
@@ -151,8 +129,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/core/src/main/java/com/fifteen/service/imp/UserServiceImp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="29" selection-start-line="29" selection-end-line="29" />
+            <state relative-caret-position="354">
+              <caret line="33" column="29" lean-forward="true" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -169,7 +147,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/main/java/com/fifteen/pojo/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
+            <state relative-caret-position="198">
               <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
             </state>
           </provider>
@@ -178,7 +156,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/main/resources/mapper/UserMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="880">
+            <state relative-caret-position="1474">
               <caret line="67" column="45" selection-start-line="67" selection-start-column="45" selection-end-line="67" selection-end-column="45" />
             </state>
           </provider>
@@ -187,7 +165,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.2/mybatis-3.4.2.jar!/org/apache/ibatis/builder/xml/mybatis-3-mapper.dtd">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
+            <state relative-caret-position="1474">
               <caret line="67" selection-start-line="67" selection-end-line="67" />
             </state>
           </provider>
@@ -264,9 +242,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="AndroidView" />
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -577,11 +555,12 @@
       <workItem from="1537349257829" duration="32000" />
       <workItem from="1537422442391" duration="3540000" />
       <workItem from="1537426039659" duration="3335000" />
+      <workItem from="1537495201197" duration="421000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15351000" />
+    <option name="totallyTimeSpent" value="15772000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -593,9 +572,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20107238" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20375335" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -603,7 +583,6 @@
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Web" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Database Console" weight="0.32892805" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32892805" />
@@ -619,6 +598,7 @@
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info anchor="bottom" id="Database Console" order="15" weight="0.32892805" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -751,11 +731,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#245#246#0" expanded="true" />
-            <element signature="e#279#280#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -774,13 +749,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/src/main/webapp/js/jquery-1.11.3.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/client/src/main/webapp/jsp/register.jsp">
       <provider selected="true" editor-type-id="text-editor">
@@ -792,31 +761,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.2/mybatis-3.4.2.jar!/org/apache/ibatis/builder/xml/mybatis-3-mapper.dtd">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="67" selection-start-line="67" selection-end-line="67" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.2/mybatis-3.4.2.jar!/org/apache/ibatis/binding/MapperProxy.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="111">
           <caret line="31" selection-start-line="31" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/fifteen/pojo/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/fifteen/dao/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -848,16 +796,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/resources/mapper/UserMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="880">
-          <caret line="67" column="45" selection-start-line="67" selection-start-column="45" selection-end-line="67" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/main/java/com/fifteen/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
+        <state relative-caret-position="330">
           <caret line="25" selection-start-line="25" selection-end-line="25" />
           <folding>
             <element signature="e#1076#1077#0" expanded="true" />
@@ -866,10 +807,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/fifteen/dao/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/fifteen/pojo/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/resources/mapper/UserMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1474">
+          <caret line="67" column="45" selection-start-line="67" selection-start-column="45" selection-end-line="67" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.2/mybatis-3.4.2.jar!/org/apache/ibatis/builder/xml/mybatis-3-mapper.dtd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1474">
+          <caret line="67" selection-start-line="67" selection-end-line="67" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/java/com/fifteen/service/imp/UserServiceImp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        <state relative-caret-position="354">
+          <caret line="33" column="29" lean-forward="true" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
         </state>
       </provider>
     </entry>
