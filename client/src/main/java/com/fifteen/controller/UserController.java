@@ -62,13 +62,13 @@ public class UserController {
                 response.addCookie(passwordCookie);
             }
             session.setAttribute("user",user);
-            return "/jsp/index";
+            return "redirect:/index.do";
         }
     }
 
     @RequestMapping("/logout")
     public String logout(HttpSession session){
         session.invalidate();
-        return "/jsp/index";
+        return "redirect:/index.do";
     }
 }

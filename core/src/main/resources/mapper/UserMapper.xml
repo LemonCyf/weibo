@@ -4,26 +4,26 @@
 <mapper namespace="com.fifteen.dao.UserDao">
     <resultMap id="UserMap" type="com.fifteen.pojo.User">
         <id property="userId" column="userId"/>
-        <result property="phone" column="phone"/>
-        <result property="password" column="password"/>
-        <result property="mailbox" column="mailbox"/>
-        <result property="registeredl_dentity" column="registeredl_dentity"/>
-        <result property="location" column="location"/>
-        <result property="nickname" column="nickname"/>
-        <result property="orientation" column="orientation"/>
-        <result property="sex" column="sex"/>
-        <result property="emotional_state" column="emotional_state"/>
-        <result property="birthday" column="birthday"/>
-        <result property="blood_type" column="blood_type"/>
-        <result property="brieflntroduction" column="brieflntroduction"/>
-        <result property="blog_address" column="blog_address"/>
-        <result property="MSN" column="MSN"/>
-        <result property="qq" column="qq"/>
-        <result property="receiptlnformation" column="receiptlnformation"/>
-        <result property="domain_name" column="domain_name"/>
-        <result property="how_to_find_me" column="how_to_find_me"/>
-        <result property="ID" column="ID"/>
-        <result property="member" column="member"/>
+        <id property="phone" column="phone"/>
+        <id property="password" column="password"/>
+        <id property="mailbox" column="mailbox"/>
+        <id property="registeredl_dentity" column="registeredl_dentity"/>
+        <id property="location" column="location"/>
+        <id property="nickname" column="nickname"/>
+        <id property="orientation" column="orientation"/>
+        <id property="sex" column="sex"/>
+        <id property="emotional_state" column="emotional_state"/>
+        <id property="birthday" column="birthday"/>
+        <id property="blood_type" column="blood_type"/>
+        <id property="brieflntroduction" column="brieflntroduction"/>
+        <id property="blog_address" column="blog_address"/>
+        <id property="MSN" column="MSN"/>
+        <id property="qq" column="qq"/>
+        <id property="receiptlnformation" column="receiptlnformation"/>
+        <id property="domain_name" column="domain_name"/>
+        <id property="how_to_find_me" column="how_to_find_me"/>
+        <id property="ID" column="ID"/>
+        <id property="member" column="member"/>
     </resultMap>
     <select id="login" resultType="com.fifteen.pojo.User">
         select * from  user where phone=#{phone} and password=#{password};
