@@ -8,7 +8,7 @@ public class Comment {
     private Integer comment_id;
     private String text;
     private Integer expression_id;
-    private Blob picture;
+    private String picture;
     private Integer publish_content_id;
     private String userId;
     private Date time;
@@ -16,7 +16,7 @@ public class Comment {
     public Comment() {
     }
 
-    public Comment(Integer comment_id, String text, Integer expression_id, Blob picture, Integer publish_content_id, String userId, Date time) {
+    public Comment(Integer comment_id, String text, Integer expression_id, String picture, Integer publish_content_id, String userId, Date time) {
         this.comment_id = comment_id;
         this.text = text;
         this.expression_id = expression_id;
@@ -50,11 +50,11 @@ public class Comment {
         this.expression_id = expression_id;
     }
 
-    public Blob getPicture() {
+    public String getPicture() {
         return picture;
     }
 
-    public void setPicture(Blob picture) {
+    public void setPicture(String picture) {
         this.picture = picture;
     }
 

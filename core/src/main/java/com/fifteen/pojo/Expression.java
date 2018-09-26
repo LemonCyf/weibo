@@ -4,12 +4,12 @@ import com.mysql.jdbc.Blob;
 
 public class Expression {
     private Integer ExpressionId;
-    private Blob Expression;
+    private String Expression;
 
     public Expression() {
     }
 
-    public Expression(Integer expressionId, Blob expression) {
+    public Expression(Integer expressionId, String expression) {
         ExpressionId = expressionId;
         Expression = expression;
     }
@@ -22,11 +22,11 @@ public class Expression {
         ExpressionId = expressionId;
     }
 
-    public Blob getExpression() {
+    public String getExpression() {
         return Expression;
     }
 
-    public void setExpression(Blob expression) {
+    public void setExpression(String expression) {
         Expression = expression;
     }
 

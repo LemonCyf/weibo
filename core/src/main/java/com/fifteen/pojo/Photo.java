@@ -6,14 +6,14 @@ import java.util.Date;
 
 public class Photo {
     private Integer photo_id;
-    private Blob photo;
+    private String photo;
     private Date time;
     private Integer album_id;
 
     public Photo() {
     }
 
-    public Photo(Integer photo_id, Blob photo, Date time, Integer album_id) {
+    public Photo(Integer photo_id, String photo, Date time, Integer album_id) {
         this.photo_id = photo_id;
         this.photo = photo;
         this.time = time;
@@ -28,11 +28,11 @@ public class Photo {
         this.photo_id = photo_id;
     }
 
-    public Blob getPhoto() {
+    public String getPhoto() {
         return photo;
     }
 
-    public void setPhoto(Blob photo) {
+    public void setPhoto(String photo) {
         this.photo = photo;
     }
 

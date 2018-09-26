@@ -6,14 +6,14 @@ public class Fabulous {
     private Integer fabulous_id;
     private String text;
     private Integer expression_id;
-    private Blob picture;
+    private String picture;
     private Integer publish_content_id;
     private String userId;
 
     public Fabulous() {
     }
 
-    public Fabulous(Integer fabulous_id, String text, Integer expression_id, Blob picture, Integer publish_content_id, String userId) {
+    public Fabulous(Integer fabulous_id, String text, Integer expression_id, String picture, Integer publish_content_id, String userId) {
         this.fabulous_id = fabulous_id;
         this.text = text;
         this.expression_id = expression_id;
@@ -46,11 +46,11 @@ public class Fabulous {
         this.expression_id = expression_id;
     }
 
-    public Blob getPicture() {
+    public String getPicture() {
         return picture;
     }
 
-    public void setPicture(Blob picture) {
+    public void setPicture(String picture) {
         this.picture = picture;
     }
 

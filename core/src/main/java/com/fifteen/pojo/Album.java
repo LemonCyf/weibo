@@ -5,14 +5,14 @@ import com.mysql.jdbc.Blob;
 public class Album {
     private Integer albume_id;
     private String albume_name;
-    private Blob cover;
+    private String cover;
     private String userId;
     private String text;
 
     public Album() {
     }
 
-    public Album(Integer albume_id, String albume_name, Blob cover, String userId, String text) {
+    public Album(Integer albume_id, String albume_name, String cover, String userId, String text) {
         this.albume_id = albume_id;
         this.albume_name = albume_name;
         this.cover = cover;
@@ -36,11 +36,11 @@ public class Album {
         this.albume_name = albume_name;
     }
 
-    public Blob getCover() {
+    public String getCover() {
         return cover;
     }
 
-    public void setCover(Blob cover) {
+    public void setCover(String cover) {
         this.cover = cover;
     }
 

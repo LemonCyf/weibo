@@ -25,7 +25,7 @@ public class UserServiceImp implements UserService {
         boolean isSuccess = false;
         User user = userDao.login(phone, password);
         if(user == null){
-            user = new User("1231241r13r12",phone,password,"1471@qq.com",null,"","","",null,"","","","","","","","","","","","");
+            user = new User("1231241r13r12",phone,password,"1471@qq.com",null,"","","",null,"","","","","","","","","","");
             int count= userDao.add(user);
             if(count > 0){
                 isSuccess = true;

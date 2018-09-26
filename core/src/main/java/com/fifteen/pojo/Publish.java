@@ -8,15 +8,23 @@ public class Publish {
     private Integer publish_content_id;
     private String text;
     private Integer expression_id;
-    private Blob picture;
-    private Blob phone;
+    private String picture;
+    private String phone;
     private String userId;
     private Date time;
+    private User user;
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
 
     public Publish() {
     }
 
-    public Publish(Integer publish_content_id, String text, Integer expression_id, Blob picture, Blob phone, String userId, Date time) {
+    public Publish(Integer publish_content_id, String text, Integer expression_id, String picture, String phone, String userId, Date time) {
         this.publish_content_id = publish_content_id;
         this.text = text;
         this.expression_id = expression_id;
@@ -50,19 +58,19 @@ public class Publish {
         this.expression_id = expression_id;
     }
 
-    public Blob getPicture() {
+    public String getPicture() {
         return picture;
     }
 
-    public void setPicture(Blob picture) {
+    public void setPicture(String picture) {
         this.picture = picture;
     }
 
-    public Blob getPhone() {
+    public String getPhone() {
         return phone;
     }
 
-    public void setPhone(Blob phone) {
+    public void setPhone(String phone) {
         this.phone = phone;
     }
 

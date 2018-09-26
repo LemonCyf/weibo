@@ -5,24 +5,33 @@ import com.mysql.jdbc.Blob;
 import java.util.Date;
 
 public class Head_portrait {
-    private Blob head_portrait;
+    private String head_portrait;
     private Date head_portrait_time;
     private String userId;
+    private Publish publish;
+
+    public Publish getPublish() {
+        return publish;
+    }
+
+    public void setPublish(Publish publish) {
+        this.publish = publish;
+    }
 
     public Head_portrait() {
     }
 
-    public Head_portrait(Blob head_portrait, Date head_portrait_time, String userId) {
+    public Head_portrait(String head_portrait, Date head_portrait_time, String userId) {
         this.head_portrait = head_portrait;
         this.head_portrait_time = head_portrait_time;
         this.userId = userId;
     }
 
-    public Blob getHead_portrait() {
+    public String getHead_portrait() {
         return head_portrait;
     }
 
-    public void setHead_portrait(Blob head_portrait) {
+    public void setHead_portrait(String head_portrait) {
         this.head_portrait = head_portrait;
     }
 

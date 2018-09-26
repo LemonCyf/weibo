@@ -20,7 +20,8 @@
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/dlzc.css">
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/nanoscroller.css">
 
-    <script language="javascript" type="text/javascript" src="${pageContext.request.contextPath}/js/jquery-1.11.1.min.js"></script>
+    <script language="javascript" type="text/javascript"
+            src="${pageContext.request.contextPath}/js/jquery-1.11.1.min.js"></script>
     <script language="javascript" type="text/javascript" src="${pageContext.request.contextPath}/js/main.js"></script>
     <script language="javascript" type="text/javascript" src="${pageContext.request.contextPath}/js/popwin.js"></script>
 
@@ -30,44 +31,96 @@
 <jsp:include page="head.jsp"/>
 <div class="container" id="index">
     <div class="wrap-left pull-left col-md-6">
-        <div class="mod-info-flow">
-            <c:forEach items="${news}" var="news">
-            <div class="mod-b mod-art" data-aid="213665">
-                <div class="mod-thumb ">
-                    <a class="transition" title="${news.title}" href="${news.newsAddress}" target="_blank">
-                        <img class="lazy" src="${news.image}" alt="${news.title}">
+        <c:if test="${not empty news}">
+            <div class="big-pic-box">
+                <div class="big-pic">
+                    <a href="${news[0].newsAddress}" target="_blank" class="transition" title="${news[0].title}">
+                        <div class="back-img"><img src="${news[0].image}" alt="${news[0].introduction}"></div>
+                        <div class="big-pic-content">
+                            <h1 class="t-h1">${news[0].title}</h1>
+                        </div>
                     </a>
                 </div>
-                <div class="column-link-box">
-
-                </div>
-                <div class="mob-ctt">
-                    <h2><a href="${news.newsAddress}" class="transition msubstr-row2" target="_blank">${news.title}</a>
-                    </h2>
-                    <div class="mob-author">
-                        <div class="author-face">
-                            <img src="${pageContext.request.contextPath}/sy-img/59_1502432173.jpg">
+                <div class="big2-pic big2-pic-index big2-pic-index-top">
+                    <a href="${news[1].newsAddress}" class="back-img transition" target="_blank"
+                       title="${news[1].title}">
+                        <img class="lazy" src="${news[1].image}" alt="${news[1].introduction}">
+                    </a>
+                    <a href="${news[1].newsAddress}" target="_blank" title="${news[1].title}">
+                        <div class="big2-pic-content">
+                            <h2 class="t-h1">${news[1].title}</h2>
                         </div>
-                        <a href="#" target="_blank">
-                            <span class="author-name ">${news.time}</span>
-                        </a>
-                    </div>
-                    <div class="mob-sub">${news.introduction}</div>
+                    </a>
+                </div>
+                <div class="big2-pic big2-pic-index big2-pic-index-bottom">
+                    <a href="${news[2].newsAddress}" class="back-img transition" target="_blank"
+                       title="${news[2].title}">
+                        <img class="lazy" src="${news[2].image}" alt="${news[2].introduction}">
+                    </a>
+                    <a href="${news[2].newsAddress}" target="_blank" title="${news[2].title}">
+                        <div class="big2-pic-content">
+                            <h2 class="t-h1">${news[2].title}</h2>
+                        </div>
+                    </a>
                 </div>
             </div>
+        </c:if>
+        <div class="mod-info-flow">
+            <c:forEach items="${publish}" var="publish">
+                <c:if test="${empty publish.picture}">
+                    <div class="mob-pu">
+                        <p><a href="#" class="transition msubstr-row2" target="_blank">${publish.text}</a></p>
+                        <div class="publishUser">
+                            <div class="userImg">
+                                <img src="${publish.user.head}">
+                            </div>
+                            <p class="userName">${publish.user.nickname}</p>
+                        </div>
+                        <div class="mob-author">
+                            <div class="author-face">
+                                <img src="${pageContext.request.contextPath}/sy-img/59_1502432173.jpg">
+                            </div>
+                            <p class="author-name ">${publish.time}</p>
+                        </div>
+                    </div>
+                </c:if>
+                <c:if test="${not empty publish.picture}">
+                    <div class="mod-b mod-art" data-aid="213665">
+                        <div class="umb ">
+                            <a class="transition" href="#" target="_blank">
+                                <img class="lazy" src="${publish.picture}">
+                            </a>
+                        </div>
+                        <div class="mob-ctt">
+                            <p><a href="#" class="transition msubstr-row2" target="_blank">${publish.text}</a></p>
+                            <div class="publishUser">
+                                <div class="userImg">
+                                        <img src="${publish.user.head}">
+                                </div>
+                                <p class="userName">${publish.user.nickname}</p>
+                            </div>
+                            <div class="mob-author">
+                                <div class="author-face">
+                                    <img src="${pageContext.request.contextPath}/sy-img/59_1502432173.jpg">
+                                </div>
+                                <p class="author-name ">${publish.time}</p>
+                            </div>
+                        </div>
+                    </div>
+                </c:if>
             </c:forEach>
         </div>
-        <nav class="page-nav" style="height: 90px;">
-            <ul class="pagination">
-                <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true"><i
-                        class="icon icon-lt"></i></span></a></li>
-                <li class="active"><a>1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#"><i class="icon icon-gt"></i></a></li>
-            </ul>
-        </nav>
+        <%--<nav class="page-nav" style="height: 90px;">--%>
+        <%--<ul class="pagination">--%>
+        <%--<li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true"><i--%>
+        <%--class="icon icon-lt"></i></span></a></li>--%>
+        <%--<li class="active"><a>1</a></li>--%>
+        <%--<li><a href="#">2</a></li>--%>
+        <%--<li><a href="#">3</a></li>--%>
+        <%--<li><a href="#">4</a></li>--%>
+        <%--<li><a href="#"><i class="icon icon-gt"></i></a></li>--%>
+        <%--</ul>--%>
+        <%--</nav>--%>
 
     </div>
     <div class="wrap-right pull-right">
@@ -90,7 +143,7 @@
                 <div class="clear"></div>
                 <ul class="rumorlist">
                     <li>
-                        <p>籍贯：山西 晋城</p>
+                        <p>籍贯：浙江</p>
                         <p>爱好：喜欢编程，就是技术太菜。</p>
                         <p>爱分享 音乐、视频和软件。</p>
                     </li>
@@ -106,8 +159,9 @@
 
 <footer class="footer">
     <div class="container copy-right" style="text-align: center;">
-        <span> Copyright 2018 <a href="#"> 微博 </a> 邮箱:123456789@163.com <img src="${pageContext.request.contextPath}/images/pic.gif"
-                                                                                 style="width: 45px;"></span>
+        <span> Copyright 2018 <a href="#"> 微博 </a> 邮箱:123456789@163.com <img
+                src="${pageContext.request.contextPath}/images/pic.gif"
+                style="width: 45px;"></span>
     </div>
 </footer>
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/mouse.js"></script>

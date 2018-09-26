@@ -540,7 +540,7 @@ header.active .navbar-left .nav-news, header.active .navbar-nav.navbar-right .us
 }
 
 .big-pic-box {
-    position: relative;
+    margin-top: 80px;
     height: 400px;
 }
 
@@ -688,7 +688,7 @@ header.active .navbar-left .nav-news, header.active .navbar-nav.navbar-right .us
 }
 
 .big2-pic.big2-pic-index.big2-pic-index-bottom {
-    top: 180px;
+    top: 275px;
 }
 
 .big2-pic.big2-pic-index .big2-pic-content {
@@ -714,28 +714,22 @@ header.active .navbar-left .nav-news, header.active .navbar-nav.navbar-right .us
 }
 
 .mod-b {
-    height: 225px;
+    height: 140px;
     border-bottom: 1px solid #f0f0f0;
     width: 730px;
     position: relative;
-    padding: 40px 0;
-    margin-top: 40px;
+    padding: 20px 0;
 }
 
 .mob-ctt {
     position: relative;
     float: right;
     width: 460px;
-    margin: -162px 30px 0;
+    margin: -110px 80px 0px 0px;
 }
 
 .mob-ctt h3 {
     margin-top: -5px;
-}
-
-.mob-ctt h2 {
-    margin-top: -5px;
-    font-size: 24px;
 }
 
 .mob-sub {
@@ -753,7 +747,8 @@ header.active .navbar-left .nav-news, header.active .navbar-nav.navbar-right .us
 }
 
 .mob-author {
-    margin: 15px 0;
+    margin: 60px 0;
+    float: right;
 }
 
 .mob-author .author-face {
@@ -763,9 +758,14 @@ header.active .navbar-left .nav-news, header.active .navbar-nav.navbar-right .us
 }
 
 .mob-author .author-face img {
-    width: 100%;
+    width: 70%;
+    height: 70%;
     overflow: hidden;
     border-radius: 25px;
+}
+
+.mob-author p{
+    fonr-size:20px;
 }
 
 .mob-author .author-name, .mob-author .time, .mob-author em {
@@ -975,15 +975,15 @@ header.active .navbar-left .nav-news, header.active .navbar-nav.navbar-right .us
     height: 20px;
 }
 
-.i-wj {
-    position: relative;
-    width: 20px;
-    height: 20px;
-    display: inline-block;
-    background-image: url(../images/wj.png);
-    top: 3px;
-    margin-right: 6px;
-}
+/*.i-wj {*/
+    /*position: relative;*/
+    /*width: 20px;*/
+    /*height: 20px;*/
+    /*display: inline-block;*/
+    /*background-image: url(../images/wj.png);*/
+    /*top: 3px;*/
+    /*margin-right: 6px;*/
+/*}*/
 
 .icon-footer {
     position: relative;
@@ -1581,12 +1581,12 @@ header.active .navbar-left .nav-news, header.active .navbar-nav.navbar-right .us
     width: 30px;
 }
 
-.i-icon2 {
-    display: inline-block;
-    vertical-align: text-bottom;
-    background-image: url(../images/icon2.png);
-    background-repeat: no-repeat;
-}
+/*.i-icon2 {*/
+    /*display: inline-block;*/
+    /*vertical-align: text-bottom;*/
+    /*background-image: url(../images/icon2.png);*/
+    /*background-repeat: no-repeat;*/
+/*}*/
 
 .icon2-stars0, .icon2-stars01, .icon2-stars02, .icon2-stars03, .icon2-stars04, .icon2-stars05 {
     width: 84px;
@@ -1982,13 +1982,13 @@ header.active .navbar-left .nav-news, header.active .navbar-nav.navbar-right .us
     z-index: 10;
 }
 
-.weixin-Qr-code {
-    background: url(../images/1450293529.png) center center no-repeat;
-}
+/*.weixin-Qr-code {*/
+    /*background: url(../images/1450293529.png) center center no-repeat;*/
+/*}*/
 
-.zhifubao-Qr-code {
-    background: url(../images/zfb.png) center center no-repeat;
-}
+/*.zhifubao-Qr-code {*/
+    /*background: url(../images/zfb.png) center center no-repeat;*/
+/*}*/
 
 .article-left-btn-group .weixin-Qr-code:before, .article-left-btn-group .zhifubao-Qr-code:before {
     content: '';
@@ -2996,15 +2996,15 @@ header.active .navbar-left .nav-news, header.active .navbar-nav.navbar-right .us
     left: 10px;
 }
 
-.icon-pl {
-    display: inline-block;
-    position: relative;
-    top: 2px;
-    width: 12px;
-    height: 15px;
-    background: url(../images/pl.png) center no-repeat;
-    background-size: 100%;
-}
+/*.icon-pl {*/
+    /*display: inline-block;*/
+    /*position: relative;*/
+    /*top: 2px;*/
+    /*width: 12px;*/
+    /*height: 15px;*/
+    /*background: url(../images/pl.png) center no-repeat;*/
+    /*background-size: 100%;*/
+/*}*/
 
 .report-f-b .pl-box {
     position: relative;
@@ -3847,16 +3847,16 @@ footer .bull-em {
     margin-left: 15px;
 }
 
-.icon-aliyun {
-    position: relative;
-    display: inline-block;
-    vertical-align: text-bottom;
-    background-repeat: no-repeat;
-    width: 40px;
-    height: 22.7px;
-    background-image: url(../images/aliyun.png);
-    left: 10px;
-}
+/*.icon-aliyun {*/
+    /*position: relative;*/
+    /*display: inline-block;*/
+    /*vertical-align: text-bottom;*/
+    /*background-repeat: no-repeat;*/
+    /*width: 40px;*/
+    /*height: 22.7px;*/
+    /*background-image: url(../images/aliyun.png);*/
+    /*left: 10px;*/
+/*}*/
 
 footer .footer-icon-list .app-qrcode:before {
     content: '';
@@ -3882,15 +3882,15 @@ footer .footer-icon-list .app-qrcode:after {
     left: 57px;
 }
 
-.icon-footer-right {
-    position: absolute;
-    left: 0;
-    top: 0;
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    background: url(../images/footer.png) no-repeat;
-}
+/*.icon-footer-right {*/
+    /*position: absolute;*/
+    /*left: 0;*/
+    /*top: 0;*/
+    /*display: inline-block;*/
+    /*width: 30px;*/
+    /*height: 30px;*/
+    /*background: url(../images/footer.png) no-repeat;*/
+/*}*/
 
 .i-reply {
     background-position: 3px 1px;
@@ -5238,14 +5238,14 @@ footer .footer-icon-list .app-qrcode:after {
     margin-top: -30px;
 }
 
-.guide-warp-modal {
-    position: relative;
-    top: 244px;
-    left: 68px;
-    width: 684px;
-    height: 198px;
-    background: url(../images/guide.png);
-}
+/*.guide-warp-modal {*/
+    /*position: relative;*/
+    /*top: 244px;*/
+    /*left: 68px;*/
+    /*width: 684px;*/
+    /*height: 198px;*/
+    /*background: url(../images/guide.png);*/
+/*}*/
 
 .guide-title {
     margin-top: 2px;
@@ -5404,13 +5404,13 @@ footer .footer-icon-list .app-qrcode:after {
     border-radius: 0;
 }
 
-.Qr-upload-btn {
-    display: inline-block;
-    background: url(../images/checkout.png) no-repeat center;
-    width: 94px;
-    height: 30px;
-    margin: -1px;
-}
+/*.Qr-upload-btn {*/
+    /*display: inline-block;*/
+    /*background: url(../images/checkout.png) no-repeat center;*/
+    /*width: 94px;*/
+    /*height: 30px;*/
+    /*margin: -1px;*/
+/*}*/
 
 .jcrop-btn {
     height: 30px;
@@ -5425,24 +5425,6 @@ footer .footer-icon-list .app-qrcode:after {
     display: inline-block;
     text-align: center;
     cursor: pointer;
-}
-
-70
-%
-{
-    -webkit-transform: scale(1.05) rotateX(0)
-;
-    transform: scale(1.05) rotateX(0)
-;
-}
-
-100
-%
-{
-    -webkit-transform: scale(1) rotateX(0)
-;
-    transform: scale(1) rotateX(0)
-;
 }
 
 .clear {
@@ -5537,13 +5519,13 @@ footer .footer-icon-list .app-qrcode:after {
     top: 11px;
 }
 
-.moder-story-list ul li .story-content .story-time .icon-group-zan {
-    display: block;
-    width: 16px;
-    height: 15px;
-    background-image: url(../images/icon_zan.png);
-    background-position: 0 0;
-}
+/*.moder-story-list ul li .story-content .story-time .icon-group-zan {*/
+    /*display: block;*/
+    /*width: 16px;*/
+    /*height: 15px;*/
+    /*background-image: url(../images/icon_zan.png);*/
+    /*background-position: 0 0;*/
+/*}*/
 
 .moder-story-list ul li .story-content .story-time p {
     padding-bottom: 5px;
@@ -5774,7 +5756,7 @@ footer .footer-icon-list .app-qrcode:after {
     left: -10px;
     width: 30px;
     height: 28px;
-    transition: 0;
+    transition: none;
 }
 
 .cy-mod-thumb {
@@ -5993,12 +5975,12 @@ footer .footer-icon-list .app-qrcode:after {
     padding-right: 20px;
 }
 
-.about-icon {
-    display: inline-block;
-    background: url(../images/hx_cp.png) no-repeat;
-    width: 102px;
-    height: 102px;
-}
+/*.about-icon {*/
+    /*display: inline-block;*/
+    /*background: url(../images/hx_cp.png) no-repeat;*/
+    /*width: 102px;*/
+    /*height: 102px;*/
+/*}*/
 
 .about-icon-web {
     background-position: -1px -8px;
@@ -6518,7 +6500,7 @@ footer .footer-icon-list .app-qrcode:after {
     line-height: 24px;
     overflow: hidden;
     text-overflow: ellipsis;
-    display: 0;
+    display: none;
     -webkit-box-orient: vertical;
     line-clamp: 3;
     -webkit-line-clamp: 3;
@@ -6673,10 +6655,7 @@ header.active .navbar-nav.navbar-right .user-head .avatar, #push_box_three_party
     border-radius: 0;
 }
 
-.search-box-last, .box-topic .topic-pic-title:hover, .go-top:hover .go-hover,
-
-50
-%
+.search-box-last, .box-topic .topic-pic-title:hover, .go-top:hover .go-hover
 {
     opacity: 1
 ;
@@ -6731,7 +6710,7 @@ header.active .navbar-nav.navbar-right .user-head .avatar, #push_box_three_party
 }
 
 .mob-author .author-name, .mod-b-push .mob-author .author-name {
-    margin-left: 36px;
+    margin-left: 20px;
 }
 
 .mob-author .author-name.no-face, .mod-b-push .mob-author .author-name.no-face, .message-box .mob-author .time, .zfb-wx-warp .control-box, .zfb-wx-warp .control-input {
@@ -7017,13 +6996,13 @@ footer .bull-right, .selected-title span em {
     width: 100%;
 }
 
-@media screen and max-width1255px {
-    .go-top-box {
-        left: auto;
-        right: 0;
-        margin-left: 0;
-    }
-}
+/*@media screen and max-width1255px {*/
+    /*.go-top-box {*/
+        /*left: auto;*/
+        /*right: 0;*/
+        /*margin-left: 0;*/
+    /*}*/
+/*}*/
 
 #topcontrol {
     height: 30px;
@@ -7112,7 +7091,7 @@ footer .bull-right, .selected-title span em {
 }
 
 .zhong {
-    width: 100% ；
+    width: 100%;
     height: 700px;
 }
 
@@ -7145,4 +7124,66 @@ footer .bull-right, .selected-title span em {
 
 #rumor_center{
     margin-top: 80px;
+}
+
+.umb .transition .lazy{
+    width: 160px;
+    height: 110px;
+}
+
+.mob-ctt a{
+    color: black;
+    font-size: 20px;
+}
+
+.userImg{
+    float: left;
+    width: 25px;
+    height: 25px;
+    overflow: hidden;
+    border-radius: 25px;
+}
+.userImg img{
+    width: 25px;
+    height: 25px;
+}
+.mob-ctt  .userName{
+    font-size: 18px;
+    margin-left: 5px;
+    float: left;
+}
+
+.mob-ctt .publishUser{
+    float: left;
+    height: 25px;
+    margin-top: 30px;
+}
+
+.mob-pu{
+    height: 140px;
+    border-bottom: 1px solid #f0f0f0;
+    width: 730px;
+    position: relative;
+    padding: 20px 0;;
+}
+
+.mob-pu a{
+    font-size: 20px;
+    color: black;
+    padding-left: 20px;
+}
+
+.mob-pu .userName{
+    margin-left: 30px;
+}
+
+.mob-pu .publishUser{
+    padding-left: 20px;
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+.mob-pu .mob-author{
+    margin-top: 10px;
+    margin-right: 75px;
 }
