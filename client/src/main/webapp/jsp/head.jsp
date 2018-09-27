@@ -43,8 +43,9 @@
                         </li>
                     </c:if>
                     <c:if test="${not empty user}">
-                        <li><a href="${pageContext.request.contextPath}/jsp/gr_index.jsp" class="S_txt1" target="_top">${user.nickname}</a></li>
-                        <li class="W_vline S_line1"></li>
+                        <li><a href="${pageContext.request.contextPath}/user/goToPersonalHome.do?userId=${user.userId}" class="S_txt1" target="_top">
+                                <img src="${user.head}" style="width: 20px;height: 20px;border-radius: 20px">
+                                ${user.nickname}</a></li>
                         <li><a node-type="loginBtn" href="${pageContext.request.contextPath}/user/logout.do" class="S_txt1"
                                target="_top">注销</a>
                         </li>

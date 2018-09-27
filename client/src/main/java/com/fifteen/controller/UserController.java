@@ -1,10 +1,14 @@
 package com.fifteen.controller;
 
+import com.fifteen.pojo.Publish;
 import com.fifteen.pojo.User;
+import com.fifteen.service.PublishService;
 import com.fifteen.service.UserService;
 import com.fifteen.utils.ResponseModel;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -14,6 +18,7 @@ import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import java.util.List;
 
 
 @Controller
@@ -22,6 +27,9 @@ public class UserController {
 
     @Autowired
     private UserService userService;
+
+    @Autowired
+    private PublishService publishService;
 
     @RequestMapping("/register")
     @ResponseBody
@@ -70,5 +78,12 @@ public class UserController {
     public String logout(HttpSession session){
         session.invalidate();
         return "redirect:/index.do";
+    }
+
+    @RequestMapping("/goToPersonalHome")
+    public String goToPersonalHome(@RequestParam(value = "userId",required = false)String userId, Model model){
+        List<Publish> publishes= publishService.findAllPublish(userId);
+        model.addAttribute("publishes",publishes);
+        return "/jsp/gr_index";
     }
 }

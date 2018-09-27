@@ -9,4 +9,5 @@ public interface PublishDao {
 
     Publish findPublishDetails(String publish_content_id);
 
+    List<Publish> findAllPublsh(String userId);
 }

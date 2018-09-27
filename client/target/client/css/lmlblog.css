@@ -57,7 +57,6 @@
 /*用户中心*/
 .lmlblog-member-main {
     padding-top: 50px;
-    background: #0a0627 url(http://wx3.sinaimg.cn/large/9c774d91gy1ft2c2d2gz8j21e00qktt3.jpg) bottom center fixed;
 }
 .lmlblog-member-bg {
     background:url(../images/10.jpg) no-repeat top center;
@@ -1702,9 +1701,9 @@ img.wp-smiley {
     width: 100%;
 }
 .lmlblog-post-user-info-time {
-    width: 160px;
+    width: 200px;
     margin: 10px 0 0 50px;
-    font-size: 13px;
+    font-size: 1px;
     color: #808080;
     cursor: pointer;
 }
@@ -1712,7 +1711,7 @@ img.wp-smiley {
     display: none;
 }
 .lmlblog-post-images-list {
-    height:160px;
+    height:300px;
    overflow:hidden;
    margin:10px 20px;
 }
@@ -1727,7 +1726,7 @@ img.wp-smiley {
 .lmlblog-post-images-list img {
     width: 100%;
     float: left;
-    height: auto;
+    height: 100%;
     border-radius: 0;
     cursor: url(../images/open_new.cur), auto;
     border: 1px solid #f1f1f1;

@@ -23,4 +23,9 @@ public class PublishServiceImp implements PublishService {
         return publishDao.findPublishDetails(publish_content_id);
     }
 
+    @Override
+    public List<Publish> findAllPublish(String userId) {
+        return publishDao.findAllPublsh(userId);
+    }
+
 }

@@ -36,4 +36,9 @@ public class UserServiceImp implements UserService {
         return isSuccess;
     }
 
+    @Override
+    public User goToPersonalHome(String userId) {
+        return userDao.goToPersonalHome(userId);
+    }
+
 }

@@ -47,4 +47,7 @@
     <select id="findPublishDetails" resultMap="userPublishMap">
         select * from publish join user on publish.`userId`=user.`userId` where publish_content_id=#{publish_content_id}
     </select>
+    <select id="findAllPublsh" resultType="com.fifteen.pojo.Publish">
+        select * from publish where userId=#{userId}
+    </select>
 </mapper>

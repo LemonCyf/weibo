@@ -7,7 +7,6 @@
         <id property="phone" column="phone"/>
         <id property="password" column="password"/>
         <id property="mailbox" column="mailbox"/>
-        <id property="registeredl_dentity" column="registeredl_dentity"/>
         <id property="location" column="location"/>
         <id property="nickname" column="nickname"/>
         <id property="orientation" column="orientation"/>
@@ -21,12 +20,13 @@
         <id property="qq" column="qq"/>
         <id property="receiptlnformation" column="receiptlnformation"/>
         <id property="domain_name" column="domain_name"/>
-        <id property="how_to_find_me" column="how_to_find_me"/>
         <id property="ID" column="ID"/>
-        <id property="member" column="member"/>
     </resultMap>
     <select id="login" resultType="com.fifteen.pojo.User">
         select * from  user where phone=#{phone} and password=#{password};
+    </select>
+    <select id="goToPersonalHome" resultType="com.fifteen.pojo.User">
+        select * from user where userId=#{userId}
     </select>
     <insert id="add" parameterType="com.fifteen.pojo.User">
         INSERT into user
