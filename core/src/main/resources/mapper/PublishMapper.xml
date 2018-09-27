@@ -44,4 +44,7 @@
     <select id="findPublish" resultMap="userPublishMap">
         SELECT  * FROM publish join user on publish.`userId`=user.`userId` order by time desc
     </select>
+    <select id="findPublishDetails" resultMap="userPublishMap">
+        select * from publish join user on publish.`userId`=user.`userId` where publish_content_id=#{publish_content_id}
+    </select>
 </mapper>

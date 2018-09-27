@@ -69,7 +69,7 @@
             <c:forEach items="${publish}" var="publish">
                 <c:if test="${empty publish.picture}">
                     <div class="mob-pu">
-                        <p><a href="#" class="transition msubstr-row2" target="_blank">${publish.text}</a></p>
+                        <p><a href="${pageContext.request.contextPath}/publish/publishDetails.do?publish_content_id=${publish.publish_content_id}" class="transition msubstr-row2" target="_blank">${publish.text}</a></p>
                         <div class="publishUser">
                             <div class="userImg">
                                 <img src="${publish.user.head}">
@@ -87,12 +87,12 @@
                 <c:if test="${not empty publish.picture}">
                     <div class="mod-b mod-art" data-aid="213665">
                         <div class="umb ">
-                            <a class="transition" href="#" target="_blank">
+                            <a class="transition" href="${pageContext.request.contextPath}/publish/publishDetails.do?publish_content_id=${publish.publish_content_id}" target="_blank">
                                 <img class="lazy" src="${publish.picture}">
                             </a>
                         </div>
                         <div class="mob-ctt">
-                            <p><a href="#" class="transition msubstr-row2" target="_blank">${publish.text}</a></p>
+                            <p><a href="${pageContext.request.contextPath}/publish/publishDetails.do?publish_content_id=${publish.publish_content_id}" class="transition msubstr-row2" target="_blank">${publish.text}</a></p>
                             <div class="publishUser">
                                 <div class="userImg">
                                         <img src="${publish.user.head}">
