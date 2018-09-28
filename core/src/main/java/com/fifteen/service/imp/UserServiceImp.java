@@ -26,7 +26,11 @@ public class UserServiceImp implements UserService {
         boolean isSuccess = false;
         User user = userDao.login(phone, password);
         if(user == null){
+<<<<<<< HEAD
             user = new User(Utils.getUUID(),phone,password,"",null,"","","",null,"","","","","","","","","","","","");
+=======
+            user = new User("1231241r13r12",phone,password,"1471@qq.com",null,"","","",null,"","","","","","","","","","");
+>>>>>>> 93d6740ad6ed106efff0ff2228a43686d8d1bfe0
             int count= userDao.add(user);
             if(count > 0){
                 isSuccess = true;
@@ -38,6 +42,7 @@ public class UserServiceImp implements UserService {
     }
 
     @Override
+<<<<<<< HEAD
     public User selectByPhone(String phone) {
         User user = userDao.selectByPhone(phone);
         return user;
@@ -51,6 +56,10 @@ public class UserServiceImp implements UserService {
             isSuccess = true;
         }
         return isSuccess;
+=======
+    public User goToPersonalHome(String userId) {
+        return userDao.goToPersonalHome(userId);
+>>>>>>> 93d6740ad6ed106efff0ff2228a43686d8d1bfe0
     }
 
 }

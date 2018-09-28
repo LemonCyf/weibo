@@ -1,13 +1,20 @@
 package com.fifteen.controller;
 
+import com.fifteen.pojo.Publish;
 import com.fifteen.pojo.User;
+import com.fifteen.service.PublishService;
 import com.fifteen.service.UserService;
 import com.fifteen.utils.ResponseModel;
+<<<<<<< HEAD
 import com.fifteen.utils.miaodiyun.httpApiDemo.IndustrySMS;
 import com.fifteen.utils.miaodiyun.httpApiDemo.common.PhoneResponse;
 import com.google.gson.Gson;
+=======
+import org.apache.ibatis.annotations.Param;
+>>>>>>> 93d6740ad6ed106efff0ff2228a43686d8d1bfe0
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -18,12 +25,16 @@ import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+<<<<<<< HEAD
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.util.Random;
 import java.util.concurrent.ExecutionException;
+=======
+import java.util.List;
+>>>>>>> 93d6740ad6ed106efff0ff2228a43686d8d1bfe0
 
 
 @Controller
@@ -32,6 +43,9 @@ public class UserController {
 
     @Autowired
     private UserService userService;
+
+    @Autowired
+    private PublishService publishService;
 
     @RequestMapping("/register")
     @ResponseBody
@@ -106,7 +120,7 @@ public class UserController {
                 response.addCookie(passwordCookie);
             }
             session.setAttribute("user",user);
-            return "/jsp/index";
+            return "redirect:/index.do";
         }
     }
     @RequestMapping("/code")
@@ -175,6 +189,13 @@ public class UserController {
     @RequestMapping("/logout")
     public String logout(HttpSession session){
         session.invalidate();
-        return "/jsp/index";
+        return "redirect:/index.do";
+    }
+
+    @RequestMapping("/goToPersonalHome")
+    public String goToPersonalHome(@RequestParam(value = "userId",required = false)String userId, Model model){
+        List<Publish> publishes= publishService.findAllPublish(userId);
+        model.addAttribute("publishes",publishes);
+        return "/jsp/gr_index";
     }
 }

@@ -16,7 +16,7 @@ CREATE DATABASE /*!32312 IF NOT EXISTS*/`micro_blog` /*!40100 DEFAULT CHARACTER 
 
 USE `micro_blog`;
 
-/*Table structure for table `album` */
+/*Table structure for table `Album` */
 
 DROP TABLE IF EXISTS `album`;
 
@@ -31,9 +31,9 @@ CREATE TABLE `album` (
   CONSTRAINT `au_id` FOREIGN KEY (`userId`) REFERENCES `user` (`userId`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-/*Data for the table `album` */
+/*Data for the table `Album` */
 
-/*Table structure for table `call_me` */
+/*Table structure for table `Call_me` */
 
 DROP TABLE IF EXISTS `call_me`;
 
@@ -48,7 +48,7 @@ CREATE TABLE `call_me` (
   CONSTRAINT `cu_id2` FOREIGN KEY (`call_userId`) REFERENCES `user` (`userId`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-/*Data for the table `call_me` */
+/*Data for the table `Call_me` */
 
 /*Table structure for table `collection` */
 
@@ -73,7 +73,7 @@ CREATE TABLE `collection` (
 
 /*Data for the table `collection` */
 
-/*Table structure for table `college` */
+/*Table structure for table `College` */
 
 DROP TABLE IF EXISTS `college`;
 
@@ -89,9 +89,9 @@ CREATE TABLE `college` (
   CONSTRAINT `cu_user` FOREIGN KEY (`userId`) REFERENCES `user` (`userId`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-/*Data for the table `college` */
+/*Data for the table `College` */
 
-/*Table structure for table `comment` */
+/*Table structure for table `Comment` */
 
 DROP TABLE IF EXISTS `comment`;
 
@@ -112,9 +112,9 @@ CREATE TABLE `comment` (
   CONSTRAINT `cc_id2` FOREIGN KEY (`userId`) REFERENCES `user` (`userId`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-/*Data for the table `comment` */
+/*Data for the table `Comment` */
 
-/*Table structure for table `company` */
+/*Table structure for table `Company` */
 
 DROP TABLE IF EXISTS `company`;
 
@@ -128,9 +128,9 @@ CREATE TABLE `company` (
   CONSTRAINT `cu_id` FOREIGN KEY (`userId`) REFERENCES `user` (`userId`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-/*Data for the table `company` */
+/*Data for the table `Company` */
 
-/*Table structure for table `department` */
+/*Table structure for table `Department` */
 
 DROP TABLE IF EXISTS `department`;
 
@@ -140,9 +140,9 @@ CREATE TABLE `department` (
   PRIMARY KEY (`department_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-/*Data for the table `department` */
+/*Data for the table `Department` */
 
-/*Table structure for table `expression` */
+/*Table structure for table `Expression` */
 
 DROP TABLE IF EXISTS `expression`;
 
@@ -152,9 +152,9 @@ CREATE TABLE `expression` (
   PRIMARY KEY (`ExpressionId`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-/*Data for the table `expression` */
+/*Data for the table `Expression` */
 
-/*Table structure for table `fabulous` */
+/*Table structure for table `Fabulous` */
 
 DROP TABLE IF EXISTS `fabulous`;
 
@@ -174,9 +174,9 @@ CREATE TABLE `fabulous` (
   CONSTRAINT `fcf_id2` FOREIGN KEY (`userId`) REFERENCES `user` (`userId`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-/*Data for the table `fabulous` */
+/*Data for the table `Fabulous` */
 
-/*Table structure for table `fans` */
+/*Table structure for table `Fans` */
 
 DROP TABLE IF EXISTS `fans`;
 
@@ -189,9 +189,9 @@ CREATE TABLE `fans` (
   CONSTRAINT `fu_user` FOREIGN KEY (`userId`) REFERENCES `user` (`userId`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-/*Data for the table `fans` */
+/*Data for the table `Fans` */
 
-/*Table structure for table `forward` */
+/*Table structure for table `Forward` */
 
 DROP TABLE IF EXISTS `forward`;
 
@@ -212,9 +212,9 @@ CREATE TABLE `forward` (
   CONSTRAINT `cf_id2` FOREIGN KEY (`userId`) REFERENCES `user` (`userId`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-/*Data for the table `forward` */
+/*Data for the table `Forward` */
 
-/*Table structure for table `head_portrait` */
+/*Table structure for table `Head_portrait` */
 
 DROP TABLE IF EXISTS `head_portrait`;
 
@@ -226,9 +226,9 @@ CREATE TABLE `head_portrait` (
   CONSTRAINT `fk_user` FOREIGN KEY (`userId`) REFERENCES `user` (`userId`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-/*Data for the table `head_portrait` */
+/*Data for the table `Head_portrait` */
 
-/*Table structure for table `label` */
+/*Table structure for table `Label` */
 
 DROP TABLE IF EXISTS `label`;
 
@@ -238,9 +238,9 @@ CREATE TABLE `label` (
   PRIMARY KEY (`label_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-/*Data for the table `label` */
+/*Data for the table `Label` */
 
-/*Table structure for table `people_label` */
+/*Table structure for table `People_label` */
 
 DROP TABLE IF EXISTS `people_label`;
 
@@ -253,9 +253,9 @@ CREATE TABLE `people_label` (
   CONSTRAINT `fk_perople_label_user` FOREIGN KEY (`userId`) REFERENCES `user` (`userId`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-/*Data for the table `people_label` */
+/*Data for the table `People_label` */
 
-/*Table structure for table `photo` */
+/*Table structure for table `Photo` */
 
 DROP TABLE IF EXISTS `photo`;
 
@@ -269,9 +269,9 @@ CREATE TABLE `photo` (
   CONSTRAINT `pu_id` FOREIGN KEY (`album_id`) REFERENCES `album` (`albume_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-/*Data for the table `photo` */
+/*Data for the table `Photo` */
 
-/*Table structure for table `private_letter` */
+/*Table structure for table `Private_letter` */
 
 DROP TABLE IF EXISTS `private_letter`;
 
@@ -286,9 +286,9 @@ CREATE TABLE `private_letter` (
   CONSTRAINT `fk_user1` FOREIGN KEY (`userId`) REFERENCES `user` (`userId`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-/*Data for the table `private_letter` */
+/*Data for the table `Private_letter` */
 
-/*Table structure for table `publish` */
+/*Table structure for table `Publish` */
 
 DROP TABLE IF EXISTS `publish`;
 
@@ -307,9 +307,9 @@ CREATE TABLE `publish` (
   CONSTRAINT `pu_id1` FOREIGN KEY (`userId`) REFERENCES `user` (`userId`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-/*Data for the table `publish` */
+/*Data for the table `Publish` */
 
-/*Table structure for table `report` */
+/*Table structure for table `Report` */
 
 DROP TABLE IF EXISTS `report`;
 
@@ -325,9 +325,9 @@ CREATE TABLE `report` (
   CONSTRAINT `rr_id3` FOREIGN KEY (`userId`) REFERENCES `user` (`userId`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-/*Data for the table `report` */
+/*Data for the table `Report` */
 
-/*Table structure for table `report_class` */
+/*Table structure for table `Report_class` */
 
 DROP TABLE IF EXISTS `report_class`;
 
@@ -337,9 +337,9 @@ CREATE TABLE `report_class` (
   PRIMARY KEY (`report_class_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-/*Data for the table `report_class` */
+/*Data for the table `Report_class` */
 
-/*Table structure for table `shield` */
+/*Table structure for table `Shield` */
 
 DROP TABLE IF EXISTS `shield`;
 
@@ -356,7 +356,7 @@ CREATE TABLE `shield` (
   CONSTRAINT `fs_id2` FOREIGN KEY (`publish_content_id`) REFERENCES `publish` (`publish_content_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-/*Data for the table `shield` */
+/*Data for the table `Shield` */
 
 /*Table structure for table `user` */
 
