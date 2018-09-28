@@ -29,7 +29,7 @@ html{-webkit-text-size-adjust:none;}
 #nav ul li a:hover{ background:url(../images/site_bg.png) no-repeat; color:#FFF;}
 #nav ul li.local a{background:url(../images/site_bg.png) no-repeat; color:#FFF; }
 .top_bg_c{ background:url(../images/top_bg.gif);}
-.main_area{ margin-top:45px;}
+_area{ margin-top:45px;}
 .index_left{ width:520px; float:left; }
 .index_right{ width:412px; float:right; margin-right:26px; padding-top:23px;}
 .free_website_font{ padding-top:7px;}
@@ -45,7 +45,7 @@ html{-webkit-text-size-adjust:none;}
 .system_description .sys_des_left{ float:left; }
 .system_description .sys_des_right{ float:right; text-align:right;}
 .system_description p{ margin-bottom:5px;}
-.main_web{ padding:27px 26px 0 26px; width:1000px; margin:0 auto;}
+_web{ padding:27px 26px 0 26px; width:1000px; margin:0 auto;}
 .template_list_left{ float:left; width:842px; padding-left:5px;}
 .template_list_category{ float:right; width:115px;}
 .color_bar{ font-size:12px; height:20px; line-height:20px; margin-bottom:24px;}

@@ -2,10 +2,7 @@ package com.fifteen.utils.miaodiyun.httpApiDemo.common;
 
 import org.apache.commons.codec.digest.DigestUtils;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
+import java.io.*;
 import java.net.URL;
 import java.net.URLConnection;
 import java.text.SimpleDateFormat;
@@ -96,8 +93,7 @@ public class HttpUtil
 	 * @param reqStr
 	 * @return
 	 */
-	public static String postHuiDiao(String url, String body)
-	{
+	public static String postHuiDiao(String url, String body) throws UnsupportedEncodingException {
 		String result = "";
 		try
 		{
@@ -136,6 +132,7 @@ public class HttpUtil
 		{
 			e.printStackTrace();
 		}
+
 		return result;
 	}
 }

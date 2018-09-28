@@ -363,7 +363,7 @@ CREATE TABLE `shield` (
 DROP TABLE IF EXISTS `user`;
 
 CREATE TABLE `user` (
-  `userId` varchar(16) NOT NULL,
+  `userId` varchar(32) NOT NULL,
   `phone` char(11) NOT NULL,
   `password` varchar(16) NOT NULL,
   `mailbox` varchar(20) NOT NULL,
