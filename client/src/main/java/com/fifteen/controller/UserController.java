@@ -7,13 +7,10 @@ import com.fifteen.service.FansService;
 import com.fifteen.service.PublishService;
 import com.fifteen.service.UserService;
 import com.fifteen.utils.ResponseModel;
-<<<<<<< HEAD
 import com.fifteen.utils.miaodiyun.httpApiDemo.IndustrySMS;
 import com.fifteen.utils.miaodiyun.httpApiDemo.common.PhoneResponse;
 import com.google.gson.Gson;
-=======
 import org.apache.ibatis.annotations.Param;
->>>>>>> 93d6740ad6ed106efff0ff2228a43686d8d1bfe0
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -27,16 +24,13 @@ import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-<<<<<<< HEAD
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.util.Random;
 import java.util.concurrent.ExecutionException;
-=======
 import java.util.List;
->>>>>>> 93d6740ad6ed106efff0ff2228a43686d8d1bfe0
 
 
 @Controller

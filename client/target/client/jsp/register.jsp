@@ -184,7 +184,7 @@
 
 
     // 红叉
-    //图片验证码输入是否正确??????????
+    //图片验证码输入是否正确
     $("#code").blur(function () {
         $.ajax({
             url:"${pageContext.request.contextPath}/user/checkCode.do",

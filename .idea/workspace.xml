@@ -6,16 +6,22 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-<<<<<<< HEAD
     <list default="true" id="1b7c7845-82d6-4bc2-997e-1b5a451c9d7d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/webapp/jsp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/webapp/jsp/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/target/client/jsp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/client/jsp/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/java/com/fifteen/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/com/fifteen/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/target/classes/com/fifteen/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/classes/com/fifteen/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/target/client/WEB-INF/classes/com/fifteen/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/client/WEB-INF/classes/com/fifteen/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/target/client/WEB-INF/lib/core-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/client/WEB-INF/lib/core-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/target/client/jsp/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/client/jsp/register.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/fifteen/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/fifteen/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/fifteen/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/fifteen/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/fifteen/service/imp/UserServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/fifteen/service/imp/UserServiceImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/target/classes/com/fifteen/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/com/fifteen/dao/UserDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/target/classes/com/fifteen/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/com/fifteen/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/target/classes/com/fifteen/service/imp/UserServiceImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/com/fifteen/service/imp/UserServiceImp.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
-=======
-    <list default="true" id="aabd43d8-d2cf-4dc8-ae19-2009a3c494a6" name="Default Changelist" comment="" />
->>>>>>> a8b5eff0d870a4c0b4add7a8e12cbba290b879e2
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/core/target/" />
     <ignored path="$PROJECT_DIR$/admin/target/" />
@@ -37,30 +43,7 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="micro_blog@localhost" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="micro_blog@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="micro_blog@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="micro_blog: schema" type="c314c289:MysqlImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="micro_blog@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="micro_blog: schema" type="c314c289:MysqlImplModel$Schema" />
-        <item name="user: table" type="98d5ac3d:MysqlImplModel$Table" />
-      </path>
-    </expand>
+    <expand />
     <select />
   </component>
   <component name="FUSProjectUsageTrigger">
@@ -99,7 +82,6 @@
           <entry key="JAVA" value="16" />
           <entry key="JSP" value="5" />
           <entry key="JavaScript" value="1" />
-<<<<<<< HEAD
           <entry key="Properties" value="3" />
           <entry key="SQL" value="1" />
           <entry key="XML" value="11" />
@@ -123,177 +105,205 @@
     <session id="2116066459">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="Properties" value="1" />
+          <entry key="XML" value="10" />
           <entry key="project.closed" value="9" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.12" value="3" />
-          <entry key="project.open.time.15" value="2" />
+          <entry key="project.open.time.15" value="3" />
           <entry key="project.open.time.16" value="3" />
           <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.20" value="1" />
-          <entry key="project.opened" value="12" />
-=======
-          <entry key="Properties" value="1" />
-          <entry key="XML" value="10" />
->>>>>>> a8b5eff0d870a4c0b4add7a8e12cbba290b879e2
+          <entry key="project.opened" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-<<<<<<< HEAD
           <entry key="css" value="117" />
-          <entry key="java" value="1343" />
+          <entry key="dummy" value="6" />
+          <entry key="java" value="657" />
           <entry key="js" value="7" />
-          <entry key="jsp" value="1256" />
+          <entry key="jsp" value="842" />
           <entry key="properties" value="15" />
+          <entry key="sql" value="1" />
           <entry key="txt" value="11" />
-          <entry key="xml" value="17" />
-=======
-          <entry key="java" value="439" />
-          <entry key="jsp" value="745" />
-          <entry key="xml" value="382" />
->>>>>>> a8b5eff0d870a4c0b4add7a8e12cbba290b879e2
+          <entry key="xml" value="440" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-<<<<<<< HEAD
           <entry key="CSS" value="117" />
-          <entry key="JAVA" value="1343" />
-          <entry key="JSP" value="1256" />
+          <entry key="JAVA" value="1561" />
+          <entry key="JSP" value="1353" />
           <entry key="JavaScript" value="7" />
-          <entry key="PLAIN_TEXT" value="11" />
+          <entry key="PLAIN_TEXT" value="17" />
           <entry key="Properties" value="15" />
-          <entry key="XML" value="17" />
+          <entry key="Scratch" value="1" />
+          <entry key="XML" value="75" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="4" />
+          <entry key="class" value="5" />
           <entry key="css" value="11" />
           <entry key="gif" value="2" />
-          <entry key="java" value="41" />
+          <entry key="java" value="52" />
           <entry key="js" value="7" />
-          <entry key="jsp" value="24" />
+          <entry key="jsp" value="25" />
           <entry key="log" value="2" />
+          <entry key="news" value="3" />
           <entry key="png" value="3" />
           <entry key="properties" value="4" />
           <entry key="publish" value="3" />
-          <entry key="sql" value="1" />
+          <entry key="sql" value="2" />
           <entry key="user" value="3" />
-          <entry key="xml" value="17" />
+          <entry key="xml" value="20" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="4" />
+          <entry key="CLASS" value="5" />
           <entry key="CSS" value="11" />
-          <entry key="Database Element" value="6" />
+          <entry key="Database Element" value="9" />
           <entry key="Image" value="5" />
-          <entry key="JAVA" value="41" />
-          <entry key="JSP" value="24" />
+          <entry key="JAVA" value="450" />
+          <entry key="JSP" value="746" />
           <entry key="JavaScript" value="7" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="Properties" value="4" />
-          <entry key="Scratch" value="1" />
-          <entry key="XML" value="17" />
-=======
-          <entry key="JAVA" value="439" />
-          <entry key="JSP" value="745" />
           <entry key="SQL" value="14" />
-          <entry key="XML" value="368" />
->>>>>>> a8b5eff0d870a4c0b4add7a8e12cbba290b879e2
+          <entry key="Scratch" value="2" />
+          <entry key="XML" value="371" />
         </counts>
       </usages-collector>
+      <usages-collector id="statistics.js.language.service.starts" />
+      <usages-collector id="statistics.spring.boot.mvc.usages" />
+      <usages-collector id="statistics.vcs.git.usages" />
+      <usages-collector id="statistics.spring.boot.run.usages" />
+    </session>
+    <session id="-1999684727">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="11" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.16" value="1" />
+          <entry key="project.open.time.18" value="4" />
+          <entry key="project.open.time.19" value="4" />
+          <entry key="project.open.time.20" value="5" />
+          <entry key="project.open.time.21" value="1" />
+          <entry key="project.open.time.29" value="1" />
+          <entry key="project.open.time.34" value="1" />
+          <entry key="project.opened" value="18" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="class" value="8" />
+          <entry key="css" value="28" />
+          <entry key="fxml" value="1" />
+          <entry key="gif" value="2" />
+          <entry key="java" value="98" />
+          <entry key="js" value="3" />
+          <entry key="jsp" value="25" />
+          <entry key="private_letter" value="1" />
+          <entry key="properties" value="5" />
+          <entry key="publish" value="4" />
+          <entry key="user" value="1" />
+          <entry key="xml" value="24" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CLASS" value="8" />
+          <entry key="CSS" value="28" />
+          <entry key="Database Element" value="6" />
+          <entry key="Image" value="2" />
+          <entry key="JAVA" value="98" />
+          <entry key="JSP" value="25" />
+          <entry key="JavaScript" value="3" />
+          <entry key="Properties" value="5" />
+          <entry key="XML" value="25" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="cell" value="13" />
+          <entry key="css" value="954" />
+          <entry key="dummy" value="2" />
+          <entry key="java" value="1366" />
+          <entry key="js" value="3" />
+          <entry key="jsp" value="2532" />
+          <entry key="properties" value="3" />
+          <entry key="xml" value="1106" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="CSS" value="954" />
+          <entry key="JAVA" value="1366" />
+          <entry key="JSP" value="2532" />
+          <entry key="JavaScript" value="3" />
+          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="Properties" value="3" />
+          <entry key="SQL" value="3" />
+          <entry key="Scratch" value="13" />
+          <entry key="XML" value="1103" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.js.language.service.starts" />
+      <usages-collector id="statistics.spring.boot.mvc.usages" />
+      <usages-collector id="statistics.vcs.git.usages" />
+      <usages-collector id="statistics.spring.boot.run.usages" />
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-<<<<<<< HEAD
-        <entry file="file://$PROJECT_DIR$/client/src/main/java/com/fifteen/controller/IndexController.java">
+        <entry file="file://$PROJECT_DIR$/client/src/main/webapp/css/lmlblog.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#245#246#0" expanded="true" />
-                <element signature="e#280#281#0" expanded="true" />
-=======
-        <entry file="file://$PROJECT_DIR$/client/src/main/java/com/fifteen/controller/UserController.java">
+            <state relative-caret-position="418">
+              <caret line="228" column="24" selection-start-line="228" selection-start-column="24" selection-end-line="228" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/src/main/webapp/jsp/gr_index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="25" selection-start-line="25" selection-end-line="25" />
+            <state relative-caret-position="134">
+              <caret line="260" column="19" selection-start-line="165" selection-start-column="56" selection-end-line="170" selection-end-column="62" />
               <folding>
-                <element signature="e#1076#1077#0" expanded="true" />
-                <element signature="e#1114#1115#0" expanded="true" />
->>>>>>> a8b5eff0d870a4c0b4add7a8e12cbba290b879e2
+                <element signature="n#style#0;n#li#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#div#2;n#div#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#3;n#div#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#3;n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#script#0;n#html#0;n#!!top" />
+                <element signature="n#script#5;n#html#0;n#!!top" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-<<<<<<< HEAD
-        <entry file="file://$PROJECT_DIR$/client/src/main/webapp/jsp/login.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-557">
-              <caret line="30" column="25" lean-forward="true" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
-=======
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/main/java/com/fifteen/service/imp/UserServiceImp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="354">
-              <caret line="33" column="29" lean-forward="true" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
->>>>>>> a8b5eff0d870a4c0b4add7a8e12cbba290b879e2
+            <state relative-caret-position="632">
+              <caret line="59" selection-start-line="59" selection-end-line="59" />
+              <folding>
+                <element signature="e#1248#1249#0" expanded="true" />
+                <element signature="e#1295#1296#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-<<<<<<< HEAD
-        <entry file="file://$PROJECT_DIR$/client/src/main/webapp/jsp/head.jsp">
+        <entry file="file://$PROJECT_DIR$/core/src/main/java/com/fifteen/service/imp/PublishServiceImp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="900">
-              <caret line="36" column="89" selection-start-line="36" selection-start-column="77" selection-end-line="36" selection-end-column="89" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/src/main/java/com/fifteen/controller/UserController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
-              <caret line="31" column="71" lean-forward="true" selection-start-line="31" selection-start-column="71" selection-end-line="31" selection-end-column="71" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/src/main/webapp/jsp/register.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2550">
-              <caret line="102" column="62" selection-start-line="102" selection-start-column="62" selection-end-line="102" selection-end-column="62" />
-=======
-        <entry file="file://$PROJECT_DIR$/core/src/main/java/com/fifteen/dao/UserDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
->>>>>>> a8b5eff0d870a4c0b4add7a8e12cbba290b879e2
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-<<<<<<< HEAD
-        <entry file="file://$PROJECT_DIR$/client/src/main/webapp/jsp/index.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="13" column="31" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
-=======
-        <entry file="file://$PROJECT_DIR$/core/src/main/java/com/fifteen/pojo/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+            <state relative-caret-position="321">
+              <caret line="27" column="34" lean-forward="true" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -301,46 +311,77 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/main/resources/mapper/UserMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1474">
-              <caret line="67" column="45" selection-start-line="67" selection-start-column="45" selection-end-line="67" selection-end-column="45" />
+            <state relative-caret-position="646">
+              <caret line="106" column="14" lean-forward="true" selection-start-line="106" selection-start-column="14" selection-end-line="106" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.2/mybatis-3.4.2.jar!/org/apache/ibatis/builder/xml/mybatis-3-mapper.dtd">
+        <entry file="file://$PROJECT_DIR$/core/src/main/java/com/fifteen/dao/UserDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1474">
-              <caret line="67" selection-start-line="67" selection-end-line="67" />
->>>>>>> a8b5eff0d870a4c0b4add7a8e12cbba290b879e2
+            <state relative-caret-position="300">
+              <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/main/java/com/fifteen/service/UserService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="250">
+              <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/client/src/main/java/com/fifteen/controller/UserController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="521">
+              <caret line="198" column="56" selection-start-line="198" selection-start-column="56" selection-end-line="198" selection-end-column="56" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#code#0;class#UserController#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/src/main/java/com/fifteen/controller/PublishController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="575">
+              <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/main/resources/mapper/NewsMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-line="2" selection-end-column="55" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
-<<<<<<< HEAD
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="FxmlFile" />
-        <option value="XML Properties File" />
-        <option value="Jsp File" />
         <option value="JavaScript File" />
+        <option value="Interface" />
+        <option value="FxmlFile" />
+        <option value="Jsp File" />
         <option value="Class" />
+        <option value="XML Properties File" />
       </list>
     </option>
-=======
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>newmobilesea</find>
-      <find>PASSWORD</find>
-      <find>http://help.weibo.com/faq/q/2375/20136#20136</find>
-      <find>id=&quot;register</find>
-      <find>W_btn_big</find>
-      <find>register</find>
-    </findStrings>
->>>>>>> a8b5eff0d870a4c0b4add7a8e12cbba290b879e2
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -348,7 +389,28 @@
       <find>moder-rumors-list</find>
       <find>rumor_center</find>
       <find>r</find>
+      <find>big-pic-box</find>
+      <find>big2-pic-index</find>
+      <find>big2-pic-index-b</find>
+      <find>big2-pic-index-bottom</find>
+      <find>mod-th</find>
       <find>mod-b</find>
+      <find>msubstr</find>
+      <find>mob-ctt</find>
+      <find>mob-author</find>
+      <find>author-name</find>
+      <find>am-u-sm</find>
+      <find>am-g</find>
+      <find>am-g-f</find>
+      <find>am-g-fixed</find>
+      <find>commentAll</find>
+      <find>pre</find>
+      <find>blog-art</find>
+      <find>body</find>
+      <find>lmlblog-girl</find>
+      <find>lmlblog-member-main</find>
+      <find>lmlblog-posts</find>
+      <find>lmlblog-icon</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -360,67 +422,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-<<<<<<< HEAD
-        <option value="$PROJECT_DIR$/core/src/main/java/com/fifteen/utils/IndexController.java" />
-        <option value="$PROJECT_DIR$/client/src/main/webapp/WEB-INF/jsp/cyf.jsp" />
-        <option value="$PROJECT_DIR$/core/src/main/java/com/fifteen/utils/miaodiyun/huiDiao/ReceNotice.java" />
-        <option value="$PROJECT_DIR$/core/src/main/java/com/fifteen/utils/miaodiyun/huiDiao/MoNotice.java" />
-        <option value="$PROJECT_DIR$/core/src/main/java/com/fifteen/utils/miaodiyun/huiDiao/VoiceBack.java" />
-=======
-        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
-        <option value="$PROJECT_DIR$/core/src/main/resources/coreContext.xml" />
->>>>>>> a8b5eff0d870a4c0b4add7a8e12cbba290b879e2
-        <option value="$PROJECT_DIR$/core/src/main/java/com/fifteen/service/UserService.java" />
-        <option value="$PROJECT_DIR$/client/src/main/webapp/jsp/head.jsp" />
-        <option value="$PROJECT_DIR$/client/src/main/java/com/fifteen/controller/UserController.java" />
-        <option value="$PROJECT_DIR$/client/src/main/webapp/jsp/register.jsp" />
+        <option value="$PROJECT_DIR$/core/src/main/java/com/fifteen/service/NewsService.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/a1a4e366-cc79-420e-8819-b53dac62de84/console.sql" />
         <option value="$PROJECT_DIR$/core/src/main/resources/jdbc.properties" />
-<<<<<<< HEAD
-        <option value="$PROJECT_DIR$/core/src/main/resources/coreContext.xml" />
-        <option value="$PROJECT_DIR$/core/src/main/java/com/fifteen/utils/miaodiyun/httpApiDemo/Test.java" />
-        <option value="$PROJECT_DIR$/core/src/main/java/com/fifteen/utils/miaodiyun/httpApiDemo/IndustrySMS.java" />
-        <option value="$PROJECT_DIR$/client/src/main/webapp/index.jsp" />
-        <option value="$PROJECT_DIR$/client/src/main/webapp/Wopop_files/style.css" />
-        <option value="$PROJECT_DIR$/client/src/main/webapp/Wopop_files/style_log.css" />
-        <option value="$PROJECT_DIR$/core/src/main/java/com/fifteen/dao/UserDao.java" />
-        <option value="$PROJECT_DIR$/core/src/main/java/com/fifteen/service/imp/UserServiceImp.java" />
-        <option value="$PROJECT_DIR$/core/src/main/resources/coreContext.xml" />
-        <option value="$PROJECT_DIR$/client/src/main/webapp/css/activity.css" />
-        <option value="$PROJECT_DIR$/client/src/main/webapp/js/base64.js" />
-        <option value="$PROJECT_DIR$/client/src/main/webapp/css/build.css" />
-        <option value="$PROJECT_DIR$/client/src/main/webapp/js/popwin.js" />
+        <option value="$PROJECT_DIR$/core/src/main/java/com/fifteen/service/imp/NewsServiceImp.java" />
+        <option value="$PROJECT_DIR$/core/src/main/resources/mapper/NewsMapper.fxml" />
+        <option value="$PROJECT_DIR$/core/src/main/resources/mapper/NewsMapper.xml" />
+        <option value="$PROJECT_DIR$/core/src/main/java/com/fifteen/dao/NewsDao.java" />
+        <option value="$PROJECT_DIR$/core/src/main/resources/mapper/NewsDao.xml" />
+        <option value="$PROJECT_DIR$/core/src/main/java/com/fifteen/pojo/News.java" />
+        <option value="$PROJECT_DIR$/client/src/main/webapp/js/mouse.js" />
+        <option value="$PROJECT_DIR$/core/src/main/java/com/fifteen/pojo/Album.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/com/fifteen/pojo/Collections.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/com/fifteen/pojo/Comment.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/com/fifteen/pojo/Expression.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/com/fifteen/pojo/Fabulous.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/com/fifteen/pojo/Forward.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/com/fifteen/pojo/Photo.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/com/fifteen/pojo/Head_portrait.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/com/fifteen/pojo/Publish.java" />
         <option value="$PROJECT_DIR$/client/src/main/java/com/fifteen/controller/IndexController.java" />
-        <option value="$PROJECT_DIR$/core/src/main/java/com/fifteen/pojo/publish.java" />
-        <option value="$PROJECT_DIR$/core/src/main/java/com/fifteen/pojo/album.java" />
-        <option value="$PROJECT_DIR$/core/src/main/java/com/fifteen/pojo/call_me.java" />
-        <option value="$PROJECT_DIR$/core/src/main/java/com/fifteen/pojo/college.java" />
-        <option value="$PROJECT_DIR$/core/src/main/java/com/fifteen/pojo/comment.java" />
-        <option value="$PROJECT_DIR$/core/src/main/java/com/fifteen/pojo/company.java" />
-        <option value="$PROJECT_DIR$/core/src/main/java/com/fifteen/pojo/department.java" />
-        <option value="$PROJECT_DIR$/core/src/main/java/com/fifteen/pojo/expression.java" />
-        <option value="$PROJECT_DIR$/core/src/main/java/com/fifteen/pojo/fabulous.java" />
-        <option value="$PROJECT_DIR$/core/src/main/java/com/fifteen/pojo/fans.java" />
-        <option value="$PROJECT_DIR$/core/src/main/java/com/fifteen/pojo/forward.java" />
-        <option value="$PROJECT_DIR$/core/src/main/java/com/fifteen/pojo/head_portrait.java" />
-        <option value="$PROJECT_DIR$/core/src/main/java/com/fifteen/pojo/label.java" />
-        <option value="$PROJECT_DIR$/core/src/main/java/com/fifteen/pojo/people_label.java" />
-        <option value="$PROJECT_DIR$/core/src/main/java/com/fifteen/pojo/photo.java" />
-        <option value="$PROJECT_DIR$/core/src/main/java/com/fifteen/pojo/private_letter.java" />
-        <option value="$PROJECT_DIR$/core/src/main/java/com/fifteen/pojo/report.java" />
-        <option value="$PROJECT_DIR$/core/src/main/java/com/fifteen/pojo/report_class.java" />
-        <option value="$PROJECT_DIR$/core/src/main/java/com/fifteen/pojo/shield.java" />
-        <option value="$PROJECT_DIR$/core/src/main/java/com/fifteen/pojo/collection.java" />
-        <option value="$PROJECT_DIR$/core/src/main/java/com/fifteen/pojo/collections.java" />
         <option value="$PROJECT_DIR$/client/src/main/java/com/fifteen/controller/IndexController.java" />
-        <option value="$PROJECT_DIR$/client/src/main/java/com/fifteen/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/com/fifteen/pojo/User.java" />
+        <option value="$PROJECT_DIR$/client/src/main/webapp/js/app.js" />
+        <option value="$PROJECT_DIR$/client/src/main/java/com/fifteen/controller/PublishController.java" />
+        <option value="$PROJECT_DIR$/client/src/main/webapp/css/amazeui.css" />
+        <option value="$PROJECT_DIR$/client/src/main/webapp/css/app.css" />
+        <option value="$PROJECT_DIR$/client/src/main/webapp/css/amazeui.min.css" />
+        <option value="$PROJECT_DIR$/client/src/main/webapp/css/style.css" />
+        <option value="$PROJECT_DIR$/client/src/main/webapp/jsp/weiboDetails.jsp" />
+        <option value="$PROJECT_DIR$/client/src/main/webapp/css/comment.css" />
         <option value="$PROJECT_DIR$/client/src/main/webapp/jsp/head.jsp" />
+        <option value="$PROJECT_DIR$/core/src/main/java/com/fifteen/dao/PublishDao.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/com/fifteen/service/imp/PublishServiceImp.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/com/fifteen/service/PublishService.java" />
+        <option value="$PROJECT_DIR$/core/src/main/resources/mapper/PublishMapper.xml" />
+        <option value="$PROJECT_DIR$/core/src/main/java/com/fifteen/service/FansService.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/com/fifteen/service/imp/FansServiceImp.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/com/fifteen/dao/FansDao.java" />
+        <option value="$PROJECT_DIR$/core/src/main/resources/mapper/FansMapper.xml" />
+        <option value="$PROJECT_DIR$/client/src/main/webapp/jsp/gr_album.jsp" />
         <option value="$PROJECT_DIR$/client/src/main/webapp/jsp/index.jsp" />
-        <option value="$PROJECT_DIR$/client/src/main/webapp/jsp/login.jsp" />
-=======
+        <option value="$PROJECT_DIR$/client/src/main/webapp/css/build.css" />
+        <option value="$PROJECT_DIR$/client/src/main/webapp/jsp/gr_data.jsp" />
+        <option value="$PROJECT_DIR$/client/src/main/webapp/css/lmlblog.css" />
+        <option value="$PROJECT_DIR$/client/src/main/webapp/jsp/gr_index.jsp" />
+        <option value="$PROJECT_DIR$/client/src/main/java/com/fifteen/controller/UserController.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/com/fifteen/dao/UserDao.java" />
-        <option value="$PROJECT_DIR$/core/src/main/java/com/fifteen/service/imp/UserServiceImp.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/com/fifteen/dao/UserDao.java" />
         <option value="$PROJECT_DIR$/core/src/main/resources/mapper/UserMapper.xml" />
->>>>>>> a8b5eff0d870a4c0b4add7a8e12cbba290b879e2
+        <option value="$PROJECT_DIR$/core/src/main/java/com/fifteen/service/imp/UserServiceImp.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/com/fifteen/service/UserService.java" />
       </list>
     </option>
   </component>
@@ -437,7 +489,6 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-<<<<<<< HEAD
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -450,8 +501,6 @@
       </MavenImportingSettings>
     </option>
   </component>
-=======
->>>>>>> a8b5eff0d870a4c0b4add7a8e12cbba290b879e2
   <component name="MavenProjectNavigator">
     <treeState>
       <expand>
@@ -462,26 +511,16 @@
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="weibo" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-<<<<<<< HEAD
           <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="weibo" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
-          <item name="tomcat7" type="36feed69:MavenProjectsStructure$PluginNode" />
-=======
-          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
->>>>>>> a8b5eff0d870a4c0b4add7a8e12cbba290b879e2
         </path>
       </expand>
       <select />
     </treeState>
-<<<<<<< HEAD
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="953" />
-    <option name="width" value="974" />
+    <option name="x" value="-4" />
+    <option name="y" value="10" />
+    <option name="width" value="1057" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -506,14 +545,6 @@
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
-=======
-  </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="445" />
-    <option name="y" value="55" />
-    <option name="width" value="1275" />
-    <option name="height" value="1040" />
->>>>>>> a8b5eff0d870a4c0b4add7a8e12cbba290b879e2
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -522,44 +553,42 @@
     <panes>
       <pane id="PackagesPane" />
       <pane id="AndroidView" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-<<<<<<< HEAD
-              <item name="新建文件夹" type="b2602c69:ProjectViewProjectNode" />
-              <item name="新建文件夹" type="462c0819:PsiDirectoryNode" />
+              <item name="weibo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="weibo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="新建文件夹" type="b2602c69:ProjectViewProjectNode" />
-              <item name="新建文件夹" type="462c0819:PsiDirectoryNode" />
+              <item name="weibo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="weibo" type="462c0819:PsiDirectoryNode" />
               <item name="client" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="新建文件夹" type="b2602c69:ProjectViewProjectNode" />
-              <item name="新建文件夹" type="462c0819:PsiDirectoryNode" />
+              <item name="weibo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="weibo" type="462c0819:PsiDirectoryNode" />
               <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="新建文件夹" type="b2602c69:ProjectViewProjectNode" />
-              <item name="新建文件夹" type="462c0819:PsiDirectoryNode" />
+              <item name="weibo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="weibo" type="462c0819:PsiDirectoryNode" />
               <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="新建文件夹" type="b2602c69:ProjectViewProjectNode" />
-              <item name="新建文件夹" type="462c0819:PsiDirectoryNode" />
+              <item name="weibo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="weibo" type="462c0819:PsiDirectoryNode" />
               <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="新建文件夹" type="b2602c69:ProjectViewProjectNode" />
-              <item name="新建文件夹" type="462c0819:PsiDirectoryNode" />
+              <item name="weibo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="weibo" type="462c0819:PsiDirectoryNode" />
               <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -567,16 +596,33 @@
               <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="新建文件夹" type="b2602c69:ProjectViewProjectNode" />
-              <item name="新建文件夹" type="462c0819:PsiDirectoryNode" />
+              <item name="weibo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="weibo" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="weibo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="weibo" type="462c0819:PsiDirectoryNode" />
               <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="新建文件夹" type="b2602c69:ProjectViewProjectNode" />
-              <item name="新建文件夹" type="462c0819:PsiDirectoryNode" />
+              <item name="weibo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="weibo" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="weibo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="weibo" type="462c0819:PsiDirectoryNode" />
               <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -584,61 +630,27 @@
               <item name="jsp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="新建文件夹" type="b2602c69:ProjectViewProjectNode" />
-              <item name="新建文件夹" type="462c0819:PsiDirectoryNode" />
+              <item name="weibo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="weibo" type="462c0819:PsiDirectoryNode" />
               <item name="core" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="新建文件夹" type="b2602c69:ProjectViewProjectNode" />
-              <item name="新建文件夹" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="新建文件夹" type="b2602c69:ProjectViewProjectNode" />
-              <item name="新建文件夹" type="462c0819:PsiDirectoryNode" />
+              <item name="weibo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="weibo" type="462c0819:PsiDirectoryNode" />
               <item name="core" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="新建文件夹" type="b2602c69:ProjectViewProjectNode" />
-              <item name="新建文件夹" type="462c0819:PsiDirectoryNode" />
+              <item name="weibo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="weibo" type="462c0819:PsiDirectoryNode" />
               <item name="core" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="新建文件夹" type="b2602c69:ProjectViewProjectNode" />
-              <item name="新建文件夹" type="462c0819:PsiDirectoryNode" />
+              <item name="weibo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="weibo" type="462c0819:PsiDirectoryNode" />
               <item name="core" type="462c0819:PsiDirectoryNode" />
-=======
-              <item name="weibo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weibo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="weibo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weibo" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="weibo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weibo" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="weibo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weibo" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="weibo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weibo" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -646,95 +658,31 @@
             <path>
               <item name="weibo" type="b2602c69:ProjectViewProjectNode" />
               <item name="weibo" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="weibo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weibo" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
->>>>>>> a8b5eff0d870a4c0b4add7a8e12cbba290b879e2
+              <item name="core" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="fifteen" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-<<<<<<< HEAD
-              <item name="新建文件夹" type="b2602c69:ProjectViewProjectNode" />
-              <item name="新建文件夹" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-=======
               <item name="weibo" type="b2602c69:ProjectViewProjectNode" />
               <item name="weibo" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
->>>>>>> a8b5eff0d870a4c0b4add7a8e12cbba290b879e2
+              <item name="core" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="fifteen" type="462c0819:PsiDirectoryNode" />
-<<<<<<< HEAD
               <item name="dao" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="新建文件夹" type="b2602c69:ProjectViewProjectNode" />
-              <item name="新建文件夹" type="462c0819:PsiDirectoryNode" />
+              <item name="weibo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="weibo" type="462c0819:PsiDirectoryNode" />
               <item name="core" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="fifteen" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
-=======
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="weibo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weibo" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="weibo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weibo" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="weibo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weibo" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="jsp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="weibo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weibo" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="weibo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weibo" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="weibo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weibo" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
->>>>>>> a8b5eff0d870a4c0b4add7a8e12cbba290b879e2
             </path>
             <path>
               <item name="weibo" type="b2602c69:ProjectViewProjectNode" />
@@ -743,104 +691,9 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-<<<<<<< HEAD
               <item name="fifteen" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
               <item name="imp" type="462c0819:PsiDirectoryNode" />
-=======
->>>>>>> a8b5eff0d870a4c0b4add7a8e12cbba290b879e2
-            </path>
-            <path>
-              <item name="weibo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weibo" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-<<<<<<< HEAD
-              <item name="fifteen" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-=======
-              <item name="com" type="462c0819:PsiDirectoryNode" />
->>>>>>> a8b5eff0d870a4c0b4add7a8e12cbba290b879e2
-            </path>
-            <path>
-              <item name="weibo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weibo" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-<<<<<<< HEAD
-              <item name="fifteen" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-              <item name="miaodiyun" type="462c0819:PsiDirectoryNode" />
-=======
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="fifteen" type="462c0819:PsiDirectoryNode" />
->>>>>>> a8b5eff0d870a4c0b4add7a8e12cbba290b879e2
-            </path>
-            <path>
-              <item name="weibo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weibo" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="fifteen" type="462c0819:PsiDirectoryNode" />
-<<<<<<< HEAD
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-              <item name="miaodiyun" type="462c0819:PsiDirectoryNode" />
-              <item name="httpApiDemo" type="462c0819:PsiDirectoryNode" />
-=======
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
->>>>>>> a8b5eff0d870a4c0b4add7a8e12cbba290b879e2
-            </path>
-            <path>
-              <item name="weibo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weibo" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="fifteen" type="462c0819:PsiDirectoryNode" />
-<<<<<<< HEAD
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-              <item name="miaodiyun" type="462c0819:PsiDirectoryNode" />
-              <item name="httpApiDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-=======
-              <item name="pojo" type="462c0819:PsiDirectoryNode" />
->>>>>>> a8b5eff0d870a4c0b4add7a8e12cbba290b879e2
-            </path>
-            <path>
-              <item name="weibo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weibo" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="fifteen" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-              <item name="miaodiyun" type="462c0819:PsiDirectoryNode" />
-              <item name="huiDiao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="weibo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weibo" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="fifteen" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-              <item name="miaodiyun" type="462c0819:PsiDirectoryNode" />
-              <item name="huiDiao" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="weibo" type="b2602c69:ProjectViewProjectNode" />
@@ -863,24 +716,22 @@
           <select />
         </subPane>
       </pane>
-<<<<<<< HEAD
       <pane id="Scope" />
-=======
->>>>>>> a8b5eff0d870a4c0b4add7a8e12cbba290b879e2
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-<<<<<<< HEAD
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537495703451" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538125304783" />
     <property name="database.console.LAST_STATE" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -896,11 +747,6 @@
       <recent name="C:\Users\Administrator\Desktop\weibo\core\src\main" />
       <recent name="C:\Users\Administrator\Desktop\weibo\client\src\main" />
     </key>
-=======
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537429366251" />
-    <property name="database.console.LAST_STATE" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.editor" />
->>>>>>> a8b5eff0d870a4c0b4add7a8e12cbba290b879e2
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -914,57 +760,11 @@
       </list>
     </option>
   </component>
-<<<<<<< HEAD
-  <component name="RunManager" selected="Tomcat Server.Unnamed">
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.fifteen.utils.miaodiyun.httpApiDemo.Test" />
-      <module name="core" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.fifteen.utils.miaodiyun.httpApiDemo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="JUnit" factoryName="JUnit">
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="TestNG" factoryName="TestNG">
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Unnamed" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.90" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="1.8">
+  <component name="RunManager">
+    <configuration name="Unnamed" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.90" ALTERNATIVE_JRE_ENABLED="false">
       <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
-=======
-  <component name="RunManager">
-    <configuration name="Unnamed" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.0.M26" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="UPDATING_POLICY" value="redeploy-artifacts" />
->>>>>>> a8b5eff0d870a4c0b4add7a8e12cbba290b879e2
       <deployment>
         <artifact name="client:war exploded">
           <settings>
@@ -973,11 +773,8 @@
         </artifact>
       </deployment>
       <server-settings>
-<<<<<<< HEAD
-        <option name="BASE_DIRECTORY_NAME" value="Unnamed_新建文件夹_4" />
-=======
         <option name="BASE_DIRECTORY_NAME" value="Unnamed_weibo_5" />
->>>>>>> a8b5eff0d870a4c0b4add7a8e12cbba290b879e2
+        <option name="HTTP_PORT" value="8081" />
       </server-settings>
       <predefined_log_file id="Tomcat" enabled="true" />
       <predefined_log_file id="Tomcat Catalina" enabled="true" />
@@ -985,11 +782,7 @@
       <predefined_log_file id="Tomcat Host Manager" enabled="false" />
       <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
       <RunnerSettings RunnerId="Debug">
-<<<<<<< HEAD
-        <option name="DEBUG_PORT" value="54664" />
-=======
         <option name="DEBUG_PORT" value="1915" />
->>>>>>> a8b5eff0d870a4c0b4add7a8e12cbba290b879e2
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -1049,12 +842,11 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="aabd43d8-d2cf-4dc8-ae19-2009a3c494a6" name="Default Changelist" comment="" />
+      <changelist id="1b7c7845-82d6-4bc2-997e-1b5a451c9d7d" name="Default Changelist" comment="" />
       <created>1537339546451</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-<<<<<<< HEAD
-      <updated>1537240905125</updated>
+      <updated>1537339546451</updated>
       <workItem from="1537240908881" duration="3235000" />
       <workItem from="1537251803133" duration="5948000" />
       <workItem from="1537251803133" duration="2325000" />
@@ -1072,29 +864,36 @@
       <workItem from="1537421816099" duration="3725000" />
       <workItem from="1537490496740" duration="4510000" />
       <workItem from="1537496058560" duration="1433000" />
-=======
-      <updated>1537339546451</updated>
       <workItem from="1537339552189" duration="1808000" />
       <workItem from="1537341626330" duration="6636000" />
       <workItem from="1537349257829" duration="32000" />
       <workItem from="1537422442391" duration="3540000" />
       <workItem from="1537426039659" duration="3335000" />
       <workItem from="1537495201197" duration="481000" />
->>>>>>> a8b5eff0d870a4c0b4add7a8e12cbba290b879e2
+      <workItem from="1537498684979" duration="8524000" />
+      <workItem from="1537512758786" duration="1919000" />
+      <workItem from="1537514721480" duration="7065000" />
+      <workItem from="1537837229256" duration="5437000" />
+      <workItem from="1537843121076" duration="9947000" />
+      <workItem from="1537859796134" duration="3009000" />
+      <workItem from="1537863082419" duration="4338000" />
+      <workItem from="1537923786505" duration="10311000" />
+      <workItem from="1537939898382" duration="2524000" />
+      <workItem from="1537943782256" duration="942000" />
+      <workItem from="1537944920678" duration="7483000" />
+      <workItem from="1537953172357" duration="1037000" />
+      <workItem from="1538010003992" duration="5361000" />
+      <workItem from="1538016229725" duration="2751000" />
+      <workItem from="1538029150534" duration="4410000" />
+      <workItem from="1538033749794" duration="5998000" />
+      <workItem from="1538096546725" duration="6186000" />
+      <workItem from="1538112684650" duration="5956000" />
+      <workItem from="1538118730295" duration="6433000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-<<<<<<< HEAD
-    <option name="totallyTimeSpent" value="28157000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
-    <editor active="true" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21428572" />
-=======
-    <option name="totallyTimeSpent" value="15832000" />
+    <option name="totallyTimeSpent" value="127788000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1106,95 +905,75 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20375335" />
->>>>>>> a8b5eff0d870a4c0b4add7a8e12cbba290b879e2
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8078176" visible="true" weight="0.2196162" />
+      <window_info id="Structure" order="1" sideWeight="0.1921824" side_tool="true" visible="true" weight="0.2196162" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info id="Capture Tool" order="6" />
-      <window_info id="Web" order="7" side_tool="true" />
+      <window_info id="Web" order="7" sideWeight="0.18802229" side_tool="true" weight="0.22707888" />
       <window_info anchor="bottom" id="Message" order="0" />
-<<<<<<< HEAD
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49932975" weight="0.32899022" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32899022" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.8827078" visible="true" weight="0.32899022" />
-=======
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32892805" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4948605" />
->>>>>>> a8b5eff0d870a4c0b4add7a8e12cbba290b879e2
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32899022" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.330076" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.37893593" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32892805" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.34067547" />
       <window_info anchor="bottom" id="Spring" order="8" />
       <window_info anchor="bottom" id="Terminal" order="9" />
-<<<<<<< HEAD
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.117292225" side_tool="true" weight="0.13950074" />
-      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49798927" weight="0.32785088" />
-      <window_info anchor="bottom" id="Java Enterprise" order="12" />
-      <window_info anchor="bottom" id="Database Changes" order="13" />
-      <window_info anchor="bottom" id="Version Control" order="14" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Console" order="15" weight="0.32899022" />
-=======
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.4743025" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.31487513" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="bottom" id="Version Control" order="14" />
-      <window_info anchor="bottom" id="Database Console" order="15" weight="0.32892805" />
->>>>>>> a8b5eff0d870a4c0b4add7a8e12cbba290b879e2
+      <window_info anchor="bottom" id="Database Console" order="15" weight="0.32790446" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-<<<<<<< HEAD
-      <window_info anchor="right" id="Maven Projects" order="5" />
-      <window_info anchor="right" id="Database" order="6" weight="0.24360341" />
-=======
-      <window_info anchor="right" id="Maven Projects" order="5" weight="0.17828418" />
-      <window_info anchor="right" id="Database" order="6" visible="true" weight="0.16957104" />
->>>>>>> a8b5eff0d870a4c0b4add7a8e12cbba290b879e2
+      <window_info anchor="right" id="Maven Projects" order="5" weight="0.17803837" />
+      <window_info anchor="right" id="Database" order="6" weight="0.1988273" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20107238" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.81197774" visible="true" weight="0.2196162" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info id="Capture Tool" order="6" />
-      <window_info id="Web" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Database Console" order="0" weight="0.32892805" />
-      <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Find" order="2" />
-      <window_info anchor="bottom" id="Run" order="3" weight="0.32892805" />
-      <window_info active="true" anchor="bottom" id="Debug" order="4" visible="true" weight="0.47136563" />
-      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="7" weight="0.32892805" />
-      <window_info anchor="bottom" id="Application Servers" order="8" weight="0.34067547" />
-      <window_info anchor="bottom" id="Spring" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.47488585" />
-      <window_info anchor="bottom" id="Java Enterprise" order="13" />
-      <window_info anchor="bottom" id="Database Changes" order="14" />
-      <window_info anchor="bottom" id="Version Control" order="15" />
+      <window_info id="Web" order="7" sideWeight="0.18802229" side_tool="true" weight="0.22707888" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32899022" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.330076" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.37893593" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32892805" />
+      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.34067547" />
+      <window_info anchor="bottom" id="Spring" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.31487513" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info anchor="bottom" id="Database Console" order="15" weight="0.32790446" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Maven Projects" order="5" weight="0.17828418" />
-      <window_info anchor="right" id="Database" order="6" visible="true" weight="0.17024128" />
+      <window_info anchor="right" id="Maven Projects" order="5" weight="0.17803837" />
+      <window_info anchor="right" id="Database" order="6" visible="true" weight="0.1988273" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
     </layout-to-restore>
@@ -1210,303 +989,143 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/client/src/main/java/com/fifteen/controller/UserController.java</url>
-          <line>25</line>
+          <line>55</line>
           <properties />
-          <option name="timeStamp" value="9" />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/client/src/main/java/com/fifteen/controller/UserController.java</url>
+          <line>57</line>
+          <properties />
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/core/src/main/java/com/fifteen/service/imp/UserServiceImp.java</url>
-          <line>25</line>
+          <line>26</line>
           <properties />
-          <option name="timeStamp" value="13" />
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory">
+        <watch expression="userImg" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/client/src/main/webapp/Wopop_files/JQuery.cookie.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/main/webapp/Wopop_files/jquery.ui.all.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/main/webapp/Wopop_files/loading1.gif">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/main/webapp/Wopop_files/loadingpn.gif">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/main/webapp/Wopop_files/style.css">
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/fifteen/pojo/Label.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
+        <state relative-caret-position="50">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/main/webapp/Wopop_files/logo.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/main/webapp/Wopop_files/style_log.css">
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/fifteen/pojo/News.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="134" column="52" lean-forward="true" selection-start-line="134" selection-start-column="52" selection-end-line="134" selection-end-column="52" />
+        <state relative-caret-position="1150">
+          <caret line="64" column="18" selection-start-line="64" selection-start-column="18" selection-end-line="64" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/main/resources/dispatcher-servlet.xml">
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/fifteen/pojo/People_label.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="18" column="46" lean-forward="true" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
+        <state relative-caret-position="50">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.2/mybatis-3.4.2.jar!/org/apache/ibatis/binding/MapperProxy.class">
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/fifteen/pojo/Photo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="275">
+          <caret line="34" column="31" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/main/webapp/index.jsp">
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/fifteen/pojo/Private_letter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
-=======
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="501">
-          <caret line="87" column="10" lean-forward="true" selection-start-line="87" selection-start-column="10" selection-end-line="87" selection-end-column="10" />
+        <state relative-caret-position="50">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/main/webapp/WEB-INF/web.xml">
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/fifteen/pojo/Report.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-821" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/resources/coreContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="919">
-          <caret line="47" column="8" lean-forward="true" selection-start-line="47" selection-start-column="8" selection-end-line="47" selection-end-column="8" />
->>>>>>> a8b5eff0d870a4c0b4add7a8e12cbba290b879e2
+        <state relative-caret-position="50">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/resources/mapper/UserMapper.xml">
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/fifteen/pojo/Report_class.java">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="340">
-          <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
+        <state relative-caret-position="50">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/fifteen/service/imp/UserServiceImp.java">
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/fifteen/pojo/Shield.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+        <state relative-caret-position="50">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/fifteen/dao/UserDao.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/jre/lib/rt.jar!/sun/reflect/DelegatingMethodAccessorImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="11" column="171" selection-start-line="11" selection-start-column="171" selection-end-line="11" selection-end-column="171" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/fifteen/pojo/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3125">
+          <caret line="201" column="18" selection-start-line="201" selection-start-column="18" selection-end-line="201" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/fifteen/pojo/Head_portrait.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
-          <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+          <caret line="7" column="18" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/resources/mybatis-config.xml">
+    <entry file="file://$PROJECT_DIR$/client/src/main/webapp/css/default.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/resources/coreContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="47" column="8" selection-start-line="47" selection-start-column="8" selection-end-line="47" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="21" column="37" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hs_err_pid6768.log">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/replay_pid6768.log">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/main/webapp/css/activity.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-27582">
-          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/main/webapp/js/base64.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="109" column="1" selection-start-line="109" selection-start-column="1" selection-end-line="109" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://a1a4e366-cc79-420e-8819-b53dac62de84/schema/micro_blog/table/user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/main/webapp/css/build.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1725">
-          <caret line="5438" column="3" lean-forward="true" selection-start-line="5438" selection-start-column="3" selection-end-line="5438" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/main/webapp/js/popwin.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="131" lean-forward="true" selection-start-line="131" selection-end-line="131" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/fifteen/pojo/publish.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/fifteen/pojo/album.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
-          <caret line="63" column="18" selection-start-line="63" selection-start-column="18" selection-end-line="63" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/fifteen/pojo/call_me.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="521">
-          <caret line="51" column="18" selection-start-line="51" selection-start-column="18" selection-end-line="51" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/fifteen/pojo/college.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="507">
-          <caret line="51" column="18" selection-start-line="51" selection-start-column="18" selection-end-line="51" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/fifteen/pojo/comment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="85" column="18" selection-start-line="85" selection-start-column="18" selection-end-line="85" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/fifteen/pojo/company.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
-          <caret line="63" column="18" selection-start-line="63" selection-start-column="18" selection-end-line="63" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/fifteen/pojo/department.java">
+    <entry file="file://$PROJECT_DIR$/client/src/main/webapp/css/amazeui.flat.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="4" selection-end-column="35" />
+          <caret column="494" selection-start-column="494" selection-end-column="494" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/fifteen/pojo/expression.java">
+    <entry file="file://$PROJECT_DIR$/client/src/main/webapp/css/amazeui.flat.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="721">
-          <caret line="33" column="18" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
+        <state relative-caret-position="350">
+          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/fifteen/pojo/fabulous.java">
+    <entry file="file://$PROJECT_DIR$/client/src/main/webapp/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="73" column="18" selection-start-line="73" selection-start-column="18" selection-end-line="73" selection-end-column="18" />
+        <state relative-caret-position="3725">
+          <caret line="151" column="3" selection-start-line="151" selection-start-column="3" selection-end-line="151" selection-end-column="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/fifteen/pojo/fans.java">
+    <entry file="file://$PROJECT_DIR$/client/src/main/webapp/js/jquery.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="571">
-          <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/fifteen/pojo/forward.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="85" column="18" selection-start-line="85" selection-start-column="18" selection-end-line="85" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/fifteen/pojo/head_portrait.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="45" column="18" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/fifteen/pojo/label.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="571">
-          <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/fifteen/pojo/people_label.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="775">
-          <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/fifteen/pojo/photo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="521">
-          <caret line="55" column="18" selection-start-line="55" selection-start-column="18" selection-end-line="55" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/fifteen/pojo/private_letter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="521">
-          <caret line="51" column="18" selection-start-line="51" selection-start-column="18" selection-end-line="51" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/fifteen/pojo/report.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="41" column="18" selection-start-line="41" selection-start-column="18" selection-end-line="41" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/fifteen/pojo/report_class.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="571">
-          <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/fifteen/pojo/shield.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="507">
-          <caret line="51" column="18" selection-start-line="51" selection-start-column="18" selection-end-line="51" selection-end-column="18" />
+        <state relative-caret-position="25">
+          <caret line="1" column="93232" selection-start-line="1" selection-start-column="93232" selection-end-line="1" selection-end-column="93232" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1517,61 +1136,167 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.2/mybatis-3.4.2.jar!/org/apache/ibatis/type/TypeAliasRegistry.class">
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/fifteen/pojo/Publish.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="450">
+          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/fifteen/pojo/collections.java">
+    <entry file="file://$PROJECT_DIR$/client/src/main/webapp/css/app.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
-=======
-        <state relative-caret-position="132">
-          <caret line="6" column="51" selection-start-line="6" selection-start-column="51" selection-end-line="6" selection-end-column="51" />
+        <state relative-caret-position="7000">
+          <caret line="280" column="22" selection-start-line="280" selection-start-column="22" selection-end-line="280" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/fifteen/utils/ResponseModel.java">
+    <entry file="file://$PROJECT_DIR$/client/src/main/webapp/css/amazeui.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="77" column="37" selection-start-line="77" selection-start-column="37" selection-end-line="77" selection-end-column="37" />
+        <state relative-caret-position="17350">
+          <caret line="694" column="20" selection-start-line="694" selection-start-column="20" selection-end-line="694" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/main/webapp/css/amazeui.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378850">
+          <caret line="15154" column="18" selection-start-line="15154" selection-start-column="18" selection-end-line="15154" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/main/webapp/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="478">
+          <caret line="7656" column="26" lean-forward="true" selection-start-line="7656" selection-start-column="26" selection-end-line="7656" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/main/webapp/jsp/weiboDetails.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1450">
+          <caret line="58" column="4" selection-start-line="58" selection-start-column="4" selection-end-line="58" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/main/webapp/css/comment.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/fifteen/service/PublishService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/fifteen/dao/PublishDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/src/main/webapp/jsp/head.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="814">
-          <caret line="37" column="89" selection-start-line="37" selection-start-column="77" selection-end-line="37" selection-end-column="89" />
+        <state relative-caret-position="225">
+          <caret line="45" column="118" lean-forward="true" selection-start-line="45" selection-start-column="37" selection-end-line="45" selection-end-column="118" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/main/webapp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/main/webapp/Wopop.html">
+    <entry file="file://$PROJECT_DIR$/core/src/main/resources/mapper/PublishMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+        <state relative-caret-position="217">
+          <caret line="44" column="93" lean-forward="true" selection-start-line="44" selection-start-column="8" selection-end-line="44" selection-end-column="93" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/resources/mybatis-config.xml">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/client/src/main/java/com/fifteen/controller/IndexController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+        <state relative-caret-position="267">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/resources/jdbc.properties">
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/fifteen/pojo/Fans.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="300">
+          <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/fifteen/service/FansService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="37" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/fifteen/service/imp/FansServiceImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/main/webapp/jsp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1400">
+          <caret line="89" column="23" selection-start-line="89" selection-start-column="23" selection-end-line="89" selection-end-column="23" />
+          <folding>
+            <element signature="n#c:if#0;n#jsp:root#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/main/webapp/css/build.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17100">
+          <caret line="684" column="17" selection-start-line="684" selection-start-column="17" selection-end-line="684" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/main/webapp/jsp/gr_album.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2100">
+          <caret line="84" column="34" selection-start-line="84" selection-start-column="34" selection-end-line="84" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/fifteen/dao/FansDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/resources/mapper/FansMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="12" column="61" selection-start-line="12" selection-start-column="61" selection-end-line="12" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/resources/mapper/NewsMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="2" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/main/webapp/jsp/gr_data.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="590">
+          <caret line="80" column="16" lean-forward="true" selection-start-line="80" selection-start-column="16" selection-end-line="84" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/main/webapp/css/lmlblog.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="228" column="24" selection-start-line="228" selection-start-column="24" selection-end-line="228" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -1582,136 +1307,93 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/main/webapp/js/jquery-1.11.3.min.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/main/webapp/jsp/register.jsp">
+    <entry file="file://$PROJECT_DIR$/client/src/main/java/com/fifteen/controller/PublishController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="224" column="41" selection-start-line="224" selection-start-column="41" selection-end-line="224" selection-end-column="41" />
+        <state relative-caret-position="575">
+          <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
           <folding>
-            <element signature="n#style#0;n#img#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/main/webapp/jsp/gr_index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="260" column="19" selection-start-line="165" selection-start-column="56" selection-end-line="170" selection-end-column="62" />
+          <folding>
+            <element signature="n#style#0;n#li#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#div#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#script#0;n#html#0;n#!!top" />
+            <element signature="n#script#5;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/resources/jdbc.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="33" lean-forward="true" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.2/mybatis-3.4.2.jar!/org/apache/ibatis/binding/MapperProxy.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        <state relative-caret-position="182">
+          <caret line="14" column="145" selection-start-line="14" selection-start-column="145" selection-end-line="14" selection-end-column="145" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.16.RELEASE/spring-webmvc-4.3.16.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.class">
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/fifteen/service/imp/PublishServiceImp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="531" selection-start-line="531" selection-end-line="531" />
+        <state relative-caret-position="321">
+          <caret line="27" column="34" lean-forward="true" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.16.RELEASE/spring-webmvc-4.3.16.RELEASE.jar!/org/springframework/web/servlet/DispatcherServlet.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="406" selection-start-line="406" selection-end-line="406" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.16.RELEASE/spring-webmvc-4.3.16.RELEASE.jar!/org/springframework/web/servlet/FrameworkServlet.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="474" selection-start-line="474" selection-end-line="474" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.16.RELEASE/spring-web-4.3.16.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="125" selection-start-line="125" selection-end-line="125" />
->>>>>>> a8b5eff0d870a4c0b4add7a8e12cbba290b879e2
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/main/java/com/fifteen/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="200">
-          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#245#246#0" expanded="true" />
-            <element signature="e#280#281#0" expanded="true" />
-=======
-        <state relative-caret-position="330">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="e#1076#1077#0" expanded="true" />
-            <element signature="e#1114#1115#0" expanded="true" />
->>>>>>> a8b5eff0d870a4c0b4add7a8e12cbba290b879e2
-          </folding>
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/client/src/main/webapp/jsp/head.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="36" column="89" selection-start-line="36" selection-start-column="77" selection-end-line="36" selection-end-column="89" />
-=======
     <entry file="file://$PROJECT_DIR$/core/src/main/java/com/fifteen/dao/UserDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
->>>>>>> a8b5eff0d870a4c0b4add7a8e12cbba290b879e2
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/fifteen/pojo/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="2550">
-          <caret line="102" column="62" selection-start-line="102" selection-start-column="62" selection-end-line="102" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/main/webapp/jsp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="13" column="31" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
-=======
-        <state relative-caret-position="198">
-          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+        <state relative-caret-position="300">
+          <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/resources/mapper/UserMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1474">
-          <caret line="67" column="45" selection-start-line="67" selection-start-column="45" selection-end-line="67" selection-end-column="45" />
->>>>>>> a8b5eff0d870a4c0b4add7a8e12cbba290b879e2
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.2/mybatis-3.4.2.jar!/org/apache/ibatis/builder/xml/mybatis-3-mapper.dtd">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="25">
-          <caret line="31" column="71" lean-forward="true" selection-start-line="31" selection-start-column="71" selection-end-line="31" selection-end-column="71" />
-=======
-        <state relative-caret-position="1474">
-          <caret line="67" selection-start-line="67" selection-end-line="67" />
->>>>>>> a8b5eff0d870a4c0b4add7a8e12cbba290b879e2
+        <state relative-caret-position="646">
+          <caret line="106" column="14" lean-forward="true" selection-start-line="106" selection-start-column="14" selection-end-line="106" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/java/com/fifteen/service/imp/UserServiceImp.java">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="-557">
-          <caret line="30" column="25" lean-forward="true" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
-=======
-        <state relative-caret-position="354">
-          <caret line="33" column="29" lean-forward="true" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
->>>>>>> a8b5eff0d870a4c0b4add7a8e12cbba290b879e2
+        <state relative-caret-position="632">
+          <caret line="59" selection-start-line="59" selection-end-line="59" />
+          <folding>
+            <element signature="e#1248#1249#0" expanded="true" />
+            <element signature="e#1295#1296#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/fifteen/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/main/java/com/fifteen/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="521">
+          <caret line="198" column="56" selection-start-line="198" selection-start-column="56" selection-end-line="198" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#code#0;class#UserController#0" />
+          </folding>
         </state>
       </provider>
     </entry>
