@@ -78,4 +78,34 @@
             <if test="member != null">#{member},</if>
         </trim>
     </insert>
+    <select id="selectByPhone" resultType="com.fifteen.pojo.User">
+         select * from  user where phone=#{phone};
+    </select>
+
+    <update id="updateByPhone" parameterType="String">
+        UPDATE user
+        <set>
+            <if test="password != null">#{password},</if>
+            <if test="mailbox != null">#{mailbox},</if>
+            <if test="registeredl_dentity!= null">#{registeredl_dentity},</if>
+            <if test="location != null">#{location},</if>
+            <if test="nickname != null">#{nickname},</if>
+            <if test="orientation != null">#{orientation},</if>
+            <if test="sex != null">#{sex},</if>
+            <if test="emotional_state != null">#{emotional_state},</if>
+            <if test="birthday != null">now(),</if>
+            <if test="blood_type != null">#{blood_type},</if>
+            <if test="brieflntroduction != null">#{brieflntroduction},</if>
+            <if test="blog_address != null">#{blog_address},</if>
+            <if test="MSN != null">#{MSN},</if>
+            <if test="qq != null">#{qq},</if>
+            <if test="receiptlnformation != null">#{receiptlnformation},</if>
+            <if test="domain_name != null">#{domain_name},</if>
+            <if test="how_to_find_me != null">#{how_to_find_me},</if>
+            <if test="ID != null">#{ID},</if>
+            <if test="member != null">#{member},</if>
+        </set>
+        where phone=#{phone}
+    </update>
+
 </mapper>
