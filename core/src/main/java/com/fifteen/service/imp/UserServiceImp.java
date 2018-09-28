@@ -37,8 +37,9 @@ public class UserServiceImp implements UserService {
     }
 
     @Override
-    public User goToPersonalHome(String userId) {
-        return userDao.goToPersonalHome(userId);
+    public User findUser(String userId) {
+        return userDao.findUser(userId);
     }
+
 
 }

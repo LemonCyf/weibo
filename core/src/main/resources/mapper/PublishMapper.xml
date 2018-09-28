@@ -20,7 +20,7 @@
         <result property="userId" column="userId"/>
         <result property="time" column="time"/>
         <association property="user" javaType="com.fifteen.pojo.User">
-            <id property="userId" column="userId"/>
+            <id property="u_userId" column="u_userId"/>
             <result property="phone" column="phone"/>
             <result property="password" column="password"/>
             <result property="mailbox" column="mailbox"/>
@@ -47,7 +47,7 @@
     <select id="findPublishDetails" resultMap="userPublishMap">
         select * from publish join user on publish.`userId`=user.`userId` where publish_content_id=#{publish_content_id}
     </select>
-    <select id="findAllPublsh" resultType="com.fifteen.pojo.Publish">
+    <select id="findAllPublish" resultType="com.fifteen.pojo.Publish">
         select * from publish where userId=#{userId}
     </select>
 </mapper>

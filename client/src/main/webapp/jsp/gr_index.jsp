@@ -4,12 +4,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="shortcut icon" href="${sessionScope.user.head}"/>
+    <link rel="shortcut icon" href="${personal.head}"/>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Cache-Control" content="no-cache">
     <meta http-equiv="Expires" content="0">
-    <title>${sessionScope.user.nickname}的个人主页</title>
+    <title>${personal.nickname}的个人主页</title>
     <style type="text/css">
         img.wp-smiley,
         img.emoji {
@@ -30,7 +30,7 @@
     <script type='text/javascript' src='../js/jquery.min.js'></script>
     <script type='text/javascript' src='../js/ueditor.all.min.js'></script>
 </head>
-<body style="background-color: white">
+<body style="background-color: #e2e2e2">
 <!-- 菜单 -->
 <jsp:include page="head.jsp"/>
 <div class="lmlblog-member-main" data="1">
@@ -38,17 +38,17 @@
         <div class="lmlblog-member-content">
             <div class="lmlblog-member-header">
                 <div class="lmlblog-member-avatar other">
-                    <img src="${sessionScope.user.head}" class="avatar"/>
+                    <img src="${personal.head}" class="avatar"/>
                 </div>
                 <div class="lmlblog-member-username">
-                    <h1>${sessionScope.user.nickname}</h1>
-                    <c:if test="${sessionScope.user.sex=='女'}">
+                    <h1>${personal.nickname}</h1>
+                    <c:if test="${personal.sex=='女'}">
                         <span class="lmlblog-mark lmlblog-girl"><i class="fa fa-mars"></i></span>
                     </c:if>
-                    <c:if test="${sessionScope.user.sex=='男'}">
+                    <c:if test="${spersonal.sex=='男'}">
                         <span class="lmlblog-mark lmlblog-boy"><i class="fa fa-mars"></i></span>
                     </c:if>
-                    <div class="lmlblog-member-desc">${sessionScope.user.brieflntroduction}</div>
+                    <div class="lmlblog-member-desc">${personal.brieflntroduction}</div>
                     <div class="lmlblog-member-follow-info">
                         <a href="#" target="_blank" rel="nofollow"><span
                                 class="follow no opacity"><i class="lmlblog-icon"></i>+ 关注</span></a>
@@ -56,31 +56,32 @@
                     </div>
                 </div>
                 <div class="lmlblog-member-menu clear">
-                    <li class="on">主页</li>
-                    <li><a href="../jsp/gr_album.jsp" target="_blank">相册</a></li>
-                    <li><a href="../jsp/gr_data.jsp" target="_blank">个人资料</a></li>
+                    <li id="li_home" style="background-color: #f1f1f1" onclick="toHome()">主页</li>
+                    <li id="li_album"><p onclick="toAblum()">相册</p></li>
+                    <c:if test="${personal.userId==sessionScope.user.userId}">
+                        <li id="li_data"><p onclick="toData()">个人资料</p></li>
+                    </c:if>
                 </div>
                 <div class="lmlblog-member-content-list clear">
                     <div class="lmlblog-member-left">
                         <div class="lmlblog-member-left-follow clear">
                             <li>
-                                <strong>168</strong>
+                                <strong>${attention}</strong>
                                 <span>关注</span>
                             </li>
                             <li>
-                                <strong>666</strong>
+                                <strong>${fans}</strong>
                                 <span>粉丝</span>
                             </li>
                         </div>
                         <div class="lmlblog-member-left-profile">
                             <h3>资料简介</h3>
-                            <li><i class="fa fa-transgender"></i> 性别：<span>${sessionScope.user.sex}</span></li>
-                            <li><i class="fa fa-map-marker"></i> 城市：<span>${sessionScope.user.location}</span></li>
-                            <li><i class="fa fa-smile-o"></i> 兴趣：<span>${sessionScope.user.orientation}</span></li>
-                            <%--<div class="lmlblog-member-left-profile-more">查看更多 <i class="fa fa-angle-right"></i></div>--%>
+                            <li><i class="fa fa-transgender"></i> 性别：<span>${personal.sex}</span></li>
+                            <li><i class="fa fa-map-marker"></i> 城市：<span>${personal.location}</span></li>
+                            <li><i class="fa fa-smile-o"></i> 兴趣：<span>${personal.orientation}</span></li>
                         </div>
                     </div>
-                    <div class="lmlblog-member-right">
+                    <div class="lmlblog-member-right" id="lmlblog-member-right-publish" style="display:block">
                         <div class="lmlblog-post-list">
                             <div class="lmlblog-posts-list words"
                                  data="4197">
@@ -91,17 +92,17 @@
                                             <div class="lmlblog-post-user-info">
                                                 <div class="lmlblog-post-user-info-avatar" user-data="1">
                                                     <span class="lmlblog-vip-icon"></span><img
-                                                        src="${sessionScope.user.head}"
+                                                        src="${personal.head}"
                                                         class="avatar"/>
-                                                    <div class="lmlblog-user-info-card">
-                                                        <div class="info_card_loading"><img
-                                                                src="../picture/chat-loading.gif">
-                                                            <p>资料加载中...</p>
-                                                        </div>
-                                                    </div>
+                                                    <%--<div class="lmlblog-user-info-card">--%>
+                                                        <%--<div class="info_card_loading"><img--%>
+                                                                <%--src="../picture/chat-loading.gif">--%>
+                                                            <%--<p>资料加载中...</p>--%>
+                                                        <%--</div>--%>
+                                                    <%--</div>--%>
                                                 </div>
                                                 <div class="lmlblog-post-user-info-name">
-                                                    <font style="color:#333;font-weight:600">${sessionScope.user.nickname}</font>
+                                                    <font style="color:#333;font-weight:600">${personal.nickname}</font>
                                                 </div>
                                                 <div class="lmlblog-post-user-info-time"
                                                      title="${publish.time}">${publish.time}
@@ -160,18 +161,18 @@
                                             <div class="lmlblog-post-user-info">
                                                 <div class="lmlblog-post-user-info-avatar" user-data="1">
                                                     <span class="lmlblog-vip-icon"></span><img
-                                                        src="${sessionScope.user.head}"
+                                                        src="${personal.head}"
                                                         class="avatar"/>
-                                                    <div class="lmlblog-user-info-card">
-                                                        <div class="info_card_loading"><img
-                                                                src="../picture/chat-loading.gif">
-                                                            <p>资料加载中...</p>
-                                                        </div>
-                                                    </div>
+                                                    <%--<div class="lmlblog-user-info-card">--%>
+                                                        <%--<div class="info_card_loading"><img--%>
+                                                                <%--src="../picture/chat-loading.gif">--%>
+                                                            <%--<p>资料加载中...</p>--%>
+                                                        <%--</div>--%>
+                                                    <%--</div>--%>
                                                 </div>
 
                                                 <div class="lmlblog-post-user-info-name">
-                                                    <font style="color:#333;font-weight:600">${sessionScope.user.nickname}</font>
+                                                    <font style="color:#333;font-weight:600">${personal.nickname}</font>
                                                 </div>
                                                 <div class="lmlblog-post-user-info-time"
                                                      title="${publish.time}">${publish.time}
@@ -239,6 +240,42 @@
                             </div>
                         </div>
                     </div>
+                    <div class="lmlblog-member-right" id="lmlblog-member-right-album" style="display:none">
+                        <div class="lmlblog-posts-list words"
+                             style="background-color: white;clear: both;overflow:hidden;zoom:1 "
+                             data="4197">
+                            <c:forEach items="${publishes}" var="publish">
+                                <c:if test="${not empty publish.picture}">
+                                    <div class="img_div">
+                                        <img src="${publish.picture}" alt="">
+                                    </div>
+                                </c:if>
+                            </c:forEach>
+                        </div>
+                    </div>
+                    <div class="lmlblog-member-right" id="lmlblog-member-right-data" style="display: none">
+                        <div class="lmlblog-post-list">
+                            <div class="lmlblog-member-left-profile">
+                                <h3>资料简介</h3>
+                                <li><i class="fa fa-transgender"></i> 性别：<span>${personal.sex}</span></li>
+                                <li><i class="fa fa-map-marker"></i> 城市：<span>${personal.location}</span></li>
+                                <li><i class="fa fa-smile-o"></i> 兴趣：<span>${personal.orientation}</span></li>
+                                <li><i class=""></i> 生日：<span>${personal.birthday}</span></li>
+                                <li><i class=""></i> 血型：<span>${personal.blood_type}</span></li>
+                                <li><i class=""></i> 简介：<span>${personal.brieflntroduction}</span></li>
+                                <li><i class=""></i> 手机号：<span>${personal.phone}</span></li>
+                                <li><i class=""></i> 邮箱：<span>${personal.mailbox}</span></li>
+                                <li><i class=""></i> 感情状况：<span>${personal.emotional_state}</span></li>
+                                <li><i class=""></i> 博客地址：<span>${personal.blog_address}</span></li>
+                                <li><i class=""></i> MSN：<span>${personal.MSN}</span></li>
+                                <li><i class=""></i> QQ：<span>${personal.qq}</span></li>
+                                <li><i class=""></i> 收货信息：<span>${personal.receiptlnformation}</span></li>
+                                <li><i class=""></i> 域名：<span>${personal.domain_name}</span></li>
+                                <li><i class=""></i> 身份证：<span>${personal.ID}</span></li>
+                                <%--<li><i class=""></i> 何种方式找到我：<span>${personal.how_to_find_me}</span></li>--%>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -261,6 +298,52 @@
 <script type='text/javascript' src='../js/all.js'></script>
 <script type='text/javascript' src='../js/plupload.full.min.js'></script>
 <script type='text/javascript' src='../js/layui.js'></script>
+<script>
+    function toHome() {
+        var li_home = document.getElementById("li_home");
+        var li_album = document.getElementById("li_album");
+        var li_data = document.getElementById("li_data");
+        var home = document.getElementById("lmlblog-member-right-publish");
+        var ablum = document.getElementById("lmlblog-member-right-album");
+        var data = document.getElementById("lmlblog-member-right-data");
+        ablum.style.display = 'none';
+        home.style.display = 'block';
+        data.style.display = 'none';
+        li_album.style.backgroundColor = 'white';
+        li_home.style.backgroundColor = '#f1f1f1';
+        li_data.style.backgroundColor = 'white';
+    }
+
+    function toAblum() {
+        var li_home = document.getElementById("li_home");
+        var li_album = document.getElementById("li_album");
+        var li_data = document.getElementById("li_data");
+        var home = document.getElementById("lmlblog-member-right-publish");
+        var ablum = document.getElementById("lmlblog-member-right-album");
+        var data = document.getElementById("lmlblog-member-right-data");
+        ablum.style.display = 'block';
+        home.style.display = 'none';
+        data.style.display = 'none';
+        li_album.style.backgroundColor = '#f1f1f1';
+        li_home.style.backgroundColor = 'white';
+        li_data.style.backgroundColor = 'white';
+    }
+
+    function toData() {
+        var li_home = document.getElementById("li_home");
+        var li_album = document.getElementById("li_album");
+        var li_data = document.getElementById("li_data");
+        var home = document.getElementById("lmlblog-member-right-publish");
+        var ablum = document.getElementById("lmlblog-member-right-album");
+        var data = document.getElementById("lmlblog-member-right-data");
+        ablum.style.display = 'none';
+        home.style.display = 'none';
+        data.style.display = 'block';
+        li_album.style.backgroundColor = 'white';
+        li_home.style.backgroundColor = 'white';
+        li_data.style.backgroundColor = '#f1f1f1';
+    }
+</script>
 <script>
     jQuery(document).ready(function ($) {
         $.fn.smartFloat = function () {
