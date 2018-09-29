@@ -28,7 +28,7 @@
     <select id="login" resultType="com.fifteen.pojo.User">
         select * from  user where phone=#{phone} and password=#{password};
     </select>
-    <select id="goToPersonalHome" resultType="com.fifteen.pojo.User">
+    <select id="findUser" resultType="com.fifteen.pojo.User">
         select * from user where userId=#{userId}
     </select>
     <insert id="add" parameterType="com.fifteen.pojo.User">

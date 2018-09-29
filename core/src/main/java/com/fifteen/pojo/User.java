@@ -1,6 +1,7 @@
 package com.fifteen.pojo;
 
 public class User {
+<<<<<<< HEAD
         private String userId;
         private String phone;
         private String password;
@@ -22,6 +23,36 @@ public class User {
         private String head;
         private String code;
         private String how_to_find_me;
+=======
+    private String userId;
+    private String phone;
+    private String password;
+    private String mailbox;
+    private String location;
+    private String nickname;
+    private String orientation;
+    private String sex;
+    private String emotional_state;
+    private String birthday;
+    private String blood_type;
+    private String brieflntroduction;
+    private String blog_address;
+    private String MSN;
+    private String qq;
+    private String receiptlnformation;
+    private String domain_name;
+    private String ID;
+    private String head;
+    private Expressions expressions;
+
+    public Expressions getExpressions() {
+        return expressions;
+    }
+
+    public void setExpressions(Expressions expressions) {
+        this.expressions = expressions;
+    }
+>>>>>>> 1ae445c98c2c696c64d8fbe3f738f3b6bf029f3d
 
     public User() {
     }

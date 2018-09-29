@@ -1,12 +1,23 @@
 package com.fifteen.controller;
+<<<<<<< HEAD
+=======
+
+import com.fifteen.pojo.Fans;
+>>>>>>> 1ae445c98c2c696c64d8fbe3f738f3b6bf029f3d
 import com.fifteen.pojo.Publish;
 import com.fifteen.pojo.User;
+import com.fifteen.service.CommentService;
+import com.fifteen.service.FansService;
 import com.fifteen.service.PublishService;
 import com.fifteen.service.UserService;
 import com.fifteen.utils.ResponseModel;
 import com.fifteen.utils.miaodiyun.httpApiDemo.IndustrySMS;
 import com.fifteen.utils.miaodiyun.httpApiDemo.common.PhoneResponse;
 import com.google.gson.Gson;
+<<<<<<< HEAD
+=======
+import org.apache.ibatis.annotations.Param;
+>>>>>>> 1ae445c98c2c696c64d8fbe3f738f3b6bf029f3d
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -22,6 +33,10 @@ import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.util.Random;
+<<<<<<< HEAD
+=======
+import java.util.concurrent.ExecutionException;
+>>>>>>> 1ae445c98c2c696c64d8fbe3f738f3b6bf029f3d
 import java.util.List;
 
 
@@ -34,6 +49,12 @@ public class UserController {
 
     @Autowired
     private PublishService publishService;
+
+    @Autowired
+    private FansService fansService;
+
+    @Autowired
+    private CommentService commentService;
 
     @RequestMapping("/register")
     @ResponseBody
@@ -189,9 +210,18 @@ public class UserController {
     }
 
     @RequestMapping("/goToPersonalHome")
-    public String goToPersonalHome(@RequestParam(value = "userId",required = false)String userId, Model model){
+    public String goToPersonalHome(@RequestParam(value = "userId",required = false)String userId,
+                                   @RequestParam(value = "publish_content_id",required = false)Integer publish_content_id,
+                                   Model model){
         List<Publish> publishes= publishService.findAllPublish(userId);
+        User personal=userService.findUser(userId);
+        int fans=fansService.findFans(userId);
+        int attention=fansService.findAttention(userId);
+        model.addAttribute("personal",personal);
         model.addAttribute("publishes",publishes);
+        model.addAttribute("fans",fans);
+        model.addAttribute("attention",attention);
         return "/jsp/gr_index";
     }
+
 }

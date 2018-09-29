@@ -683,17 +683,17 @@ header.active .navbar-left .nav-news, header.active .navbar-nav.navbar-right .us
 .big2-pic.big2-pic-index {
     position: absolute;
     width: 230px;
-    height: 195px;
-    left: 493px;
+    height: 170px;
+    left: 506px;
 }
 
 .big2-pic.big2-pic-index.big2-pic-index-bottom {
-    top: 275px;
+    top: 277px;
 }
 
 .big2-pic.big2-pic-index .big2-pic-content {
     width: 257px;
-    height: 195px;
+    height: 190px;
 }
 
 .big2-pic.big2-pic-index .big2-pic-content .t-h1 {
@@ -7129,6 +7129,7 @@ footer .bull-right, .selected-title span em {
 .umb .transition .lazy{
     width: 160px;
     height: 110px;
+    padding-left: 10px;
 }
 
 .mob-ctt a{
@@ -7175,6 +7176,7 @@ footer .bull-right, .selected-title span em {
 
 .mob-pu .userName{
     margin-left: 30px;
+    margin-top: -23px;
 }
 
 .mob-pu .publishUser{
@@ -7184,6 +7186,6 @@ footer .bull-right, .selected-title span em {
 }
 
 .mob-pu .mob-author{
-    margin-top: 10px;
+    margin-top: -20px;
     margin-right: 75px;
 }

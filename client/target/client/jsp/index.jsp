@@ -27,7 +27,7 @@
 
 </head>
 
-<body style="overflow-x:hidden">
+<body style="overflow-x:hidden;background-color: #e2e2e2" >
 <jsp:include page="head.jsp"/>
 <div class="container" id="index">
     <div class="wrap-left pull-left col-md-6">
@@ -68,13 +68,17 @@
         <div class="mod-info-flow">
             <c:forEach items="${publish}" var="publish">
                 <c:if test="${empty publish.picture}">
-                    <div class="mob-pu">
-                        <p><a href="${pageContext.request.contextPath}/publish/publishDetails.do?publish_content_id=${publish.publish_content_id}" class="transition msubstr-row2" target="_blank">${publish.text}</a></p>
+                    <div class="mob-pu" style="background-color: white">
+                        <p>
+                            <a href="${pageContext.request.contextPath}/publish/publishDetails.do?publish_content_id=${publish.publish_content_id}"
+                               class="transition msubstr-row2" target="_blank">${publish.text}</a></p>
                         <div class="publishUser">
-                            <div class="userImg">
-                                <img src="${publish.user.head}">
-                            </div>
-                            <p class="userName">${publish.user.nickname}</p>
+                            <a href="${pageContext.request.contextPath}/user/goToPersonalHome.do?userId=${publish.userId}">
+                                <div class="userImg">
+                                    <img src="${publish.user.head}">
+                                </div>
+                                <p class="userName">${publish.user.nickname}</p>
+                            </a>
                         </div>
                         <div class="mob-author">
                             <div class="author-face">
@@ -85,19 +89,25 @@
                     </div>
                 </c:if>
                 <c:if test="${not empty publish.picture}">
-                    <div class="mod-b mod-art" data-aid="213665">
+                    <div class="mod-b mod-art" data-aid="213665" style="background-color: white">
                         <div class="umb ">
-                            <a class="transition" href="${pageContext.request.contextPath}/publish/publishDetails.do?publish_content_id=${publish.publish_content_id}" target="_blank">
+                            <a class="transition"
+                               href="${pageContext.request.contextPath}/publish/publishDetails.do?publish_content_id=${publish.publish_content_id}"
+                               target="_blank">
                                 <img class="lazy" src="${publish.picture}">
                             </a>
                         </div>
                         <div class="mob-ctt">
-                            <p><a href="${pageContext.request.contextPath}/publish/publishDetails.do?publish_content_id=${publish.publish_content_id}" class="transition msubstr-row2" target="_blank">${publish.text}</a></p>
+                            <p>
+                                <a href="${pageContext.request.contextPath}/publish/publishDetails.do?publish_content_id=${publish.publish_content_id}"
+                                   class="transition msubstr-row2" target="_blank">${publish.text}</a></p>
                             <div class="publishUser">
-                                <div class="userImg">
+                                <a href="${pageContext.request.contextPath}/user/goToPersonalHome.do?userId=${publish.userId}">
+                                    <div class="userImg">
                                         <img src="${publish.user.head}">
-                                </div>
-                                <p class="userName">${publish.user.nickname}</p>
+                                    </div>
+                                    <p class="userName">${publish.user.nickname}</p>
+                                </a>
                             </div>
                             <div class="mob-author">
                                 <div class="author-face">

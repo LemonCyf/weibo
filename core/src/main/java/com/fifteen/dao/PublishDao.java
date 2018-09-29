@@ -7,7 +7,8 @@ import java.util.List;
 public interface PublishDao {
     List findPublish();
 
-    Publish findPublishDetails(String publish_content_id);
+    Publish findPublishDetails(Integer publish_content_id);
 
-    List<Publish> findAllPublsh(String userId);
+    List<Publish> findAllPublish(String userId);
+
 }

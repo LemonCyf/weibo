@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.fifteen.dao.CommentDao">
+    <resultMap id="CommentMap" type="com.fifteen.pojo.Comment">
+        <id property="comment_id" column="comment_id"/>
+        <id property="text" column="text"/>
+        <id property="expression_id" column="expression_id"/>
+        <id property="picture" column="picture"/>
+        <id property="publish_content_id" column="publish_content_id"/>
+        <id property="userId" column="userId"/>
+        <id property="time" column="time"/>
+    </resultMap>
+    <resultMap id="expressionUserCommentPublish" type="com.fifteen.pojo.Comment">
+        <id property="comment_id" column="comment_id"/>
+        <id property="text" column="text"/>
+        <id property="expression_id" column="expression_id"/>
+        <id property="picture" column="picture"/>
+        <id property="publish_content_id" column="publish_content_id"/>
+        <id property="userId" column="userId"/>
+        <id property="time" column="time"/>
+        <association property="publish" javaType="com.fifteen.pojo.Publish">
+            <id property="publish_content_id" column="publish_content_id"/>
+            <result property="text" column="text"/>
+            <result property="expression_id" column="expression_id"/>
+            <result property="picture" column="picture"/>
+            <result property="phone" column="phone"/>
+            <result property="userId" column="userId"/>
+            <result property="time" column="time"/>
+            <association property="user" javaType="com.fifteen.pojo.User">
+                <id property="userId" column="userId"/>
+                <result property="phone" column="phone"/>
+                <result property="password" column="password"/>
+                <result property="mailbox" column="mailbox"/>
+                <result property="location" column="location"/>
+                <result property="nickname" column="nickname"/>
+                <result property="orientation" column="orientation"/>
+                <result property="sex" column="sex"/>
+                <result property="emotional_state" column="emotional_state"/>
+                <result property="birthday" column="birthday"/>
+                <result property="blood_type" column="blood_type"/>
+                <result property="brieflntroduction" column="brieflntroduction"/>
+                <result property="blog_address" column="blog_address"/>
+                <result property="MSN" column="MSN"/>
+                <result property="qq" column="qq"/>
+                <result property="receiptlnformation" column="receiptlnformation"/>
+                <result property="domain_name" column="domain_name"/>
+                <result property="ID" column="ID"/>
+                <result property="head" column="head"/>
+                <association property="expressions" javaType="com.fifteen.pojo.Expressions">
+                    <id property="expressionId" column="expressionId"/>
+                    <result property="expression" column="expression"/>
+                </association>
+            </association>
+        </association>
+    </resultMap>
+    <insert id="addNewComment">
+        insert into comment
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="text!=null">text,</if>
+            <if test="expression_id!=null">expression_id,</if>
+            <if test="picture!=null">picture,</if>
+            <if test="publish_content_id!=null">publish_content_id,</if>
+            <if test="userId!=null">userId,</if>
+            <if test="time!=null">time</if>
+        </trim>
+        values
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="text!=null">#{text},</if>
+            <if test="expression_id!=null">#{expression_id},</if>
+            <if test="picture!=null">#{picture},</if>
+            <if test="publish_content_id!=null">#{publish_content_id},</if>
+            <if test="userId!=null">#{userId},</if>
+            <if test="time!=null">#{time}</if>
+        </trim>
+    </insert>
+    <select id="findAllComments" resultMap="expressionUserCommentPublish">
+        SELECT * FROM
+         `comment` AS c,`user` AS u,publish AS p,expressions AS e
+         WHERE c.`publish_content_id`=p.`publish_content_id`
+         AND c.`userId`=u.userId
+         AND c.`expression_id`=e.`expressionId`
+         AND c.`publish_content_id`=#{publish_content_id};
+    </select>
+
+</mapper>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.fifteen.dao.FansDao">
+    <resultMap id="FansMap" type="com.fifteen.pojo.Fans">
+        <id property="userId" column="userId"/>
+        <id property="fansId" column="fansId"/>
+    </resultMap>
+    <select id="findFans" resultType="java.lang.Integer">
+        SELECT COUNT(fansId) FROM fans WHERE userId=#{userId}
+    </select>
+    <select id="findAttention" resultType="java.lang.Integer">
+        SELECT COUNT(userId) FROM fans WHERE fansId=#{userId}
+    </select>
+</mapper>

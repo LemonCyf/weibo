@@ -26,6 +26,28 @@
     <div class="layui-clear main" id="layui-clear">
         <div class="layui-logo">
             <a href="#" target="_blank"><img src="${pageContext.request.contextPath}/images/register/img/logo.png"/></a>
+<<<<<<< HEAD
+=======
+<body class="B_register B_reg_tel ">
+<script type="text/javascript">
+    $CONFIG.key = 'BD325CE52FC6BA090AC0C7A2039236587F99C30FA518F601F2AD33019514EE5A4340A964853E1BDF5374AB4AC22F5CFF3288E5DB94E6752B4999972DF4E23DACACAE4E4DCFB6CBAE256F1B19C4BA892D54C7A3E068F93AB47EC50635556FC223F02CB1F520631E2F03E5509B6C1E24DFB7962BCD6DC74159BF0E5AFC03D9A00D';
+    $CONFIG.key_plus = '10001';
+    $CONFIG.province = '35';
+    $CONFIG.city = '2';
+    $CONFIG.closeSendsms = '1';
+    $CONFIG.page = 'mobile';
+</script>
+<div class="W_nologin">
+    <div class="W_header_line"></div>
+    <div class="W_reg_header W_logo_wave">
+        <div class="W_nologin_logo_big"></div>
+    </div>
+    <div class="W_nologin_main main_radius_bg">
+        <div class="main_tab_line">
+            <a class="W_f22 W_Yahei cur" href="javascript:void(0);">个人注册</a>
+            <%--<span class="vline">|</span>--%>
+            <%--<a class="W_f22 W_Yahei" href="http://e.weibo.com/register/register">官方注册</a>--%>
+>>>>>>> 1ae445c98c2c696c64d8fbe3f738f3b6bf029f3d
         </div>
                     <fieldset class="layui-elem-field layui-field-title">
                         <legend class="text-white">注册</legend>
@@ -181,6 +203,7 @@
                 }
 
 
+<<<<<<< HEAD
                 // 红叉
                 //图片验证码输入是否正确
                 $("#code").blur(function () {
@@ -225,6 +248,34 @@
                             }
                         }
                     })
+=======
+    // 红叉
+    //图片验证码输入是否正确
+    $("#code").blur(function () {
+        $.ajax({
+            url:"${pageContext.request.contextPath}/user/checkCode.do",
+            type:"post",
+            data:{
+                code:$("#code").val
+            },
+            dataType:"json",
+            success:function (data) {
+                if (data.status == 1) {
+                    $("#checkCode").css("display", "none");
+                } else {
+                    $("#checkPhone").css("display", "inline");
+                }
+            }
+        })
+    });
+        $("#phone").blur(function () {
+        var num = $("#phone").val();
+        if(num.length!=11){
+            $("#checkPhone").css("display","inline");
+        }else{
+            $("#checkPhone").css("display","none");
+        }
+>>>>>>> 1ae445c98c2c696c64d8fbe3f738f3b6bf029f3d
 
                 });
 

@@ -13,6 +13,16 @@ public class Publish {
     private String userId;
     private Date time;
     private User user;
+    private Expressions expressions;
+
+    public Expressions getExpressions() {
+        return expressions;
+    }
+
+    public void setExpressions(Expressions expressions) {
+        this.expressions = expressions;
+    }
+
     public User getUser() {
         return user;
     }
