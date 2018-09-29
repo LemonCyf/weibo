@@ -256,8 +256,13 @@
     });
 </script>
 <!--删除评论块-->
+<<<<<<< HEAD
+<script type="text/javascript">micro_blog@localhost [2]
+    $('.commentAll').on('click','.removeBlock',function(){
+=======
 <script type="text/javascript">
     $('.commentAll').on('click', '.removeBlock', function () {
+>>>>>>> 1ae445c98c2c696c64d8fbe3f738f3b6bf029f3d
         var oT = $(this).parents('.date-dz-right').parents('.date-dz').parents('.all-pl-con');
         if (oT.siblings('.all-pl-con').length >= 1) {
             oT.remove();

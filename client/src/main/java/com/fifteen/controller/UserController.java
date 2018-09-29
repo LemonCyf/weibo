@@ -1,6 +1,9 @@
 package com.fifteen.controller;
+<<<<<<< HEAD
+=======
 
 import com.fifteen.pojo.Fans;
+>>>>>>> 1ae445c98c2c696c64d8fbe3f738f3b6bf029f3d
 import com.fifteen.pojo.Publish;
 import com.fifteen.pojo.User;
 import com.fifteen.service.CommentService;
@@ -11,7 +14,10 @@ import com.fifteen.utils.ResponseModel;
 import com.fifteen.utils.miaodiyun.httpApiDemo.IndustrySMS;
 import com.fifteen.utils.miaodiyun.httpApiDemo.common.PhoneResponse;
 import com.google.gson.Gson;
+<<<<<<< HEAD
+=======
 import org.apache.ibatis.annotations.Param;
+>>>>>>> 1ae445c98c2c696c64d8fbe3f738f3b6bf029f3d
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -19,18 +25,18 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
-
 import javax.imageio.ImageIO;
 import javax.servlet.http.Cookie;
-import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
-import java.io.UnsupportedEncodingException;
 import java.util.Random;
+<<<<<<< HEAD
+=======
 import java.util.concurrent.ExecutionException;
+>>>>>>> 1ae445c98c2c696c64d8fbe3f738f3b6bf029f3d
 import java.util.List;
 
 
@@ -65,6 +71,15 @@ public class UserController {
 //        return "/jsp/register";
 
     }
+    @RequestMapping("/checkUser")
+    @ResponseBody
+    public ResponseModel checkUser(String phone){
+        boolean isSuccess = userService.checkUser(phone);
+        if(isSuccess){
+            return ResponseModel.createSuccess();
+        }
+        return ResponseModel.createError("该手机号已被注册");
+    }
 
 
     @RequestMapping("/getPhoneCode")
@@ -88,7 +103,6 @@ public class UserController {
     @RequestMapping("/checkCode")
     @ResponseBody
     public ResponseModel checkCode(String code,HttpSession session) {
-        System.out.println(11111111);
         String sessionCode = (String) session.getAttribute("code");
         if(sessionCode.equals(code)){
             return ResponseModel.createSuccess();

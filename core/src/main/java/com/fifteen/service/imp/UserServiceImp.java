@@ -1,5 +1,4 @@
 package com.fifteen.service.imp;
-
 import com.fifteen.dao.UserDao;
 import com.fifteen.pojo.User;
 import com.fifteen.service.UserService;
@@ -7,7 +6,6 @@ import com.fifteen.utils.Utils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.UUID;
 
 @Service
 public class UserServiceImp implements UserService {
@@ -26,8 +24,12 @@ public class UserServiceImp implements UserService {
         boolean isSuccess = false;
         User user = userDao.login(phone, password);
         if(user == null){
+<<<<<<< HEAD
+            user = new User(Utils.getUUID(),phone,password,"","","","","",null,"","","","","","","","","","","","");
+=======
             user = new User(Utils.getUUID(),phone,password,"",null,"","","",null,"","","","","","","","","","");
             user = new User("1231241r13r12",phone,password,"1471@qq.com",null,"","","",null,"","","","","","","","","","");
+>>>>>>> 1ae445c98c2c696c64d8fbe3f738f3b6bf029f3d
             int count= userDao.add(user);
             if(count > 0){
                 isSuccess = true;
@@ -39,10 +41,13 @@ public class UserServiceImp implements UserService {
     }
 
     @Override
+<<<<<<< HEAD
+=======
     public User findUser(String userId) {
         return userDao.findUser(userId);
     }
 
+>>>>>>> 1ae445c98c2c696c64d8fbe3f738f3b6bf029f3d
     public User selectByPhone(String phone) {
         User user = userDao.selectByPhone(phone);
         return user;
@@ -56,7 +61,27 @@ public class UserServiceImp implements UserService {
             isSuccess = true;
         }
         return isSuccess;
+<<<<<<< HEAD
+
+    }
+
+    @Override
+    public User goToPersonalHome(String userId) {
+        return null;
+    }
+
+    @Override
+    public boolean checkUser(String phone) {
+        boolean isSuccess = false;
+        User user = userDao.selectByPhone(phone);
+        if(user == null){
+            isSuccess = true;
+        }
+        return isSuccess;
+    }
+=======
     }
 
 
+>>>>>>> 1ae445c98c2c696c64d8fbe3f738f3b6bf029f3d
 }
