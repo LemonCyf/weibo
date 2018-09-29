@@ -20,7 +20,7 @@
         <result property="userId" column="userId"/>
         <result property="time" column="time"/>
         <association property="user" javaType="com.fifteen.pojo.User">
-            <id property="u_userId" column="u_userId"/>
+            <id property="userId" column="userId"/>
             <result property="phone" column="phone"/>
             <result property="password" column="password"/>
             <result property="mailbox" column="mailbox"/>

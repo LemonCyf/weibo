@@ -19,7 +19,7 @@ public class PublishServiceImp implements PublishService {
     }
 
     @Override
-    public Publish findPublishDetails(String publish_content_id) {
+    public Publish findPublishDetails(Integer publish_content_id) {
         return publishDao.findPublishDetails(publish_content_id);
     }
 

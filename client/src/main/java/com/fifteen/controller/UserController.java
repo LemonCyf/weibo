@@ -3,6 +3,7 @@ package com.fifteen.controller;
 import com.fifteen.pojo.Fans;
 import com.fifteen.pojo.Publish;
 import com.fifteen.pojo.User;
+import com.fifteen.service.CommentService;
 import com.fifteen.service.FansService;
 import com.fifteen.service.PublishService;
 import com.fifteen.service.UserService;
@@ -45,6 +46,9 @@ public class UserController {
 
     @Autowired
     private FansService fansService;
+
+    @Autowired
+    private CommentService commentService;
 
     @RequestMapping("/register")
     @ResponseBody
@@ -192,7 +196,9 @@ public class UserController {
     }
 
     @RequestMapping("/goToPersonalHome")
-    public String goToPersonalHome(@RequestParam(value = "userId",required = false)String userId, Model model){
+    public String goToPersonalHome(@RequestParam(value = "userId",required = false)String userId,
+                                   @RequestParam(value = "publish_content_id",required = false)Integer publish_content_id,
+                                   Model model){
         List<Publish> publishes= publishService.findAllPublish(userId);
         User personal=userService.findUser(userId);
         int fans=fansService.findFans(userId);

@@ -19,7 +19,6 @@
     <link rel="stylesheet" href="${pageContext.request.contextPath}/layui/css/layui.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/register/register.css">
 </head>
-<<<<<<< HEAD
 
 <body style="background-image: url(${pageContext.request.contextPath}/images/register/img/login-bg2.jpg);">
 <jsp:include page="head.jsp"/>
@@ -27,10 +26,9 @@
     <div class="layui-clear main" id="layui-clear">
         <div class="layui-logo">
             <a href="#" target="_blank"><img src="${pageContext.request.contextPath}/images/register/img/logo.png"/></a>
-=======
 <body class="B_register B_reg_tel ">
 <script type="text/javascript">
-、    $CONFIG.key = 'BD325CE52FC6BA090AC0C7A2039236587F99C30FA518F601F2AD33019514EE5A4340A964853E1BDF5374AB4AC22F5CFF3288E5DB94E6752B4999972DF4E23DACACAE4E4DCFB6CBAE256F1B19C4BA892D54C7A3E068F93AB47EC50635556FC223F02CB1F520631E2F03E5509B6C1E24DFB7962BCD6DC74159BF0E5AFC03D9A00D';
+    $CONFIG.key = 'BD325CE52FC6BA090AC0C7A2039236587F99C30FA518F601F2AD33019514EE5A4340A964853E1BDF5374AB4AC22F5CFF3288E5DB94E6752B4999972DF4E23DACACAE4E4DCFB6CBAE256F1B19C4BA892D54C7A3E068F93AB47EC50635556FC223F02CB1F520631E2F03E5509B6C1E24DFB7962BCD6DC74159BF0E5AFC03D9A00D';
     $CONFIG.key_plus = '10001';
     $CONFIG.province = '35';
     $CONFIG.city = '2';
@@ -47,7 +45,6 @@
             <a class="W_f22 W_Yahei cur" href="javascript:void(0);">个人注册</a>
             <%--<span class="vline">|</span>--%>
             <%--<a class="W_f22 W_Yahei" href="http://e.weibo.com/register/register">官方注册</a>--%>
->>>>>>> 93d6740ad6ed106efff0ff2228a43686d8d1bfe0
         </div>
         <fieldset class="layui-elem-field layui-field-title">
             <legend class="text-white">注册</legend>

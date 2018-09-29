@@ -12,6 +12,33 @@ public class Comment {
     private Integer publish_content_id;
     private String userId;
     private Date time;
+    private User user;
+    private Publish publish;
+    private Expressions expressions;
+    public Publish getPublish() {
+        return publish;
+    }
+
+    public void setPublish(Publish publish) {
+        this.publish = publish;
+    }
+
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
+
+    public Expressions getExpression() {
+        return expressions;
+    }
+
+    public void setExpression(Expressions expressions) {
+        this.expressions = expressions;
+    }
 
     public Comment() {
     }
