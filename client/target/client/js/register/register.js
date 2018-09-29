@@ -1,6 +1,6 @@
 ;
 ! function() {
-	var layer = layui.layer,
+	    var layer = layui.layer,
 		form = layui.form;
 
 	// 当勾选不同意协议按钮后禁止注册

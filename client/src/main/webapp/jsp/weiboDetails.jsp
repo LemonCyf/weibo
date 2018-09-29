@@ -220,7 +220,7 @@
     });
 </script>
 <!--删除评论块-->
-<script type="text/javascript">
+<script type="text/javascript">micro_blog@localhost [2]
     $('.commentAll').on('click','.removeBlock',function(){
         var oT = $(this).parents('.date-dz-right').parents('.date-dz').parents('.all-pl-con');
         if(oT.siblings('.all-pl-con').length >= 1){

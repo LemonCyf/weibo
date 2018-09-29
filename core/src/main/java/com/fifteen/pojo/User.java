@@ -20,11 +20,13 @@ public class User {
         private String domain_name;
         private String ID;
         private String head;
+        private String code;
+        private String how_to_find_me;
 
     public User() {
     }
 
-    public User(String userId, String phone, String password, String mailbox, String location, String nickname, String orientation, String sex, String emotional_state, String birthday, String blood_type, String brieflntroduction, String blog_address, String MSN, String qq, String receiptlnformation, String domain_name, String ID, String head) {
+    public User(String userId, String phone, String password, String mailbox, String location, String nickname, String orientation, String sex, String emotional_state, String birthday, String blood_type, String brieflntroduction, String blog_address, String MSN, String qq, String receiptlnformation, String domain_name, String ID, String head, String code, String how_to_find_me) {
         this.userId = userId;
         this.phone = phone;
         this.password = password;
@@ -44,6 +46,8 @@ public class User {
         this.domain_name = domain_name;
         this.ID = ID;
         this.head = head;
+        this.code = code;
+        this.how_to_find_me = how_to_find_me;
     }
 
     public String getUserId() {
@@ -198,6 +202,22 @@ public class User {
         this.head = head;
     }
 
+    public String getCode() {
+        return code;
+    }
+
+    public void setCode(String code) {
+        this.code = code;
+    }
+
+    public String getHow_to_find_me() {
+        return how_to_find_me;
+    }
+
+    public void setHow_to_find_me(String how_to_find_me) {
+        this.how_to_find_me = how_to_find_me;
+    }
+
     @Override
     public String toString() {
         return "User{" +
@@ -220,6 +240,8 @@ public class User {
                 ", domain_name='" + domain_name + '\'' +
                 ", ID='" + ID + '\'' +
                 ", head='" + head + '\'' +
+                ", code='" + code + '\'' +
+                ", how_to_find_me='" + how_to_find_me + '\'' +
                 '}';
     }
 }
