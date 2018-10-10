@@ -28,4 +28,10 @@ public class PublishServiceImp implements PublishService {
         return publishDao.findAllPublish(userId);
     }
 
+    @Override
+    public int countOfLike(Integer publish_content_id) {
+        return publishDao.countOfLike(publish_content_id);
+    }
+
+
 }

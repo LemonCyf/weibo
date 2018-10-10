@@ -10,6 +10,6 @@
         <id property="newsAddress" column="newsAddress"/>
     </resultMap>
     <select id="findNewsList" resultType="com.fifteen.pojo.News">
-        SELECT * FROM news ORDER BY `TIME` DESC
+        SELECT * FROM news ORDER BY `time` DESC
     </select>
 </mapper>

@@ -57,16 +57,65 @@
 
     </div>
 </div>
+<div class="lmlblog-post-bar">
+    <li class="lmlblog-no-like lmlblog-no" onclick='lmlblog_like_posts(4174,this,"post");'>
+        <i class="lmlblog-icon"><img src="../images/agree.png"></i>
+        <span>${likeCount}</span>
+    </li>
 
+    <li class="lmlblog-no-comment lmlblog-no" onclick='list_comments_show();'>
+        <i class="lmlblog-icon"><img src="../images/comment.png"></i>
+        <span>${commentCount}</span>
+    </li>
+    <li id="lmlblog-forward" class="lmlblog-no-forward lmlblog-no">
+        <i class="lmlblog-icon"><img src="../images/toSend.png"></i>
+        <span>9.4k</span>
+    </li>
+    <li class="tag clear">
+</div>
+<script>
+    window.onload = function () {
+        var forward = document.getElementById("lmlblog-forward");
+        var modal = document.getElementById("modal");
+        var close = document.getElementById("close");
+        forward.onclick = function () {
+            var user = "a" + "${user}";
+            if (user == "a") {
+                alert("登录之后才可以转发哦！");
+                location.href = '/jsp/login.jsp';
+            } else {
+                modal.style.display = "block";
+                close.onclick = function (ev) {
+                    modal.style.display = "none";
+                }
+                function addForward() {
+                    document.getElementById("submit").submit();
+                }
+            }
+        }
+    }
+</script>
+<form action="${pageContext.request.contextPath}/publish/forwardPublish.do" method="post">
+    <div id="modal"
+         style="width: 600px;height: 180px; position: absolute;background-color: whitesmoke;left: 0px;display: none;border: 1px solid #c4c4c4;border-radius: 20px;left:600px;top: 30%;">
+        <p style="font-size: 20px;padding:5px">微博转发</p>
+        <input type="hidden" name="publish_content_id" value="${details.publish_content_id }">
+        <input type="hidden" name="forId" value="${sessionScope.user.userId}">
+        <div class="modal-body" style="margin-left:50px;margin-top:5px;margin-bottom:5px">
+            <textarea type="text" placeholder="请输入转发理由" id="text" name="text"></textarea>
+        </div>
+        <button id="close" style="float: right;width:100px;height:30px;font-size:20px;margin-left:20px;margin-right: 10px;">关闭</button>
+        <button id="submit" style="float: right;width:100px;height:30px;font-size:20px" onclick="addForward()" >转发</button>
+    </div>
+</form>
 <hr>
 <!--
     此评论textarea文本框部分使用的https://github.com/alexdunphy/flexText此插件
 -->
-<div class="commentAll">
+<div class="commentAll" style="display: none" id="commentList">
     <!--评论区域 begin-->
     <div class="reviewArea clearfix">
         <div class="flex-text-wrap">
-            <pre class="pre"><span></span><br></pre>
             <textarea class="content comment-input" placeholder="评论不能超过150字哦~~~~~~~~~"
                       onkeyup="keyUP(this)"></textarea></div>
         <a href="javascript:;" class="plBtn">评论</a>
@@ -129,6 +178,14 @@
             $(t).val($(t).val().substring(0, 140));
         }
     }
+</script>
+<script>
+    //动态列表点击显示评论列表
+    function list_comments_show() {
+        var commentList = document.getElementById("commentList");
+        commentList.style.display = 'block';
+    }
+
 </script>
 <!--点击评论创建评论条-->
 <script type="text/javascript">
@@ -256,19 +313,22 @@
     });
 </script>
 <!--删除评论块-->
-<script type="text/javascript">
-    $('.commentAll').on('click', '.removeBlock', function () {
-        var oT = $(this).parents('.date-dz-right').parents('.date-dz').parents('.all-pl-con');
-        if (oT.siblings('.all-pl-con').length >= 1) {
-            oT.remove();
-        } else {
-            $(this).parents('.date-dz-right').parents('.date-dz').parents('.all-pl-con').parents('.hf-list-con').css('display', 'none')
-            oT.remove();
-        }
-        $(this).parents('.date-dz-right').parents('.date-dz').parents('.comment-show-con-list').parents('.comment-show-con').remove();
+<%--<script type="text/javascript">--%>
+    <%--$('.commentAll').on('click', '.removeBlock', function () {--%>
+        <%--$('.commentAll').on('click', '.removeBlock', function () {--%>
+            <%--var oT = $(this).parents('.date-dz-right').parents('.date-dz').parents('.all-pl-con');--%>
+            <%--if (oT.siblings('.all-pl-con').length >= 1) {--%>
+                <%--oT.remove();--%>
+            <%--} else {--%>
+                <%--$(this).parents('.date-dz-right').parents('.date-dz').parents('.all-pl-con').parents('.hf-list-con').css('display', 'none')--%>
+                <%--oT.remove();--%>
+            <%--}--%>
+            <%--$(this).parents('.date-dz-right').parents('.date-dz').parents('.comment-show-con-list').parents('.comment-show-con').remove();--%>
 
-    })
-</script>
+        <%--})--%>
+    <%--}--%>
+    <%----%>
+<%--</script>--%>
 <!--点赞-->
 <script type="text/javascript">
     $('.comment-show').on('click', '.date-dz-z', function () {

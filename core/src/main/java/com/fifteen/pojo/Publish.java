@@ -12,6 +12,7 @@ public class Publish {
     private String phone;
     private String userId;
     private Date time;
+    private Integer count;
     private User user;
     private Expressions expressions;
 
@@ -34,7 +35,7 @@ public class Publish {
     public Publish() {
     }
 
-    public Publish(Integer publish_content_id, String text, Integer expression_id, String picture, String phone, String userId, Date time) {
+    public Publish(Integer publish_content_id, String text, Integer expression_id, String picture, String phone, String userId, Date time, Integer count) {
         this.publish_content_id = publish_content_id;
         this.text = text;
         this.expression_id = expression_id;
@@ -42,7 +43,9 @@ public class Publish {
         this.phone = phone;
         this.userId = userId;
         this.time = time;
+        this.count = count;
     }
+
 
     public Integer getPublish_content_id() {
         return publish_content_id;
@@ -100,16 +103,27 @@ public class Publish {
         this.time = time;
     }
 
+    public Integer getCount() {
+        return count;
+    }
+
+    public void setCount(Integer count) {
+        this.count = count;
+    }
+
     @Override
     public String toString() {
         return "Publish{" +
                 "publish_content_id=" + publish_content_id +
                 ", text='" + text + '\'' +
                 ", expression_id=" + expression_id +
-                ", picture=" + picture +
-                ", phone=" + phone +
+                ", picture='" + picture + '\'' +
+                ", phone='" + phone + '\'' +
                 ", userId='" + userId + '\'' +
                 ", time=" + time +
+                ", count=" + count +
+                ", user=" + user +
+                ", expressions=" + expressions +
                 '}';
     }
 }

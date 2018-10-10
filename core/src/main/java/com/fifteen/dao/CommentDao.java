@@ -9,4 +9,6 @@ public interface CommentDao {
 
     void addNewComment(Comment comment);
 
+    int countOfComment(Integer publish_content_id);
+
 }

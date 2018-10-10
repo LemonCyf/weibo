@@ -170,7 +170,7 @@
                                     $(function(){
                                         setTimeout(function(){
                                             window.location.href='${pageContext.request.contextPath}/jsp/login.jsp';
-                                        },3000);//5秒后返回首页
+                                        },3000);//3秒后返回首页
                                         after();
                                     })
                                      //自动刷新页面上的时间
@@ -181,8 +181,6 @@
                                             after();
                                         },1000);
                                     }
-
-                                   // window.location.href = "${pageContext.request.contextPath}/jsp/login.jsp";
                                 }
                             }
                         )
@@ -203,7 +201,6 @@
                 }
 
 
-<<<<<<< HEAD
                 // 红叉
                 //图片验证码输入是否正确
                 $("#code").blur(function () {
@@ -248,34 +245,6 @@
                             }
                         }
                     })
-=======
-    // 红叉
-    //图片验证码输入是否正确
-    $("#code").blur(function () {
-        $.ajax({
-            url:"${pageContext.request.contextPath}/user/checkCode.do",
-            type:"post",
-            data:{
-                code:$("#code").val
-            },
-            dataType:"json",
-            success:function (data) {
-                if (data.status == 1) {
-                    $("#checkCode").css("display", "none");
-                } else {
-                    $("#checkPhone").css("display", "inline");
-                }
-            }
-        })
-    });
-        $("#phone").blur(function () {
-        var num = $("#phone").val();
-        if(num.length!=11){
-            $("#checkPhone").css("display","inline");
-        }else{
-            $("#checkPhone").css("display","none");
-        }
->>>>>>> 1ae445c98c2c696c64d8fbe3f738f3b6bf029f3d
 
                 });
 

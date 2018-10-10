@@ -10,6 +10,7 @@
         <result property="phone" column="phone"/>
         <result property="userId" column="userId"/>
         <result property="time" column="time"/>
+        <result property="count" column="count"/>
     </resultMap>
     <resultMap id="userPublishMap" type="com.fifteen.pojo.Publish">
         <id property="publish_content_id" column="publish_content_id"/>
@@ -19,6 +20,7 @@
         <result property="phone" column="phone"/>
         <result property="userId" column="userId"/>
         <result property="time" column="time"/>
+        <result property="count" column="count"/>
         <association property="user" javaType="com.fifteen.pojo.User">
             <id property="userId" column="userId"/>
             <result property="phone" column="phone"/>
@@ -42,12 +44,15 @@
         </association>
     </resultMap>
     <select id="findPublish" resultMap="userPublishMap">
-        SELECT  * FROM publish join user on publish.`userId`=user.`userId` order by time desc
+        SELECT * FROM publish join user on publish.`userId`=user.`userId` order by time desc
     </select>
     <select id="findPublishDetails" resultMap="userPublishMap">
         select * from publish join user on publish.`userId`=user.`userId` where publish_content_id=#{publish_content_id}
     </select>
     <select id="findAllPublish" resultType="com.fifteen.pojo.Publish">
         select * from publish where userId=#{userId}
+    </select>
+    <select id="countOfLike" resultType="java.lang.Integer">
+        select count from publish where publish_content_id=#{publish_content_id}
     </select>
 </mapper>

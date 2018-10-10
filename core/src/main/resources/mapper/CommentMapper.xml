@@ -82,5 +82,8 @@
          AND c.`expression_id`=e.`expressionId`
          AND c.`publish_content_id`=#{publish_content_id};
     </select>
+    <select id="countOfComment" resultType="java.lang.Integer">
+        SELECT COUNT(*) FROM publish AS p JOIN comment AS c ON p.`publish_content_id`=c.`publish_content_id` WHERE p.`publish_content_id`=#{publish_content_id};
+    </select>
 
 </mapper>

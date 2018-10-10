@@ -18,6 +18,10 @@ public class CommentServiceImp implements CommentService {
         return commentDao.findAllComments(publish_content_id);
     }
 
+    @Override
+    public int countOfComment(Integer publish_content_id) {
+        return commentDao.countOfComment(publish_content_id);
+    }
 
 
     @Override

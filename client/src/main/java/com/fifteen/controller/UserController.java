@@ -1,9 +1,5 @@
 package com.fifteen.controller;
-<<<<<<< HEAD
-=======
-
 import com.fifteen.pojo.Fans;
->>>>>>> 1ae445c98c2c696c64d8fbe3f738f3b6bf029f3d
 import com.fifteen.pojo.Publish;
 import com.fifteen.pojo.User;
 import com.fifteen.service.CommentService;
@@ -14,10 +10,7 @@ import com.fifteen.utils.ResponseModel;
 import com.fifteen.utils.miaodiyun.httpApiDemo.IndustrySMS;
 import com.fifteen.utils.miaodiyun.httpApiDemo.common.PhoneResponse;
 import com.google.gson.Gson;
-<<<<<<< HEAD
-=======
 import org.apache.ibatis.annotations.Param;
->>>>>>> 1ae445c98c2c696c64d8fbe3f738f3b6bf029f3d
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -32,12 +25,12 @@ import javax.servlet.http.HttpSession;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
+import java.util.Arrays;
 import java.util.Random;
-<<<<<<< HEAD
-=======
 import java.util.concurrent.ExecutionException;
->>>>>>> 1ae445c98c2c696c64d8fbe3f738f3b6bf029f3d
 import java.util.List;
+
+import static java.util.Arrays.asList;
 
 
 @Controller
@@ -211,17 +204,54 @@ public class UserController {
 
     @RequestMapping("/goToPersonalHome")
     public String goToPersonalHome(@RequestParam(value = "userId",required = false)String userId,
-                                   @RequestParam(value = "publish_content_id",required = false)Integer publish_content_id,
-                                   Model model){
+                                   Model model,HttpSession session){
         List<Publish> publishes= publishService.findAllPublish(userId);
         User personal=userService.findUser(userId);
         int fans=fansService.findFans(userId);
         int attention=fansService.findAttention(userId);
+        List<Fans> fans1 = fansService.findIsAttention(userId);
+        String f=null;
+        if(fans1!=null) {
+            for (int i = 0; i < fans1.size(); i++) {
+                String user_Id = fans1.get(i).getFansId();
+                String fan = String.valueOf(session.getAttribute("user"));
+                if(fan!="null") {
+                    String[] arr = fan.split("'");
+                    List list = asList(arr);
+                    String fans_Id = (String) list.get(1);
+                    System.out.println(fans_Id);
+                    if (user_Id.equals(fans_Id)) {
+                        f = "isAttention";
+                    } else {
+                        f = null;
+                    }
+                }
+            }
+        }
         model.addAttribute("personal",personal);
         model.addAttribute("publishes",publishes);
         model.addAttribute("fans",fans);
         model.addAttribute("attention",attention);
+        model.addAttribute("fan",f);
         return "/jsp/gr_index";
     }
+
+    @RequestMapping("/addAttention")
+    public String addAttention(@RequestParam(value ="userId",required = false)String userId,
+                               @RequestParam(value ="fansId",required = false)String fansId){
+        Fans fans=new Fans();
+        fans.setUserId(userId);
+        fans.setFansId(fansId);
+        fansService.addAttention(fans);
+        return "redirect:/user/goToPersonalHome.do?userId="+userId;
+    }
+
+    @RequestMapping("/deleteAttention")
+    public String deleteAttention(@RequestParam(value ="userId",required = false)String userId,
+                               @RequestParam(value ="fansId",required = false)String fansId){
+        fansService.deleteAttention(userId,fansId);
+        return "redirect:/user/goToPersonalHome.do?userId="+userId;
+    }
+
 
 }

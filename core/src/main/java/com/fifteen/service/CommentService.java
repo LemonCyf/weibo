@@ -10,4 +10,6 @@ public interface CommentService {
 
     List<Comment> findAllComments(Integer publish_content_id);
 
+    int countOfComment(Integer publish_content_id);
+
 }

@@ -6,10 +6,29 @@
         <id property="userId" column="userId"/>
         <id property="fansId" column="fansId"/>
     </resultMap>
+    <insert id="addAttention">
+        insert into fans
+        <trim prefix="(" suffix=")" prefixOverrides=",">
+            <if test="userId!=null">userId,</if>
+            <if test="fansId!=null">fansId</if>
+        </trim>
+        VALUES
+        <trim prefix="(" suffix=")" prefixOverrides=",">
+            <if test="userId!=null">#{userId},</if>
+            <if test="fansId!=null">#{fansId}</if>
+        </trim>
+    </insert>
+    <delete id="deleteAttention">
+       delete from fans where userId=#{userId} and fansId=#{fansId}
+    </delete>
     <select id="findFans" resultType="java.lang.Integer">
         SELECT COUNT(fansId) FROM fans WHERE userId=#{userId}
     </select>
     <select id="findAttention" resultType="java.lang.Integer">
         SELECT COUNT(userId) FROM fans WHERE fansId=#{userId}
     </select>
+    <select id="findIsAttention" resultType="com.fifteen.pojo.Fans">
+        SELECT fansId FROM fans WHERE userId=#{userId}
+    </select>
+
 </mapper>

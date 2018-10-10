@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.fifteen.dao.ForwardDao">
+    <resultMap id="ForwardMao" type="com.fifteen.pojo.Forward">
+        <id property="forward_id" column="forward_id"/>
+        <id property="text" column="text"/>
+        <id property="publish_content_id" column="publish_content_id"/>
+        <id property="forId" column="forId"/>
+        <id property="time" column="time"/>
+    </resultMap>
+    <insert id="forward">
+        insert into forward
+        <trim prefix="(" suffix=")" prefixOverrides=",">
+            <if test="forward_id!=null">forward_id,</if>
+            <if test="text!=null">text,</if>
+            <if test="publish_content_id!=null">publish_content_id,</if>
+            <if test="forId!=null">forId,</if>
+            <if test="time!=null">time</if>
+        </trim>
+        values
+        <trim prefix="(" suffix=")" prefixOverrides=",">
+            <if test="forward_id!=null">#{forward_id},</if>
+            <if test="text!=null">#{text},</if>
+            <if test="publish_content_id!=null">#{publish_content_id},</if>
+            <if test="forId!=null">#{forId},</if>
+            <if test="time!=null">#{time}</if>
+        </trim>
+    </insert>
+</mapper>

@@ -1,3 +1,5 @@
+<%@ page import="com.fifteen.pojo.User" %>
+<%@ page import="java.util.List" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8" isELIgnored="false" %>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
@@ -49,11 +51,19 @@
                         <span class="lmlblog-mark lmlblog-boy"><i class="fa fa-mars"></i></span>
                     </c:if>
                     <div class="lmlblog-member-desc">${personal.brieflntroduction}</div>
-                    <div class="lmlblog-member-follow-info">
-                        <a href="#" target="_blank" rel="nofollow"><span
-                                class="follow no opacity"><i class="lmlblog-icon"></i>+ 关注</span></a>
-                        <span class="opacity"><i class="lmlblog-icon">&#xe612;</i> 私聊</span>
-                    </div>
+                    <c:if test="${sessionScope.user.userId==personal.userId}"></c:if>
+                    <c:if test="${sessionScope.user.userId!=personal.userId}">
+                        <div class="lmlblog-member-follow-info" id="attention">
+                            <c:if test="${empty fan}">
+                                <a id="addAttention" target="_blank" rel="nofollow">
+                                    <span class="follow no opacity"><i class="lmlblog-icon"></i>+ 关注</span></a></c:if>
+                            <c:if test="${not empty fan}">
+                                <a id="deleteAttention" target="_blank" rel="nofollow">
+                                    <span style="background-color: #7b8894;border: 1px solid #7b8894"><i
+                                            class="lmlblog-icon"></i>已关注</span></a></c:if>
+                            <span class="opacity"><i class="lmlblog-icon">&#xe612;</i> 私聊</span>
+                        </div>
+                    </c:if>
                 </div>
                 <div class="lmlblog-member-menu clear">
                     <li id="li_home" style="background-color: #f1f1f1" onclick="toHome()">主页</li>
@@ -91,15 +101,14 @@
                                             <!-- 动态内容部分，包括列表 -->
                                             <div class="lmlblog-post-user-info">
                                                 <div class="lmlblog-post-user-info-avatar" user-data="1">
-                                                    <span class="lmlblog-vip-icon"></span><img
-                                                        src="${personal.head}"
-                                                        class="avatar"/>
-                                                    <%--<div class="lmlblog-user-info-card">--%>
+                                                    <span class="lmlblog-vip-icon"></span>
+                                                    <img src="${personal.head}" class="avatar"/>
+                                                        <%--<div class="lmlblog-user-info-card">--%>
                                                         <%--<div class="info_card_loading"><img--%>
-                                                                <%--src="../picture/chat-loading.gif">--%>
-                                                            <%--<p>资料加载中...</p>--%>
+                                                        <%--src="../picture/chat-loading.gif">--%>
+                                                        <%--<p>资料加载中...</p>--%>
                                                         <%--</div>--%>
-                                                    <%--</div>--%>
+                                                        <%--</div>--%>
                                                 </div>
                                                 <div class="lmlblog-post-user-info-name">
                                                     <font style="color:#333;font-weight:600">${personal.nickname}</font>
@@ -108,49 +117,29 @@
                                                      title="${publish.time}">${publish.time}
                                                 </div>
                                             </div><!-- 作者信息 -->
-                                            <div class="lmlblog-post-setting">
-                                                <i class="fa fa-angle-down"></i>
-                                                <div class="lmlblog-post-setting-box">
-                                                    <ul>
-                                                        <a href="#4174.html" title="查看全文">
-                                                            <li>查看全文</li>
-                                                        </a>
-                                                        <a href="#1" title="访问主页">
-                                                            <li>访问主页</li>
-                                                        </a>
-                                                    </ul>
-                                                </div>
-                                            </div>
+                                                <%--<div class="lmlblog-post-setting">--%>
+                                                <%--<i class="fa fa-angle-down"></i>--%>
+                                                <%--<div class="lmlblog-post-setting-box">--%>
+                                                <%--<ul>--%>
+                                                <%--<a href="#4174.html" title="查看全文">--%>
+                                                <%--<li>查看全文</li>--%>
+                                                <%--</a>--%>
+                                                <%--<a href="#1" title="访问主页">--%>
+                                                <%--<li>访问主页</li>--%>
+                                                <%--</a>--%>
+                                                <%--</ul>--%>
+                                                <%--</div>--%>
+                                                <%--</div>--%>
                                             <div class="lmlblog-post-content ">
 
-                                                <a class="post_list_link" href="#4174.html" style="color: black;">
+                                                <a class="post_list_link"
+                                                   href="${pageContext.request.contextPath}/publish/publishDetails.do?publish_content_id=${publish.publish_content_id}"
+                                                   style="color: black;">
                                                     <p>${publish.text}</p>
                                                 </a>
                                             </div>
                                             <div class="lmlblog-post-images-list clear">
                                                 <img src="${publish.picture}"/>
-                                            </div>
-                                            <div class="lmlblog-post-bar">
-
-                                                <li class="lmlblog-no-like"
-                                                    onclick='lmlblog_like_posts(4174,this,"post");'>
-                                                    <i class="lmlblog-icon"><img src="../images/agree.png"></i>
-                                                    <span>5</span>
-                                                </li>
-
-
-                                                <li onclick='list_comments_show(this);'>
-                                                    <i class="lmlblog-icon"><img src="../images/comment.png"></i>
-                                                    <span>2</span>
-                                                </li>
-
-                                                <li>
-                                                    <i class="lmlblog-icon"><img src="../images/toSend.png"></i>
-                                                    <span>9.4k</span>
-                                                </li>
-
-                                                <li class="tag clear">
-
                                             </div>
                                             <hr>
                                         </div>
@@ -163,12 +152,12 @@
                                                     <span class="lmlblog-vip-icon"></span><img
                                                         src="${personal.head}"
                                                         class="avatar"/>
-                                                    <%--<div class="lmlblog-user-info-card">--%>
+                                                        <%--<div class="lmlblog-user-info-card">--%>
                                                         <%--<div class="info_card_loading"><img--%>
-                                                                <%--src="../picture/chat-loading.gif">--%>
-                                                            <%--<p>资料加载中...</p>--%>
+                                                        <%--src="../picture/chat-loading.gif">--%>
+                                                        <%--<p>资料加载中...</p>--%>
                                                         <%--</div>--%>
-                                                    <%--</div>--%>
+                                                        <%--</div>--%>
                                                 </div>
 
                                                 <div class="lmlblog-post-user-info-name">
@@ -179,51 +168,77 @@
                                                 </div>
                                             </div><!-- 作者信息 -->
 
-                                            <div class="lmlblog-post-setting">
-                                                <i class="fa fa-angle-down"></i>
-                                                <div class="lmlblog-post-setting-box">
-                                                    <ul>
-                                                        <a href="#4174.html" title="查看全文">
-                                                            <li>查看全文</li>
-                                                        </a>
-                                                        <a href="#1" title="访问主页">
-                                                            <li>访问主页</li>
-                                                        </a>
-                                                    </ul>
-                                                </div>
-                                            </div>
+                                                <%--<div class="lmlblog-post-setting">--%>
+                                                <%--<i class="fa fa-angle-down"></i>--%>
+                                                <%--<div class="lmlblog-post-setting-box">--%>
+                                                <%--<ul>--%>
+                                                <%--<a href="#4174.html" title="查看全文">--%>
+                                                <%--<li>查看全文</li>--%>
+                                                <%--</a>--%>
+                                                <%--<a href="#1" title="访问主页">--%>
+                                                <%--<li>访问主页</li>--%>
+                                                <%--</a>--%>
+                                                <%--</ul>--%>
+                                                <%--</div>--%>
+                                                <%--</div>--%>
                                             <div class="lmlblog-post-content ">
 
-                                                <a class="post_list_link" href="#4174.html" style="color: black;">
+                                                <a class="post_list_link"
+                                                   href="${pageContext.request.contextPath}/publish/publishDetails.do?publish_content_id=${publish.publish_content_id}"
+                                                   style="color: black;">
                                                     <p>${publish.text}</p>
                                                 </a>
-                                            </div>
-                                            <div class="lmlblog-post-bar">
-
-                                                <li class="lmlblog-no-like"
-                                                    onclick='lmlblog_like_posts(4174,this,"post");'>
-                                                    <i class="lmlblog-icon"><img src="../images/agree.png"></i>
-                                                    <span>5</span>
-                                                </li>
-
-
-                                                <li onclick='list_comments_show(this);'>
-                                                    <i class="lmlblog-icon"><img src="../images/comment.png"></i>
-                                                    <span>2</span>
-                                                </li>
-
-                                                <li>
-                                                    <i class="lmlblog-icon"><img src="../images/toSend.png"></i>
-                                                    <span>9.4k</span>
-                                                </li>
-
-                                                <li class="tag clear">
-
                                             </div>
                                             <hr>
                                         </div>
                                     </c:if>
                                 </c:forEach>
+                                <div class="lmlblog">
+                                    <!-- 动态内容部分，包括列表 -->
+                                    <div class="lmlblog-post-user-info">
+                                        <div class="lmlblog-post-user-info-avatar" user-data="1">
+                                            <span class="lmlblog-vip-icon"></span><img src="${personal.head}"
+                                                                                       class="avatar"/>
+                                        </div>
+
+                                        <div class="lmlblog-post-user-info-name">
+                                            <font style="color:#333;font-weight:600">${personal.nickname}</font>
+                                        </div>
+                                        <div class="lmlblog-post-user-info-time"
+                                             title="${publish.time}">${publish.time}
+                                        </div>
+                                    </div>
+                                    <div class="lmlblog-post-content ">
+                                        <a class="post_list_link"
+                                           href="${pageContext.request.contextPath}/publish/publishDetails.do?publish_content_id=${publish.publish_content_id}"
+                                           style="color: black;">
+                                            <p>${publish.text}</p>
+                                        </a>
+                                        <div style="border: 1px solid goldenrod;width: 650px;height: 112px">
+                                            <div class="lmlblog-post-user-info">
+                                                <div class="lmlblog-post-user-info-avatar" user-data="1">
+                                                    <span class="lmlblog-vip-icon"></span><img src="${personal.head}"
+                                                                                               class="avatar"/>
+                                                </div>
+
+                                                <div class="lmlblog-post-user-info-name">
+                                                    <font style="color:#333;font-weight:600">${personal.nickname}</font>
+                                                </div>
+                                                <div class="lmlblog-post-user-info-time"
+                                                     title="${publish.time}">${publish.time}
+                                                </div>
+                                            </div>
+                                            <div class="lmlblog-post-content ">
+                                                <a class="post_list_link"
+                                                   href="${pageContext.request.contextPath}/publish/publishDetails.do?publish_content_id=${publish.publish_content_id}"
+                                                   style="color: black;">
+                                                    <p>${publish.text}</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                </div>
                                 <div class="lmlblog-post-footer-bar">
                                     <span title="2017-12-09 16:00:32">12月09日 16:00</span>
                                     <!-- posts_list -->
@@ -376,5 +391,27 @@
         };
         $(".lmlblog-member-left-bg-xg").smartFloat();
     });
+</script>
+<script>
+    window.onload = function (ev) {
+        var attention = document.getElementById("addAttention");
+        attention.onclick = function () {
+            var userId = "a" + "${user.userId}";
+            if (userId == "a") {
+                alert("亲，请先登陆哦~~~");
+                attention.href = '/jsp/login.jsp';
+            } else {
+                alert("确定关注该用户?");
+                attention.href = '/user/addAttention.do?userId=${personal.userId}&&fansId=${user.userId}';
+            }
+        }
+    }
+</script>
+<script>
+    var deleteAttention = document.getElementById("deleteAttention");
+    deleteAttention.onclick = function () {
+        alert("确认取消关注该用户？")
+        deleteAttention.href = '/user/deleteAttention.do?userId=${personal.userId}&&fansId=${user.userId}';
+    }
 </script>
 </html>
