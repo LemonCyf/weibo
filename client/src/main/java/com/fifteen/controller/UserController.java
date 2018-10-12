@@ -1,13 +1,12 @@
 package com.fifteen.controller;
 import com.fifteen.pojo.Fans;
+import com.fifteen.pojo.Forward;
 import com.fifteen.pojo.Publish;
 import com.fifteen.pojo.User;
-import com.fifteen.service.CommentService;
-import com.fifteen.service.FansService;
-import com.fifteen.service.PublishService;
-import com.fifteen.service.UserService;
+import com.fifteen.service.*;
 import com.fifteen.utils.ResponseModel;
 import com.fifteen.utils.miaodiyun.httpApiDemo.IndustrySMS;
+import com.fifteen.utils.miaodiyun.httpApiDemo.common.FailList;
 import com.fifteen.utils.miaodiyun.httpApiDemo.common.PhoneResponse;
 import com.google.gson.Gson;
 import org.apache.ibatis.annotations.Param;
@@ -48,6 +47,9 @@ public class UserController {
 
     @Autowired
     private CommentService commentService;
+
+    @Autowired
+    private ForwardService forwardService;
 
     @RequestMapping("/register")
     @ResponseBody
@@ -210,6 +212,7 @@ public class UserController {
         int fans=fansService.findFans(userId);
         int attention=fansService.findAttention(userId);
         List<Fans> fans1 = fansService.findIsAttention(userId);
+        List<Publish> forwards=publishService.findAllForward(userId);
         String f=null;
         if(fans1!=null) {
             for (int i = 0; i < fans1.size(); i++) {
@@ -233,6 +236,7 @@ public class UserController {
         model.addAttribute("fans",fans);
         model.addAttribute("attention",attention);
         model.addAttribute("fan",f);
+        model.addAttribute("forward",forwards);
         return "/jsp/gr_index";
     }
 

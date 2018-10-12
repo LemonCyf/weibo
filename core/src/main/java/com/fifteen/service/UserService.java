@@ -10,5 +10,6 @@ public interface UserService {
     boolean update(String code);
     User goToPersonalHome(String userId);
 
+    void updateHead(String head,String userId);
     boolean checkUser(String phone);
 }

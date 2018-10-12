@@ -10,4 +10,6 @@ public interface UserDao {
     User selectByPhone(@Param("phone")String phone);
     int updateByPhone(String code);
     User goToPersonalHome(String userId);
+    void updateHead(@Param(value = "head")String head,@Param(value = "userId")String userId);
+
 }

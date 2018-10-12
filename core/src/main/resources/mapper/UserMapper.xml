@@ -111,4 +111,12 @@
         where phone=#{phone}
     </update>
 
+    <update id="updateHead">
+        update user
+        <set>
+        <if test="head != null">#{head}</if>
+        </set>
+        where userId = #{userId};
+    </update>
+
 </mapper>

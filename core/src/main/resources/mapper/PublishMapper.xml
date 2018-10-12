@@ -43,6 +43,44 @@
             <result property="head" column="head"/>
         </association>
     </resultMap>
+    <resultMap id="publishForwardUserMap" type="com.fifteen.pojo.Publish">
+        <id property="publish_content_id" column="publish_content_id"/>
+        <result property="text" column="text"/>
+        <result property="expression_id" column="expression_id"/>
+        <result property="picture" column="picture"/>
+        <result property="phone" column="phone"/>
+        <result property="userId" column="userId"/>
+        <result property="time" column="time"/>
+        <result property="count" column="count"/>
+        <association property="forward" javaType="com.fifteen.pojo.Forward">
+            <id property="forward_id" column="forward_id"/>
+            <id property="ftext" column="ftext"/>
+            <id property="publish_content_id" column="publish_content_id"/>
+            <id property="forId" column="forId"/>
+            <id property="ftime" column="ftime"/>
+            <association property="user" javaType="com.fifteen.pojo.User">
+                <id property="userId" column="userId"/>
+                <result property="phone" column="phone"/>
+                <result property="password" column="password"/>
+                <result property="mailbox" column="mailbox"/>
+                <result property="location" column="location"/>
+                <result property="nickname" column="nickname"/>
+                <result property="orientation" column="orientation"/>
+                <result property="sex" column="sex"/>
+                <result property="emotional_state" column="emotional_state"/>
+                <result property="birthday" column="birthday"/>
+                <result property="blood_type" column="blood_type"/>
+                <result property="brieflntroduction" column="brieflntroduction"/>
+                <result property="blog_address" column="blog_address"/>
+                <result property="MSN" column="MSN"/>
+                <result property="qq" column="qq"/>
+                <result property="receiptlnformation" column="receiptlnformation"/>
+                <result property="domain_name" column="domain_name"/>
+                <result property="ID" column="ID"/>
+                <result property="head" column="head"/>
+            </association>
+        </association>
+    </resultMap>
     <select id="findPublish" resultMap="userPublishMap">
         SELECT * FROM publish join user on publish.`userId`=user.`userId` order by time desc
     </select>
@@ -54,5 +92,12 @@
     </select>
     <select id="countOfLike" resultType="java.lang.Integer">
         select count from publish where publish_content_id=#{publish_content_id}
+    </select>
+    <select id="findAllForward" resultMap="publishForwardUserMap">
+        SELECT * FROM
+        forward AS f,`user` AS u,publish AS p
+        WHERE f.`publish_content_id`=p.`publish_content_id`
+        AND p.`userId`=u.`userId`
+        AND f.`forId`=#{userId} ORDER BY f.`ftime` DESC
     </select>
 </mapper>

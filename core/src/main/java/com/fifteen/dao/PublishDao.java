@@ -12,4 +12,7 @@ public interface PublishDao {
     List<Publish> findAllPublish(String userId);
 
     int countOfLike(Integer publish_content_id);
+
+    List<Publish> findAllForward(String userId);
+
 }

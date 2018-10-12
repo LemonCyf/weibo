@@ -6,20 +6,29 @@ import java.util.Date;
 
 public class Forward {
     private Integer forward_id;
-    private String text;
+    private String ftext;
     private Integer publish_content_id;
     private String forId;
-    private Date time;
+    private Date ftime;
+    private User user;
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
 
     public Forward() {
     }
 
-    public Forward(Integer forward_id, String text, Integer publish_content_id, String forId, Date time) {
+    public Forward(Integer forward_id, String ftext, Integer publish_content_id, String forId, Date ftime) {
         this.forward_id = forward_id;
-        this.text = text;
+        this.ftext = ftext;
         this.publish_content_id = publish_content_id;
         this.forId = forId;
-        this.time = time;
+        this.ftime = ftime;
     }
 
     public Integer getForward_id() {
@@ -30,12 +39,12 @@ public class Forward {
         this.forward_id = forward_id;
     }
 
-    public String getText() {
-        return text;
+    public String getFtext() {
+        return ftext;
     }
 
-    public void setText(String text) {
-        this.text = text;
+    public void setFtext(String ftext) {
+        this.ftext = ftext;
     }
 
     public Integer getPublish_content_id() {
@@ -54,22 +63,22 @@ public class Forward {
         this.forId = forId;
     }
 
-    public Date getTime() {
-        return time;
+    public Date getFtime() {
+        return ftime;
     }
 
-    public void setTime(Date time) {
-        this.time = time;
+    public void setFtime(Date ftime) {
+        this.ftime = ftime;
     }
 
     @Override
     public String toString() {
         return "Forward{" +
                 "forward_id=" + forward_id +
-                ", text='" + text + '\'' +
+                ", ftext='" + ftext + '\'' +
                 ", publish_content_id=" + publish_content_id +
                 ", forId='" + forId + '\'' +
-                ", time=" + time +
+                ", ftime=" + ftime +
                 '}';
     }
 }

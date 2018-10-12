@@ -15,6 +15,15 @@ public class Publish {
     private Integer count;
     private User user;
     private Expressions expressions;
+    private Forward forward;
+
+    public Forward getForward() {
+        return forward;
+    }
+
+    public void setForward(Forward forward) {
+        this.forward = forward;
+    }
 
     public Expressions getExpressions() {
         return expressions;

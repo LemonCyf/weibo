@@ -33,5 +33,10 @@ public class PublishServiceImp implements PublishService {
         return publishDao.countOfLike(publish_content_id);
     }
 
+    @Override
+    public List<Publish> findAllForward(String userId) {
+        return publishDao.findAllForward(userId);
+    }
+
 
 }

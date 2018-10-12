@@ -72,4 +72,10 @@ public class UserServiceImp implements UserService {
         return isSuccess;
     }
 
+    @Override
+    public void  updateHead(String head,String userId) {
+        userDao.updateHead(head,userId);
+
+    }
+
 }

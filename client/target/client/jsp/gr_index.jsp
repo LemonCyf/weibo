@@ -40,7 +40,8 @@
         <div class="lmlblog-member-content">
             <div class="lmlblog-member-header">
                 <div class="lmlblog-member-avatar other">
-                    <img src="${personal.head}" class="avatar"/>
+                    <img src="${personal.head}" class="avatar"
+                         onMouseDown="javascrtpt:window.location.href='${pageContext.request.contextPath}/updateHead/goToNewHead.do?userId=${sessionScope.user.userId}'"/>
                 </div>
                 <div class="lmlblog-member-username">
                     <h1>${personal.nickname}</h1>
@@ -145,100 +146,93 @@
                                         </div>
                                     </c:if>
                                     <c:if test="${empty publish.picture}">
-                                        <div class="lmlblog">
-                                            <!-- 动态内容部分，包括列表 -->
-                                            <div class="lmlblog-post-user-info">
-                                                <div class="lmlblog-post-user-info-avatar" user-data="1">
-                                                    <span class="lmlblog-vip-icon"></span><img
-                                                        src="${personal.head}"
-                                                        class="avatar"/>
-                                                        <%--<div class="lmlblog-user-info-card">--%>
-                                                        <%--<div class="info_card_loading"><img--%>
-                                                        <%--src="../picture/chat-loading.gif">--%>
-                                                        <%--<p>资料加载中...</p>--%>
-                                                        <%--</div>--%>
-                                                        <%--</div>--%>
+                                        <c:if test="${empty forward}">
+                                            <div class="lmlblog">
+                                                <!-- 动态内容部分，包括列表 -->
+                                                <div class="lmlblog-post-user-info">
+                                                    <div class="lmlblog-post-user-info-avatar" user-data="1">
+                                                        <span class="lmlblog-vip-icon"></span><img
+                                                            src="${personal.head}"
+                                                            class="avatar"/>
+                                                    </div>
+                                                    <div class="lmlblog-post-user-info-name">
+                                                        <font style="color:#333;font-weight:600">${personal.nickname}</font>
+                                                    </div>
+                                                    <div class="lmlblog-post-user-info-time"
+                                                         title="${publish.time}">${publish.time}
+                                                    </div>
                                                 </div>
-
-                                                <div class="lmlblog-post-user-info-name">
-                                                    <font style="color:#333;font-weight:600">${personal.nickname}</font>
+                                                <div class="lmlblog-post-content ">
+                                                    <a class="post_list_link"
+                                                       href="${pageContext.request.contextPath}/publish/publishDetails.do?publish_content_id=${publish.publish_content_id}"
+                                                       style="color: black;">
+                                                        <p>${publish.text}</p>
+                                                    </a>
                                                 </div>
-                                                <div class="lmlblog-post-user-info-time"
-                                                     title="${publish.time}">${publish.time}
-                                                </div>
-                                            </div><!-- 作者信息 -->
-
-                                                <%--<div class="lmlblog-post-setting">--%>
-                                                <%--<i class="fa fa-angle-down"></i>--%>
-                                                <%--<div class="lmlblog-post-setting-box">--%>
-                                                <%--<ul>--%>
-                                                <%--<a href="#4174.html" title="查看全文">--%>
-                                                <%--<li>查看全文</li>--%>
-                                                <%--</a>--%>
-                                                <%--<a href="#1" title="访问主页">--%>
-                                                <%--<li>访问主页</li>--%>
-                                                <%--</a>--%>
-                                                <%--</ul>--%>
-                                                <%--</div>--%>
-                                                <%--</div>--%>
-                                            <div class="lmlblog-post-content ">
-
-                                                <a class="post_list_link"
-                                                   href="${pageContext.request.contextPath}/publish/publishDetails.do?publish_content_id=${publish.publish_content_id}"
-                                                   style="color: black;">
-                                                    <p>${publish.text}</p>
-                                                </a>
+                                                <hr>
                                             </div>
-                                            <hr>
-                                        </div>
+                                        </c:if>
+                                        <c:if test="${not empty forward}">
+                                            <c:forEach items="${forward}" var="f">
+                                                <div class="lmlblog">
+                                                    <!-- 动态内容部分，包括列表 -->
+                                                    <div class="lmlblog-post-user-info">
+                                                        <div class="lmlblog-post-user-info-avatar" user-data="1">
+                                                            <span class="lmlblog-vip-icon"></span><img
+                                                                src="${personal.head}"
+                                                                class="avatar"  onMouseDown="javascrtpt:window.location.href='${pageContext.request.contextPath}/updateHead/goToNewHead.do?userId=${sessionScope.user.userId}'"/>
+                                                        </div>
+
+                                                        <div class="lmlblog-post-user-info-name">
+                                                            <font style="color:#333;font-weight:600">${personal.nickname}</font>
+                                                        </div>
+                                                        <div class="lmlblog-post-user-info-time"
+                                                             title="${f.forward.ftime}">${f.forward.ftime}
+                                                        </div>
+                                                    </div>
+                                                    <div class="lmlblog-post-content ">
+                                                        <a class="post_list_link"
+                                                           style="color: black;">
+                                                            <p>${f.forward.ftext}</p>
+                                                        </a>
+                                                        <div style="border: 1px solid goldenrod;width: 650px;margin-top: 10px">
+                                                            <div class="lmlblog-post-user-info">
+                                                                <div class="lmlblog-post-user-info-avatar"
+                                                                     user-data="1">
+                                                                    <span class="lmlblog-vip-icon"></span><img
+                                                                        src="${f.forward.user.head}"
+                                                                        class="avatar"/>
+                                                                </div>
+                                                                <div class="lmlblog-post-user-info-name">
+                                                                    <font style="color:#333;font-weight:600">${f.forward.user.nickname}</font>
+                                                                </div>
+                                                                <div class="lmlblog-post-user-info-time"
+                                                                     title="${f.time}">${f.time}
+                                                                </div>
+                                                            </div>
+                                                            <div class="lmlblog-post-content ">
+                                                                <a class="post_list_link"
+                                                                   href="${pageContext.request.contextPath}/publish/publishDetails.do?publish_content_id=${f.publish_content_id}"
+                                                                   style="color: black;">
+                                                                    <p>${f.text}</p>
+                                                                </a>
+                                                            </div>
+                                                            <c:if test="${not empty f.picture}">
+                                                                <div class="lmlblog-post-images-list clear">
+                                                                    <img src="${f.picture}"/>
+                                                                </div>
+                                                            </c:if>
+                                                            <c:if test="${empty f.picture}">
+                                                                <div></div>
+                                                            </c:if>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <hr>
+                                            </c:forEach>
+                                        </c:if>
                                     </c:if>
                                 </c:forEach>
-                                <div class="lmlblog">
-                                    <!-- 动态内容部分，包括列表 -->
-                                    <div class="lmlblog-post-user-info">
-                                        <div class="lmlblog-post-user-info-avatar" user-data="1">
-                                            <span class="lmlblog-vip-icon"></span><img src="${personal.head}"
-                                                                                       class="avatar"/>
-                                        </div>
-
-                                        <div class="lmlblog-post-user-info-name">
-                                            <font style="color:#333;font-weight:600">${personal.nickname}</font>
-                                        </div>
-                                        <div class="lmlblog-post-user-info-time"
-                                             title="${publish.time}">${publish.time}
-                                        </div>
-                                    </div>
-                                    <div class="lmlblog-post-content ">
-                                        <a class="post_list_link"
-                                           href="${pageContext.request.contextPath}/publish/publishDetails.do?publish_content_id=${publish.publish_content_id}"
-                                           style="color: black;">
-                                            <p>${publish.text}</p>
-                                        </a>
-                                        <div style="border: 1px solid goldenrod;width: 650px;height: 112px">
-                                            <div class="lmlblog-post-user-info">
-                                                <div class="lmlblog-post-user-info-avatar" user-data="1">
-                                                    <span class="lmlblog-vip-icon"></span><img src="${personal.head}"
-                                                                                               class="avatar"/>
-                                                </div>
-
-                                                <div class="lmlblog-post-user-info-name">
-                                                    <font style="color:#333;font-weight:600">${personal.nickname}</font>
-                                                </div>
-                                                <div class="lmlblog-post-user-info-time"
-                                                     title="${publish.time}">${publish.time}
-                                                </div>
-                                            </div>
-                                            <div class="lmlblog-post-content ">
-                                                <a class="post_list_link"
-                                                   href="${pageContext.request.contextPath}/publish/publishDetails.do?publish_content_id=${publish.publish_content_id}"
-                                                   style="color: black;">
-                                                    <p>${publish.text}</p>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <hr>
-                                </div>
                                 <div class="lmlblog-post-footer-bar">
                                     <span title="2017-12-09 16:00:32">12月09日 16:00</span>
                                     <!-- posts_list -->

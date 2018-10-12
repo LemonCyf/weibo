@@ -35,10 +35,12 @@ public class PublishController {
         List<Comment> comments=commentService.findAllComments(publish_content_id);
         int commentCount=commentService.countOfComment(publish_content_id);
         int likeCount=publishService.countOfLike(publish_content_id);
+        int forwardCount=forwardService.countOfForward(publish_content_id);
         model.addAttribute("likeCount",likeCount);
         model.addAttribute("commentCount",commentCount);
         model.addAttribute("allComments",comments);
         model.addAttribute("details",details);
+        model.addAttribute("forwardCount",forwardCount);
         return "/jsp/weiboDetails";
     }
 
@@ -47,10 +49,10 @@ public class PublishController {
                           @RequestParam(name = "publish_content_id",required = false)Integer publish_content_id,
                           @RequestParam(name = "forId",required = false)String forId){
         Forward forward=new Forward();
-        forward.setText(text);
+        forward.setFtext(text);
         forward.setPublish_content_id(publish_content_id);
         forward.setForId(forId);
-        forward.setTime(new Date());
+        forward.setFtime(new Date());
         forwardService.forward(forward);
         return "redirect:/publish/publishDetails.do?publish_content_id="+publish_content_id;
     }

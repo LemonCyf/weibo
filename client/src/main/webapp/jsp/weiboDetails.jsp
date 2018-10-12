@@ -69,7 +69,7 @@
     </li>
     <li id="lmlblog-forward" class="lmlblog-no-forward lmlblog-no">
         <i class="lmlblog-icon"><img src="../images/toSend.png"></i>
-        <span>9.4k</span>
+        <span>${forwardCount}</span>
     </li>
     <li class="tag clear">
 </div>

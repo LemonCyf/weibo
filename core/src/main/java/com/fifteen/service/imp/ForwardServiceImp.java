@@ -15,4 +15,9 @@ public class ForwardServiceImp implements ForwardService {
     public void forward(Forward forward) {
         forwardDao.forward(forward);
     }
+
+    @Override
+    public int countOfForward(Integer publish_content_id) {
+        return forwardDao.countOfForward(publish_content_id);
+    }
 }
