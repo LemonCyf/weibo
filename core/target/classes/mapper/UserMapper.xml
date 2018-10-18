@@ -25,6 +25,9 @@
         <result property="how_to_find_me" column="how_to_find_me"/>
         <result property="head" column="head"/>
     </resultMap>
+    <delete id="deleteUser">
+        delete from  user where userId=#{userId}
+    </delete>
     <select id="login" resultType="com.fifteen.pojo.User">
         select * from  user where phone=#{phone} and password=#{password};
     </select>
@@ -84,6 +87,15 @@
     <select id="selectByPhone" resultType="com.fifteen.pojo.User">
          select * from  user where phone=#{phone};
     </select>
+    <select id="adminLogin" resultType="com.fifteen.pojo.User">
+        select * from user where user.userId=#{userId} and password=#{password}
+    </select>
+    <select id="findAllUser" resultType="com.fifteen.pojo.User">
+        select * from user
+    </select>
+    <select id="findAll" resultType="com.fifteen.pojo.User">
+        select * from user
+    </select>
 
     <update id="updateByPhone" parameterType="String">
         UPDATE user
@@ -114,9 +126,19 @@
     <update id="updateHead">
         update user
         <set>
-        <if test="head != null">#{head}</if>
+        <if test="head != null">head=#{head}</if>
         </set>
         where userId = #{userId};
+    </update>
+    <update id="edit">
+        update user
+        <set>
+            <if test="nickname!=null">nickname=#{nickname},</if>
+            <if test="phone!=null">phone=#{phone},</if>
+            <if test="mailbox!=null">mailbox=#{mailbox},</if>
+            <if test="location!=null">location=#{location}</if>
+        </set>
+        where userId=#{userId}
     </update>
 
 </mapper>

@@ -136,7 +136,13 @@
                                                 <a class="post_list_link"
                                                    href="${pageContext.request.contextPath}/publish/publishDetails.do?publish_content_id=${publish.publish_content_id}"
                                                    style="color: black;">
-                                                    <p>${publish.text}</p>
+                                                    <span>${publish.text}</span>
+                                                    <c:if test="${not empty publish.expressions.expression}">
+                                                        <img src="${pageContext.request.contextPath}${publish.expressions.expression}" alt="" style="height: 20px;height: 20px">
+                                                    </c:if>
+                                                    <c:if test="${empty publish.expressions.expression}">
+                                                        <span></span>
+                                                    </c:if>
                                                 </a>
                                             </div>
                                             <div class="lmlblog-post-images-list clear">
@@ -166,7 +172,13 @@
                                                     <a class="post_list_link"
                                                        href="${pageContext.request.contextPath}/publish/publishDetails.do?publish_content_id=${publish.publish_content_id}"
                                                        style="color: black;">
-                                                        <p>${publish.text}</p>
+                                                        <span>${publish.text}</span>
+                                                        <c:if test="${not empty publish.expressions.expression}">
+                                                            <img src="${pageContext.request.contextPath}${publish.expressions.expression}" alt="" style="height: 20px;height: 20px">
+                                                        </c:if>
+                                                        <c:if test="${empty publish.expressions.expression}">
+                                                            <span></span>
+                                                        </c:if>
                                                     </a>
                                                 </div>
                                                 <hr>
@@ -214,7 +226,13 @@
                                                                 <a class="post_list_link"
                                                                    href="${pageContext.request.contextPath}/publish/publishDetails.do?publish_content_id=${f.publish_content_id}"
                                                                    style="color: black;">
-                                                                    <p>${f.text}</p>
+                                                                    <span>${publish.text}</span>
+                                                                    <c:if test="${not empty publish.expressions.expression}">
+                                                                        <img src="${pageContext.request.contextPath}${publish.expressions.expression}" alt="" style="height: 20px;height: 20px">
+                                                                    </c:if>
+                                                                    <c:if test="${empty publish.expressions.expression}">
+                                                                        <span></span>
+                                                                    </c:if>
                                                                 </a>
                                                             </div>
                                                             <c:if test="${not empty f.picture}">

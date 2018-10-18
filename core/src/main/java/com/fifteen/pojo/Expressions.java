@@ -5,6 +5,15 @@ import com.mysql.jdbc.Blob;
 public class Expressions {
     private Integer expressionId;
     private String expression;
+    private  User user;
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
 
     public Expressions() {
     }

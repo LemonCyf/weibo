@@ -32,12 +32,12 @@
 <!-- content srart -->
 <div class="am-g am-g-fixed blog-fixed blog-content">
     <div class="am-g blog-author blog-article-margin">
-        <a href="${pageContext.request.contextPath}/user/goToPersonalHome.do?userId=${details.user.userId}">
+        <a href="${pageContext.request.contextPath}/user/goToPersonalHome.do?userId=${details.expressions.user.userId}">
             <div class="am-u-sm-3 am-u-md-3 am-u-lg-2">
-                <img src="${details.user.head}" alt="" class="blog-author-img am-circle">
+                <img src="${details.expressions.user.head}" alt="" class="blog-author-img am-circle">
             </div>
             <div class="am-u-sm-9 am-u-md-9 am-u-lg-10">
-                <span class="blog-color">${details.user.nickname}</span>
+                <span class="blog-color">${details.expressions.user.nickname}</span>
                 <p style="color: #10D07A">${details.time}</p>
             </div>
         </a>
@@ -45,7 +45,14 @@
     <div class="am-u-sm-12">
         <article class="am-article blog-article-p">
             <div class="am-article-hd">
-                <h1 class="am-article-title">${details.text}</h1>
+                <h1 class="am-article-title" style="float:left;">${details.text}</h1>
+                <c:if test="${not empty details.expressions.expression}">
+                    <img src="${pageContext.request.contextPath}${details.expressions.expression}" alt=""
+                         style="height: 35px;height: 35px;">
+                </c:if>
+                <c:if test="${empty details.expressions.expression}">
+                    <span></span>
+                </c:if>
                 <p class="am-article-meta">
                     <span>${details.time}</span>
                 </p>
@@ -58,9 +65,13 @@
     </div>
 </div>
 <div class="lmlblog-post-bar">
-    <li class="lmlblog-no-like lmlblog-no" onclick='lmlblog_like_posts(4174,this,"post");'>
-        <i class="lmlblog-icon"><img src="../images/agree.png"></i>
+    <li class="lmlblog-no-like lmlblog-no" id="like">
+        <a href="/publish/addLikeCount.do?publish_content_id=${details.publish_content_id}&&likecount=${likeCount}" style="color: black">
+        <i class="lmlblog-icon">
+            <img src="../images/like.png">
+        </i>
         <span>${likeCount}</span>
+        </a>
     </li>
 
     <li class="lmlblog-no-comment lmlblog-no" onclick='list_comments_show();'>
@@ -88,6 +99,7 @@
                 close.onclick = function (ev) {
                     modal.style.display = "none";
                 }
+
                 function addForward() {
                     document.getElementById("submit").submit();
                 }
@@ -104,8 +116,11 @@
         <div class="modal-body" style="margin-left:50px;margin-top:5px;margin-bottom:5px">
             <textarea type="text" placeholder="请输入转发理由" id="text" name="text"></textarea>
         </div>
-        <button id="close" style="float: right;width:100px;height:30px;font-size:20px;margin-left:20px;margin-right: 10px;">关闭</button>
-        <button id="submit" style="float: right;width:100px;height:30px;font-size:20px" onclick="addForward()" >转发</button>
+        <button id="close"
+                style="float: right;width:100px;height:30px;font-size:20px;margin-left:20px;margin-right: 10px;">关闭
+        </button>
+        <button id="submit" style="float: right;width:100px;height:30px;font-size:20px" onclick="addForward()">转发
+        </button>
     </div>
 </form>
 <hr>
@@ -114,12 +129,24 @@
 -->
 <div class="commentAll" style="display: none" id="commentList">
     <!--评论区域 begin-->
-    <div class="reviewArea clearfix">
-        <div class="flex-text-wrap">
+    <c:if test="${not empty user}">
+        <form action="${pageContext.request.contextPath}/comment/addNewComment.do" method="post">
+            <input type="hidden" name="publish_content_id" value="${details.publish_content_id }">
+            <input type="hidden" name="userId" value="${sessionScope.user.userId}">
+            <div class="reviewArea clearfix">
+                <div class="flex-text-wrap">
             <textarea class="content comment-input" placeholder="评论不能超过150字哦~~~~~~~~~"
-                      onkeyup="keyUP(this)"></textarea></div>
-        <a href="javascript:;" class="plBtn">评论</a>
-    </div>
+                      onkeyup="keyUP(this)" name="commentText" id="commentText"></textarea></div>
+                <input type="submit" class="plBtn" value="评论" id="comment">
+            </div>
+        </form>
+    </c:if>
+    <c:if test="${empty user}">
+        <div>
+            <span style="color: #843534;font-size: 20px">登录之后才可以发表你自己的看法哦！</span>
+            <a href="/jsp/login.jsp">去登录</a>
+        </div>
+    </c:if>
     <!--评论区域 end-->
     <!--回复区域 begin-->
     <div class="comment-show">
@@ -146,11 +173,7 @@
                     <div class="date-dz">
                         <span class="date-dz-left pull-left comment-time">${all.time}</span>
                         <div class="date-dz-right pull-right comment-pl-block">
-                            <a href="javascript:;" class="removeBlock">删除</a>
                             <a href="javascript:;" class="date-dz-pl pl-hf hf-con-block pull-left">回复</a>
-                            <span class="pull-left date-dz-line">|</span>
-                            <a href="javascript:;" class="date-dz-z pull-left"><i class="date-dz-z-click-red"></i>赞 (<i
-                                    class="z-num">666</i>)</a>
                         </div>
                     </div>
                     <div class="hf-list-con"></div>
@@ -186,50 +209,6 @@
         commentList.style.display = 'block';
     }
 
-</script>
-<!--点击评论创建评论条-->
-<script type="text/javascript">
-    $('.commentAll').on('click', '.plBtn', function () {
-        var myDate = new Date();
-        //获取当前年
-        var year = myDate.getFullYear();
-        //获取当前月
-        var month = myDate.getMonth() + 1;
-        //获取当前日
-        var date = myDate.getDate();
-        var h = myDate.getHours();       //获取当前小时数(0-23)
-        var m = myDate.getMinutes();     //获取当前分钟数(0-59)
-        if (m < 10) m = '0' + m;
-        var s = myDate.getSeconds();
-        if (s < 10) s = '0' + s;
-        var now = year + '-' + month + "-" + date + " " + h + ':' + m + ":" + s;
-        //获取输入内容
-        var oSize = $(this).siblings('.flex-text-wrap').find('.comment-input').val();
-        console.log(oSize);
-        //动态创建评论模块
-        oHtml = '<div class="comment-show-con clearfix">' +
-            '<div class="comment-show-con-img pull-left">' +
-            '<img src="../images/header-img-comment_03.png" alt="">' +
-            '</div>' +
-            ' <div class="comment-show-con-list pull-left clearfix">' +
-            '<div class="pl-text clearfix"> ' +
-            '<a href="#" class="comment-size-name">David Beckham : </a> ' +
-            '<span class="my-pl-con">&nbsp;' + oSize + '</span>' +
-            ' </div> ' +
-            '<div class="date-dz"> ' +
-            '<span class="date-dz-left pull-left comment-time">' + now + '</span> ' +
-            '<div class="date-dz-right pull-right comment-pl-block">' +
-            '<a href="javascript:;" class="removeBlock">删除</a> ' +
-            '<a href="javascript:;" class="date-dz-pl pl-hf hf-con-block pull-left">回复</a>' +
-            ' <span class="pull-left date-dz-line">|</span>' +
-            ' <a href="javascript:;" class="date-dz-z pull-left">' +
-            '<i class="date-dz-z-click-red"></i>赞 (<i class="z-num">666</i>)</a> ' +
-            '</div> </div><div class="hf-list-con"></div></div> </div>';
-        if (oSize.replace(/(^\s*)|(\s*$)/g, "") != '') {
-            $(this).parents('.reviewArea ').siblings('.comment-show').prepend(oHtml);
-            $(this).siblings('.flex-text-wrap').find('.comment-input').prop('value', '').siblings('pre').find('span').text('');
-        }
-    });
 </script>
 <!--点击回复动态创建回复块-->
 <script type="text/javascript">
@@ -314,20 +293,20 @@
 </script>
 <!--删除评论块-->
 <%--<script type="text/javascript">--%>
-    <%--$('.commentAll').on('click', '.removeBlock', function () {--%>
-        <%--$('.commentAll').on('click', '.removeBlock', function () {--%>
-            <%--var oT = $(this).parents('.date-dz-right').parents('.date-dz').parents('.all-pl-con');--%>
-            <%--if (oT.siblings('.all-pl-con').length >= 1) {--%>
-                <%--oT.remove();--%>
-            <%--} else {--%>
-                <%--$(this).parents('.date-dz-right').parents('.date-dz').parents('.all-pl-con').parents('.hf-list-con').css('display', 'none')--%>
-                <%--oT.remove();--%>
-            <%--}--%>
-            <%--$(this).parents('.date-dz-right').parents('.date-dz').parents('.comment-show-con-list').parents('.comment-show-con').remove();--%>
+<%--$('.commentAll').on('click', '.removeBlock', function () {--%>
+<%--$('.commentAll').on('click', '.removeBlock', function () {--%>
+<%--var oT = $(this).parents('.date-dz-right').parents('.date-dz').parents('.all-pl-con');--%>
+<%--if (oT.siblings('.all-pl-con').length >= 1) {--%>
+<%--oT.remove();--%>
+<%--} else {--%>
+<%--$(this).parents('.date-dz-right').parents('.date-dz').parents('.all-pl-con').parents('.hf-list-con').css('display', 'none')--%>
+<%--oT.remove();--%>
+<%--}--%>
+<%--$(this).parents('.date-dz-right').parents('.date-dz').parents('.comment-show-con-list').parents('.comment-show-con').remove();--%>
 
-        <%--})--%>
-    <%--}--%>
-    <%----%>
+<%--})--%>
+<%--}--%>
+<%----%>
 <%--</script>--%>
 <!--点赞-->
 <script type="text/javascript">
@@ -346,7 +325,6 @@
         }
     })
 </script>
-
 <!--[if (gte IE 9)|!(IE)]><!-->
 <script src="assets/js/jquery.min.js"></script>
 <!--<![endif]-->
@@ -357,6 +335,5 @@
 <![endif]-->
 <script src="../js/amazeui.min.js"></script>
 <!-- <script src="assets/js/app.js"></script> -->
-
 </body>
 </html>

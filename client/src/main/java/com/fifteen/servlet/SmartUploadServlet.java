@@ -25,7 +25,6 @@ import java.sql.SQLException;
 @RequestMapping("/updateHead")
 public class SmartUploadServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
-    public String userId ="";
 
     public void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         doPost(req, resp);
@@ -34,7 +33,6 @@ public class SmartUploadServlet extends HttpServlet {
     public String goToNewHead(@RequestParam(value = "userId",required = false)String userId,
                               Model model){
         model.addAttribute("userId",userId);
-        userId = userId;
         return "/jsp/new_head";
     }
 
@@ -90,7 +88,6 @@ public class SmartUploadServlet extends HttpServlet {
         }
 
         String userId = su.getRequest().getParameter("userId");
-
         UserService userService = new UserServiceImp();
         userService.updateHead(head,userId);
 

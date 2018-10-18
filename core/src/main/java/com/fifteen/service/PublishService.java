@@ -15,4 +15,11 @@ public interface PublishService {
 
     List<Publish> findAllForward(String userId);
 
+    List<Publish> findPublishList(Integer pageNum, Integer count);
+
+    void deletePublish(Integer publish_content_id);
+
+    void addPublish(Publish publish);
+
+    void addLike(Integer publish_content_id, Integer likecount);
 }

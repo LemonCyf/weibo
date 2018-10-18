@@ -57,6 +57,11 @@ public class PublishController {
         return "redirect:/publish/publishDetails.do?publish_content_id="+publish_content_id;
     }
 
-
-
+    @RequestMapping("/addLikeCount")
+    public String like(@RequestParam(name = "publish_content_id")Integer publish_content_id,
+                       @RequestParam(name = "likecount")Integer likecount){
+        likecount=likecount+1;
+        publishService.addLike(publish_content_id,likecount);
+        return "redirect:/publish/publishDetails.do?publish_content_id="+publish_content_id;
+    }
 }

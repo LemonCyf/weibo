@@ -14,7 +14,7 @@
     <div class="gn_header ">
         <div class="gn_logo" node-type="logo" data-logotype="logo"
              data-logourl="//weibo.com?topnav=1&amp;mod=logo">
-            <a href="" class="box" title="" node-type="logolink"
+            <a href="${pageContext.request.contextPath}/admin/jsp/index.jsp" class="box" title="" node-type="logolink"
                suda-uatrack="key=topnav_tab&amp;value=weibologo" target="_top">
                 <span class="logo"></span>
             </a>

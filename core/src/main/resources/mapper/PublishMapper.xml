@@ -10,7 +10,7 @@
         <result property="phone" column="phone"/>
         <result property="userId" column="userId"/>
         <result property="time" column="time"/>
-        <result property="count" column="count"/>
+        <result property="likecount" column="likecount"/>
     </resultMap>
     <resultMap id="userPublishMap" type="com.fifteen.pojo.Publish">
         <id property="publish_content_id" column="publish_content_id"/>
@@ -20,7 +20,7 @@
         <result property="phone" column="phone"/>
         <result property="userId" column="userId"/>
         <result property="time" column="time"/>
-        <result property="count" column="count"/>
+        <result property="likecount" column="likecount"/>
         <association property="user" javaType="com.fifteen.pojo.User">
             <id property="userId" column="userId"/>
             <result property="phone" column="phone"/>
@@ -51,7 +51,7 @@
         <result property="phone" column="phone"/>
         <result property="userId" column="userId"/>
         <result property="time" column="time"/>
-        <result property="count" column="count"/>
+        <result property="likecount" column="likecount"/>
         <association property="forward" javaType="com.fifteen.pojo.Forward">
             <id property="forward_id" column="forward_id"/>
             <id property="ftext" column="ftext"/>
@@ -81,17 +81,95 @@
             </association>
         </association>
     </resultMap>
-    <select id="findPublish" resultMap="userPublishMap">
-        SELECT * FROM publish join user on publish.`userId`=user.`userId` order by time desc
+    <resultMap id="expressPublishMap" type="com.fifteen.pojo.Publish">
+        <id property="publish_content_id" column="publish_content_id"/>
+        <result property="text" column="text"/>
+        <result property="expression_id" column="expression_id"/>
+        <result property="picture" column="picture"/>
+        <result property="phone" column="phone"/>
+        <result property="userId" column="userId"/>
+        <result property="time" column="time"/>
+        <result property="likecount" column="likecount"/>
+        <association property="expressions" javaType="com.fifteen.pojo.Expressions">
+            <id property="expression" column="expression"/>
+            <result property="expressionId" column="expressionId"/>
+        </association>
+    </resultMap>
+    <resultMap id="userPublishExpressionMap" type="com.fifteen.pojo.Publish">
+        <id property="publish_content_id" column="publish_content_id"/>
+        <result property="text" column="text"/>
+        <result property="expression_id" column="expression_id"/>
+        <result property="picture" column="picture"/>
+        <result property="phone" column="phone"/>
+        <result property="userId" column="userId"/>
+        <result property="time" column="time"/>
+        <result property="likecount" column="likecount"/>
+        <association property="expressions" javaType="com.fifteen.pojo.Expressions">
+            <id property="expression" column="expression"/>
+            <result property="expressionId" column="expressionId"/>
+            <association property="user" javaType="com.fifteen.pojo.User">
+                <id property="userId" column="userId"/>
+                <result property="phone" column="phone"/>
+                <result property="password" column="password"/>
+                <result property="mailbox" column="mailbox"/>
+                <result property="location" column="location"/>
+                <result property="nickname" column="nickname"/>
+                <result property="orientation" column="orientation"/>
+                <result property="sex" column="sex"/>
+                <result property="emotional_state" column="emotional_state"/>
+                <result property="birthday" column="birthday"/>
+                <result property="blood_type" column="blood_type"/>
+                <result property="brieflntroduction" column="brieflntroduction"/>
+                <result property="blog_address" column="blog_address"/>
+                <result property="MSN" column="MSN"/>
+                <result property="qq" column="qq"/>
+                <result property="receiptlnformation" column="receiptlnformation"/>
+                <result property="domain_name" column="domain_name"/>
+                <result property="ID" column="ID"/>
+                <result property="head" column="head"/>
+            </association>
+        </association>
+    </resultMap>
+    <insert id="addPublish">
+        insert into micro_blog.publish
+        <trim prefix="(" suffix=")" prefixOverrides=",">
+            <if test="userId!=null">userId,</if>
+            <if test="expression_id!=null">expression_id,</if>
+            <if test="picture!=null">picture,</if>
+            <if test="text!=null">text,</if>
+            <if test="time!=null">time</if>
+        </trim>
+        VALUES
+        <trim prefix="(" suffix=")" prefixOverrides=",">
+            <if test="userId!=null">#{userId},</if>
+            <if test="expression_id!=null">#{expression_id},</if>
+            <if test="picture!=null">#{picture},</if>
+            <if test="text!=null">#{text},</if>
+            <if test="time!=null">#{time}</if>
+        </trim>
+    </insert>
+    <update id="addLike">
+      update publish set publish.likecount=#{likecount} where publish.publish_content_id=#{publish_content_id}
+    </update>
+    <delete id="deletePublish">
+        delete from publish where publish_content_id=#{publish_content_id}
+    </delete>
+    <select id="findPublish" resultMap="userPublishExpressionMap">
+        select * from
+        publish, user ,expressions where publish.`userId`=user.`userId`
+        and publish.expression_id=expressions.ExpressionId order by publish.time desc
     </select>
-    <select id="findPublishDetails" resultMap="userPublishMap">
-        select * from publish join user on publish.`userId`=user.`userId` where publish_content_id=#{publish_content_id}
+    <select id="findPublishDetails" resultMap="userPublishExpressionMap">
+        select * from
+        publish, user ,expressions where  publish.`userId`=user.`userId`
+        and publish.expression_id=expressions.ExpressionId
+        and publish.publish_content_id=#{publish_content_id}
     </select>
-    <select id="findAllPublish" resultType="com.fifteen.pojo.Publish">
-        select * from publish where userId=#{userId}
+    <select id="findAllPublish" resultMap="expressPublishMap">
+        select * from publish join expressions on publish.expression_id = expressions.ExpressionId where userId=#{userId}
     </select>
     <select id="countOfLike" resultType="java.lang.Integer">
-        select count from publish where publish_content_id=#{publish_content_id}
+        select likecount from publish where publish_content_id=#{publish_content_id}
     </select>
     <select id="findAllForward" resultMap="publishForwardUserMap">
         SELECT * FROM

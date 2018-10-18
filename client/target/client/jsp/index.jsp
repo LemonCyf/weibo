@@ -71,13 +71,20 @@
                     <div class="mob-pu" style="background-color: white">
                         <p>
                             <a href="${pageContext.request.contextPath}/publish/publishDetails.do?publish_content_id=${publish.publish_content_id}"
-                               class="transition msubstr-row2" target="_blank">${publish.text}</a></p>
+                               class="transition msubstr-row2" target="_blank">${publish.text}
+                                <c:if test="${not empty publish.expressions.expression}">
+                                    <img src="${pageContext.request.contextPath}${publish.expressions.expression}" alt="" style="width: 30px;height: 30px">
+                                </c:if>
+                                <c:if test="${empty publish.expressions.expression}">
+                                    <span></span>
+                                </c:if>
+                            </a></p>
                         <div class="publishUser">
                             <a href="${pageContext.request.contextPath}/user/goToPersonalHome.do?userId=${publish.userId}">
                                 <div class="userImg">
-                                    <img src="${publish.user.head}">
+                                    <img src="${publish.expressions.user.head}">
                                 </div>
-                                <p class="userName">${publish.user.nickname}</p>
+                                <p class="userName">${publish.expressions.user.nickname}</p>
                             </a>
                         </div>
                         <div class="mob-author">
@@ -100,13 +107,20 @@
                         <div class="mob-ctt">
                             <p>
                                 <a href="${pageContext.request.contextPath}/publish/publishDetails.do?publish_content_id=${publish.publish_content_id}"
-                                   class="transition msubstr-row2" target="_blank">${publish.text}</a></p>
+                                   class="transition msubstr-row2" target="_blank">${publish.text}
+                                    <c:if test="${not empty publish.expressions.expression}">
+                                        <img src="${pageContext.request.contextPath}${publish.expressions.expression}" alt="" style="width: 30px;height: 30px">
+                                    </c:if>
+                                    <c:if test="${empty publish.expressions.expression}">
+                                        <span></span>
+                                    </c:if>
+                                </a></p>
                             <div class="publishUser">
                                 <a href="${pageContext.request.contextPath}/user/goToPersonalHome.do?userId=${publish.userId}">
                                     <div class="userImg">
-                                        <img src="${publish.user.head}">
+                                        <img src="${publish.expressions.user.head}">
                                     </div>
-                                    <p class="userName">${publish.user.nickname}</p>
+                                    <p class="userName">${publish.expressions.user.nickname}</p>
                                 </a>
                             </div>
                             <div class="mob-author">

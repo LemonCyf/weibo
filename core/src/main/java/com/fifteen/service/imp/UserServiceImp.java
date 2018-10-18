@@ -3,8 +3,11 @@ import com.fifteen.dao.UserDao;
 import com.fifteen.pojo.User;
 import com.fifteen.service.UserService;
 import com.fifteen.utils.Utils;
+import com.github.pagehelper.PageHelper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 
 @Service
@@ -58,11 +61,6 @@ public class UserServiceImp implements UserService {
     }
 
     @Override
-    public User goToPersonalHome(String userId) {
-        return null;
-    }
-
-    @Override
     public boolean checkUser(String phone) {
         boolean isSuccess = false;
         User user = userDao.selectByPhone(phone);
@@ -70,6 +68,33 @@ public class UserServiceImp implements UserService {
             isSuccess = true;
         }
         return isSuccess;
+    }
+
+    @Override
+    public User adminLogin(String userId, String password) {
+        return userDao.adminLogin(userId,password);
+    }
+
+    @Override
+    public List<User> findAllUser(Integer pageNum,Integer count) {
+        PageHelper.startPage(pageNum,count);
+        List<User> userList=userDao.findAllUser();
+        return userList;
+    }
+
+    @Override
+    public void editUser(User user) {
+        userDao.edit(user);
+    }
+
+    @Override
+    public void deleteUser(String userId) {
+        userDao.deleteUser(userId);
+    }
+
+    @Override
+    public List<User> findAll() {
+        return userDao.findAll();
     }
 
     @Override

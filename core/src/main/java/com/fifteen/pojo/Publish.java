@@ -12,7 +12,7 @@ public class Publish {
     private String phone;
     private String userId;
     private Date time;
-    private Integer count;
+    private Integer likecount;
     private User user;
     private Expressions expressions;
     private Forward forward;
@@ -44,7 +44,7 @@ public class Publish {
     public Publish() {
     }
 
-    public Publish(Integer publish_content_id, String text, Integer expression_id, String picture, String phone, String userId, Date time, Integer count) {
+    public Publish(Integer publish_content_id, String text, Integer expression_id, String picture, String phone, String userId, Date time, Integer likecount) {
         this.publish_content_id = publish_content_id;
         this.text = text;
         this.expression_id = expression_id;
@@ -52,7 +52,7 @@ public class Publish {
         this.phone = phone;
         this.userId = userId;
         this.time = time;
-        this.count = count;
+        this.likecount = likecount;
     }
 
 
@@ -113,11 +113,11 @@ public class Publish {
     }
 
     public Integer getCount() {
-        return count;
+        return likecount;
     }
 
-    public void setCount(Integer count) {
-        this.count = count;
+    public void setCount(Integer likecount) {
+        this.likecount = likecount;
     }
 
     @Override
@@ -130,7 +130,7 @@ public class Publish {
                 ", phone='" + phone + '\'' +
                 ", userId='" + userId + '\'' +
                 ", time=" + time +
-                ", count=" + count +
+                ", count=" + likecount +
                 ", user=" + user +
                 ", expressions=" + expressions +
                 '}';

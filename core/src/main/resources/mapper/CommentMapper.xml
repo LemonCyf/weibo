@@ -58,8 +58,6 @@
         insert into comment
         <trim prefix="(" suffix=")" suffixOverrides=",">
             <if test="text!=null">text,</if>
-            <if test="expression_id!=null">expression_id,</if>
-            <if test="picture!=null">picture,</if>
             <if test="publish_content_id!=null">publish_content_id,</if>
             <if test="userId!=null">userId,</if>
             <if test="time!=null">time</if>
@@ -67,8 +65,6 @@
         values
         <trim prefix="(" suffix=")" suffixOverrides=",">
             <if test="text!=null">#{text},</if>
-            <if test="expression_id!=null">#{expression_id},</if>
-            <if test="picture!=null">#{picture},</if>
             <if test="publish_content_id!=null">#{publish_content_id},</if>
             <if test="userId!=null">#{userId},</if>
             <if test="time!=null">#{time}</if>
